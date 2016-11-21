@@ -1,0 +1,3295 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"name": "VLiveShow",
+			"description": "",
+			"order": [],
+			"folders": [
+				{
+					"id": "a1de3c76-9cd8-4fca-ee7d-1675378be703",
+					"name": "BackOffice",
+					"description": "",
+					"write": true,
+					"order": [
+						"6e3bfc8b-c1b8-ec31-bb7e-00f1d1801fa2"
+					],
+					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"owner": "981326",
+					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55"
+				},
+				{
+					"id": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7",
+					"name": "Backend",
+					"description": "",
+					"write": true,
+					"order": [
+						"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
+						"a2a1838c-2142-0bcd-7a90-ee2b78b0bec5",
+						"9c125e8d-e088-18c6-7e40-ec09ed5b6c26",
+						"53da554b-b0d1-fe02-23b8-eeec3c241d37",
+						"14dda310-99b3-76f3-431f-3ad98c7ee8f6",
+						"e335ee87-827b-358a-2503-54f19d668b19",
+						"a23a2305-9988-dc49-6b64-9649a70dcd2f",
+						"c37c0efd-1d70-e645-e5f7-3fd8f2d89b9c",
+						"1c862001-0149-ecd9-6582-e4557fb3f900",
+						"3721be10-7d14-40ac-843b-d2bf9ce47f03",
+						"794e0454-118b-2e5b-cbf4-ede6b98e396f",
+						"77df738c-517b-afcf-fa1e-3506d50747a9",
+						"337a34b6-b9b8-f163-40bf-6ef39b08dd22",
+						"3468b175-21fe-db0a-0c70-17bd2fb1a6de",
+						"b8a588ea-946b-fd6e-6a15-9e40f5715828",
+						"2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
+						"e3ad7f89-08a9-f426-f215-baab66a3a4bc"
+					],
+					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"owner": "981326",
+					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
+				},
+				{
+					"id": "a024d3f8-fdfa-ad96-bba8-640bdfe7cef5",
+					"name": "Course",
+					"description": "",
+					"write": true,
+					"order": [
+						"ba2fac81-5f55-094a-d8ca-1a1ddd154979",
+						"f72e0537-2515-e417-9938-00355b786caa",
+						"ac741404-880d-bdc9-652a-1edba7e9ad52",
+						"19a8d0af-e77d-374e-1553-acf3678a9635",
+						"15c43066-6976-1357-c798-da207b1e52df",
+						"448b40f9-0c4b-dccd-0be4-7a48e59469b4",
+						"420f6137-ba80-6b6d-03b8-9e6e754daed6",
+						"2654840c-3fbd-49ec-7b46-ba9c47606711",
+						"b5be1ca3-4384-7444-95bb-681d42aa929b",
+						"596179a3-17b9-da79-f742-44fe3fa734c4",
+						"de09f4ce-78c7-50c2-81ef-ce061f635a44",
+						"18581e9f-f7c2-69c2-4811-b3d0d71ea674",
+						"b7f931c3-8444-6619-2984-d78dee5c2e77"
+					],
+					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"owner": "981326",
+					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"collectionId": "188fd9f2-cfec-47dd-e3d9-21786929f08f"
+				}
+			],
+			"timestamp": 1479180658804,
+			"synced": false,
+			"remote_id": 711125,
+			"owner": "981326",
+			"subscribed": false,
+			"remoteLink": null,
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1479180658824,
+			"updatedAt": 1479457645341,
+			"write": true,
+			"published": false,
+			"favorite": true,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "14dda310-99b3-76f3-431f-3ad98c7ee8f6",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/config/adspace/list?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479447448790,
+					"name": "广告列表",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "15c43066-6976-1357-c798-da207b1e52df",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/subscription?id={{subscriptionId}}&token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "DELETE",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442559741,
+					"name": "unsubscribeCourse",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "18581e9f-f7c2-69c2-4811-b3d0d71ea674",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/lesson/lessonInfo?token={{token}}&lessonId={{lessonId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442593612,
+					"name": "lessonInfo",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "19a8d0af-e77d-374e-1553-acf3678a9635",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{host}}/vliveshow-api-app/v1/course/subscription?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"courseId\": {{courseId}},\n\t\"subscriptionType\": {{subscriptionType}}\n}",
+					"dataMode": "raw",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442548032,
+					"name": "subscribeCourse",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "1c862001-0149-ecd9-6582-e4557fb3f900",
+					"headers": "",
+					"url": "{{host}}//vliveshow-api-app/v1/liveshow/{{roomId}}/detail?token={{token}}&roomId={{roomId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479448932317,
+					"name": "直播间详情",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "2654840c-3fbd-49ec-7b46-ba9c47606711",
+					"headers": "",
+					"url": "dev.vliveshow.com/vliveshow-api-app/v1/course/mine?token={{token}}&client_language={{client_language}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442785124,
+					"name": "myPublish",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26Saved%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261&token={{token}}&timestamp=1479452000839&roomId={{roomId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479457454512,
+					"name": "送礼物",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "337a34b6-b9b8-f163-40bf-6ef39b08dd22",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/test/liveshow/sendGroupMsg?roomId={{roomId}}&token={{token}}&message={{message}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479695059671,
+					"name": "发送消息",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "3468b175-21fe-db0a-0c70-17bd2fb1a6de",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random=${__time(,)}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"115\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMTextElem\",\n                \"MsgContent\": {\n                  \"Text\": \"{{qcmessage}}\"\n                }\n              }\n            ]\n          }",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479695542394,
+					"name": "发送消息QCloud",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "3721be10-7d14-40ac-843b-d2bf9ce47f03",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/current_audiences?token={{token}}&roomId={{roomId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479456468348,
+					"name": "房间观众",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "420f6137-ba80-6b6d-03b8-9e6e754daed6",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{host}}/vliveshow-api-app/v1/course/lesson/rating?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"rating\": {{rating}},\n\t\"lessonId\": {{lessonId}}\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442569600,
+					"name": "rating",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "448b40f9-0c4b-dccd-0be4-7a48e59469b4",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/create",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "geoLocaltion",
+							"value": "定位关",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "topics",
+							"value": "57d7a06210bcf99aff83760f,舞蹈",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "cover",
+							"value": "PictureUnlock_200042527_FkupynSvsR8DpruwOyYL5CUEXqjk_1.pictureunlock.jpg1479186419651",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "lessonId",
+							"value": "{{lessonId}}",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442564867,
+					"name": "create",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "53da554b-b0d1-fe02-23b8-eeec3c241d37",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/config?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479447443977,
+					"name": "直播配置",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "596179a3-17b9-da79-f742-44fe3fa734c4",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/lessons?token={{token}}&courseId={{courseId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442583996,
+					"name": "courseLessons",
+					"description": "10. 套课的课程列表",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/phone/password_login?nationCode={{nationCode}}&mobilePhone={{mobilePhone}}&password={{password}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479693705272,
+					"name": "手机登录",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "6e3bfc8b-c1b8-ec31-bb7e-00f1d1801fa2",
+					"headers": "",
+					"url": "{{host}}/vliveshow-backoffice-app/v1/course?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.value === 100;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479467702620,
+					"name": "查询订阅列表",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "77df738c-517b-afcf-fa1e-3506d50747a9",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\"GroupId\": \"{{roomId}}\", \"NewMemberList\" :[{\"Member_Account\":\"{{userId}}\"}]}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479694834061,
+					"name": "进入房间Callback",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "794e0454-118b-2e5b-cbf4-ede6b98e396f",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"37\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"10&1\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479695512890,
+					"name": "进入房间QCloud",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "9c125e8d-e088-18c6-7e40-ec09ed5b6c26",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/list?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479447431137,
+					"name": "直播间列表",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "a23a2305-9988-dc49-6b64-9649a70dcd2f",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/relationship?token={{token}}&userId={{userId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479447456385,
+					"name": "用户关系",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "a2a1838c-2142-0bcd-7a90-ee2b78b0bec5",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/phone/bind?nationCode={{nationCode}}&mobilePhone={{mobilePhone}}&verificationCode={{verificationCode}}&token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479457645334,
+					"name": "绑定手机",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "ac741404-880d-bdc9-652a-1edba7e9ad52",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/{{courseId}}/detail?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442539575,
+					"name": "courseDetail",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "b5be1ca3-4384-7444-95bb-681d42aa929b",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/subscription/mine?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442579957,
+					"name": "mySubscription",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "b7f931c3-8444-6619-2984-d78dee5c2e77",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/lesson/LivingInfo?token={{token}}&courseId={{courseId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442598826,
+					"name": "liveInfo",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "b8a588ea-946b-fd6e-6a15-9e40f5715828",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random=${__time(,)}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"112\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479695017028,
+					"name": "点赞QCloud",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "ba2fac81-5f55-094a-d8ca-1a1ddd154979",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/list?token={{token}}&client_language={{client_language}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442502365,
+					"name": "courseList",
+					"description": "CourseList",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "c37c0efd-1d70-e645-e5f7-3fd8f2d89b9c",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/money/user/balance?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479466854178,
+					"name": "账户余额",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "de09f4ce-78c7-50c2-81ef-ce061f635a44",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/timing/lesson?token={{token}}&client_language={{client_language}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442588382,
+					"name": "courseTiming",
+					"description": "11.主播开播倒计时",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "e335ee87-827b-358a-2503-54f19d668b19",
+					"headers": "",
+					"url": "{{host}}//vliveshow-api-app/v1/config/gift/list?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479449337253,
+					"name": "礼物列表",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "e3ad7f89-08a9-f426-f215-baab66a3a4bc",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterMemberExit&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\"GroupId\": \"{{roomId}}\", \"ExitMemberList\" :[{\"Member_Account\":\"{{userId}}\"}]}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479466778997,
+					"name": "退出房间Callback",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "f72e0537-2515-e417-9938-00355b786caa",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/course/{{courseId}}/subscription?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479442527745,
+					"name": "subscription",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				}
+			]
+		},
+		{
+			"favoriters": [],
+			"owner": "981326",
+			"lastUpdatedBy": "981326",
+			"lastRevision": 528140329,
+			"team": null,
+			"id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+			"name": "Postman Echo",
+			"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://echo.getpostman.com](https://echo.getpostman.com?source=echo-collection-app-onboarding)",
+			"remote_id": "0",
+			"remoteLink": null,
+			"order": [],
+			"shared": false,
+			"write": true,
+			"createdAt": "2016-09-02T09:25:05.000Z",
+			"updatedAt": "2016-09-02T09:25:06.000Z",
+			"folders": [
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140413,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "09ddd67c-13fe-4626-8dd4-fc64f1fc27b7",
+					"name": "Auth: Digest",
+					"description": "Digest authentication protects an endpoint with a username and password without actually transmitting the password over network.\nOne has to apply a hash function (like MD5, etc) to the username and password before sending them over the network.\n\n> Username: `postman`\n>\n> Password: `password`\n\nUnlike Basic-Auth, authentication happens using two consecutive requests where the first request returns `401 Unauthorised` along with `WWW-Authenticate` header containing information that needs to be used to authenticate subsequent calls.\n\nTo know more about digest authentication, refer to the [Digest Access Authentication](https://en.wikipedia.org/wiki/Digest_access_authentication) wikipedia article.\nThe article on [authentication helpers](https://www.getpostman.com/docs/helpers#digest-auth) elaborates how to use the same within the Postman app.",
+					"order": [
+						"70ed7920-ead1-2d20-645a-c716ab0fd137",
+						"a4c04e32-72cf-0475-07dc-89c23f85cf0c"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140415,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "37368024-f6a8-0f70-85fc-7e876cde9e33",
+					"name": "Cookies",
+					"description": "The cookie related endpoints allow one to get, set and delete simple cookies.\n\nCookies are small snippets of information that is stored in the browser and sent back to the server with every subsequent requests in order to store useful information between requests.\nIf you want to know more about cookies, read the [HTTP Cookie](https://en.wikipedia.org/wiki/HTTP_cookie) article on wikipedia.",
+					"order": [
+						"3de3b135-b3cc-3a68-ba27-b6d373e03c8c",
+						"a4f24593-448b-88de-963f-eeb952d38a57",
+						"8dc08eee-a543-7c1c-297f-b0b7040c35c6"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140416,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "5d3595b3-5e8e-9e33-05ed-855c77298e4e",
+					"name": "Headers",
+					"description": "The following set of endpoints allow one to see the headers being sent as part of a request and to get a custom set of headers as part of response.\n\nHTTP header fields provide required information about the request or response, or about the object sent in the message body. Both request headers and response headers can be controlled using these endpoints.",
+					"order": [
+						"da16c006-6293-c1fe-ea42-e9ba8a5e68b1",
+						"e50f9111-3a52-a325-47f1-fc702bea1fff"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140417,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"name": "Utilities",
+					"description": "",
+					"order": [
+						"6cfd22d8-26cc-7d3e-cf50-16d400211a76",
+						"159a89e2-110d-0785-9dd7-9e73b2d6878b",
+						"0189572f-509e-efe0-686d-eed4b3d2f1f0",
+						"154510d1-65a8-a2d0-f157-aa2c694d7be7",
+						"fd961ad0-ab24-68d8-4be5-573e8585d526",
+						"5d3b31c0-fa26-ee03-5c1b-3715825d811d"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140401,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"name": "Request Methods",
+					"description": "HTTP has multiple request \"verbs\", such as `GET`, `PUT`, `POST`, `DELETE`,\n`PATCH`, `HEAD`, etc. \n\nAn HTTP Method (verb) defines how a request should be interpreted by a server. \nThe endpoints in this section demonstrate various HTTP Verbs. Postman supports \nall the HTTP Verbs, including some rarely used ones, such as `PROPFIND`, `UNLINK`, \netc.\n\nFor details about HTTP Verbs, refer to [RFC 2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)\n",
+					"order": [
+						"078883ea-ac9e-842e-8f41-784b59a33722",
+						"1eb1cf9d-2be7-4060-f554-73cd13940174",
+						"12c51acc-50d2-2d9b-10d6-cc80e3a10d70",
+						"8c53212f-42cd-cb37-6e02-08c47a7c8bb1",
+						"1f0fad16-6bff-5130-2056-7f4af6b18912"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140414,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "df815c41-a76b-4b5b-7129-ea59275f254b",
+					"name": "Auth: Others",
+					"description": "",
+					"order": [
+						"42c867ca-e72b-3307-169b-26a478b00641",
+						"2f79ab5b-9029-56c2-7b05-52047790d670",
+						"843acf02-a33c-c4bb-d742-c07b9212e4b0"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z"
+				}
+			],
+			"favorite": false,
+			"subscribed": false,
+			"sharedWithTeam": false,
+			"hasRequests": true,
+			"synced": true,
+			"published": false,
+			"requests": [
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140363,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "0189572f-509e-efe0-686d-eed4b3d2f1f0",
+					"name": "Delay Response",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "Using this endpoint one can configure how long it takes for the server to come back with a response. Appending a number to the URL defines the time (in seconds) the server will wait before responding.\n\nNote that a maximum delay of 10 seconds is accepted by the server.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/delay/3",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry { \n    responseJSON = JSON.parse(responseBody); \n    tests[\"response body has key delay\"] = 'delay' in responseJSON;\n}\ncatch (e) { }\ntests[\"response code is 200\"] = responseCode.code === 200;\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140398,
+							"request": "0189572f-509e-efe0-686d-eed4b3d2f1f0",
+							"id": "c69827df-5275-773e-4753-7878a72fd156",
+							"name": "sample delay response",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "1396",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "13",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 12:00:02 GMT",
+									"description": ""
+								},
+								{
+									"name": "ETag",
+									"key": "ETag",
+									"value": "W/\"d-2835810952\"",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460718898.059833,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "getpostmanlogin",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "yes"
+								},
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460718898.059992,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "postman.sid",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "df0c0256028d7ec4d641f766104a9571a8e249685bbc667d7cee030bbf44d3209495c70c03248e31e678a93812591d5e12187a8e99bf6bc5e80c40903f6ff6226938f24e413c0ffa613a7372064ec44a8594e8d3ede6945e34394f369573feeebc4a73a3e24b8c9ac18a53704addb5fd3f71f1ede488ff551feb059e9c1fb208164814e45e0312c4df8ea6e83c26702f42ae634c6afbe82d57c857bbf5598b5527961c1c28688dc2580070a4389f0cf4ec0a179b5b9c11b2ecbaa5460d374065bf5c7a3add9505df0fa89acb9f227f05ed2d4c6b58c39d6d728bd49f6f323ae67d4a75882aa7682f5d6fc5b981ba411d94aa93970bfaefa1953a73e440d50d012b5f288975c888e2345ee7777e746fb5aed3a7b2dbc087c6456621aa78c24a3c17c5f96cf59844933249a352f631e2008cffac6faf06d0e253dcc01cf0067bf56c1fbc5ed61fec1861b60c5accf35ffc2e56154a113004fa1db9d7171c3af8fc063918554092f5"
+								},
+								{
+									"domain": ".echo.getpostman.com",
+									"expirationDate": 1522494981,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "_ga",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "GA1.3.1703443399.1459422978"
+								},
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3AE3eq7KE5S-hRJvtmRXXYRjTmlNz202zj.pbXR3%2F3TQ4g1827ALbVAcaxSQQjlzrZeHtLNFdbPD9c"
+								}
+							],
+							"mime": "",
+							"text": "{\"delay\":\"1\"}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/delay/1\",\"headers\":[],\"data\":[],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140358,
+					"folder": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "078883ea-ac9e-842e-8f41-784b59a33722",
+					"name": "GET Request",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "The HTTP `GET` request method is meant to retrieve data from a server. The data\nis identified by a unique URI (Uniform Resource Identifier). \n\nA `GET` request can pass parameters to the server using \"Query String \nParameters\". For example, in the following request,\n\n> http://example.com/hi/there?hand=wave\n\nThe parameter \"hand\" has the value \"wave\".\n\nThis endpoint echoes the HTTP headers, request parameters and the complete\nURI requested.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/get?test=123",
+					"preRequestScript": "",
+					"tests": "tests[\"Body contains headers\"] = responseBody.has(\"headers\");\ntests[\"Body contains args\"] = responseBody.has(\"args\");\ntests[\"Body contains url\"] = responseBody.has(\"url\");\n\nvar responseJSON;\n\ntry { responseJSON = JSON.parse(responseBody); }\ncatch (e) { }\n\n\ntests[\"Args key contains argument passed as url parameter\"] = 'test' in responseJSON.args",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140359,
+					"folder": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "12c51acc-50d2-2d9b-10d6-cc80e3a10d70",
+					"name": "PUT Request",
+					"dataMode": "raw",
+					"data": "Etiam mi lacus, cursus vitae felis et, blandit pellentesque neque. Vestibulum eget nisi a tortor commodo dignissim.\nQuisque ipsum ligula, faucibus a felis a, commodo elementum nisl. Mauris vulputate sapien et tincidunt viverra. Donec vitae velit nec metus.",
+					"rawModeData": "Etiam mi lacus, cursus vitae felis et, blandit pellentesque neque. Vestibulum eget nisi a tortor commodo dignissim.\nQuisque ipsum ligula, faucibus a felis a, commodo elementum nisl. Mauris vulputate sapien et tincidunt viverra. Donec vitae velit nec metus.",
+					"descriptionFormat": null,
+					"description": "The HTTP `PUT` request method is similar to HTTP `POST`. It too is meant to \ntransfer data to a server (and elicit a response). What data is returned depends on the implementation\nof the server.\n\nA `PUT` request can pass parameters to the server using \"Query String \nParameters\", as well as the Request Body. For example, in the following \nraw HTTP request,\n\n> PUT /hi/there?hand=wave\n>\n> <request-body>\n\n\n",
+					"headers": "",
+					"method": "PUT",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/put",
+					"preRequestScript": "",
+					"tests": "var data;\n\ntry { responseJSON = JSON.parse(responseBody); }\ncatch (e) {}\n\ntests[\"Body contains files\"] = responseBody.has(\"files\");\ntests[\"Body contains args\"] = responseBody.has(\"args\");\ntests[\"Body contains form\"] = responseBody.has(\"form\");\ntests[\"Body contains headers\"] = responseBody.has(\"headers\");\ntests[\"Body contains url\"] = responseBody.has(\"url\");\n\n\n\ntests[\"Data has been passed\"] = (responseJSON && responseJSON.data && responseJSON.data.length)",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140364,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "154510d1-65a8-a2d0-f157-aa2c694d7be7",
+					"name": "Get UTF8 Encoded Response",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "If a response of an endpoint requires to send data beyond the basic English / ASCII character set, the `charset` parameter in the `Content-Type` response header defines the character encoding policy.\n\nThis endpoint returns an `UTF8` character encoded response body with text in various languages such as Greek, Latin, East Asian, etc. Postman can interpret the character encoding and use appropriate methods to display the character set in responses.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/encoding/utf8",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140365,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "159a89e2-110d-0785-9dd7-9e73b2d6878b",
+					"name": "Streamed Response",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint allows one to recieve streaming http response using [chunked transfer encoding](https://en.wikipedia.org/wiki/Chunked_transfer_encoding) of a configurable length.\n\nA streaming response does not wait for the entire response to be generated on server before flushing it out. This implies that for a fairly large response, parts of it can be streamed to the requestee as and when it is generated on server. The client can then take actions of processing this partially received data.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/stream/10",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;\ntests[\"response is sent in chunks\"] = (postman.getResponseHeader('Transfer-Encoding') === 'chunked')\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140360,
+					"folder": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "1eb1cf9d-2be7-4060-f554-73cd13940174",
+					"name": "POST Request",
+					"dataMode": "raw",
+					"data": "Duis posuere augue vel cursus pharetra. In luctus a ex nec pretium. Praesent neque quam, tincidunt nec leo eget, rutrum vehicula magna.\nMaecenas consequat elementum elit, id semper sem tristique et. Integer pulvinar enim quis consectetur interdum volutpat.",
+					"rawModeData": "Duis posuere augue vel cursus pharetra. In luctus a ex nec pretium. Praesent neque quam, tincidunt nec leo eget, rutrum vehicula magna.\nMaecenas consequat elementum elit, id semper sem tristique et. Integer pulvinar enim quis consectetur interdum volutpat.",
+					"descriptionFormat": null,
+					"description": "The HTTP `POST` request method is meant to transfer data to a server \n(and elicit a response). What data is returned depends on the implementation\nof the server.\n\nA `POST` request can pass parameters to the server using \"Query String \nParameters\", as well as the Request Body. For example, in the following request,\n\n> POST /hi/there?hand=wave\n>\n> <request-body>\n\nThe parameter \"hand\" has the value \"wave\". The request body can be in multiple\nformats. These formats are defined by the MIME type of the request. The MIME \nType can be set using the ``Content-Type`` HTTP header. The most commonly used \nMIME types are:\n\n* `multipart/form-data`\n* `application/x-www-form-urlencoded`\n* `application/json`\n\nThis endpoint echoes the HTTP headers, request parameters, the contents of\nthe request body and the complete URI requested.",
+					"headers": "Content-Type: text/plain\n",
+					"method": "POST",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/post",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\n\ntry { responseJSON = JSON.parse(responseBody); }\ncatch (e) { }\n\n\ntests[\"response has data\"] = responseJSON && responseJSON.data && (responseJSON.data.length === 256);\ntests[\"content-type equals text/plain\"] = responseJSON && responseJSON.headers && (responseJSON.headers[\"content-type\"] === 'text/plain');",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140361,
+					"folder": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "1f0fad16-6bff-5130-2056-7f4af6b18912",
+					"name": "DELETE Request",
+					"dataMode": "raw",
+					"data": "Donec fermentum, nisi sed cursus eleifend, nulla tortor ultricies tellus, ut vehicula orci arcu ut velit. In volutpat egestas dapibus. \nMorbi condimentum vestibulum sapien. Etiam dignissim diam quis eros lobortis gravida vel lobortis est. Etiam gravida sed.",
+					"rawModeData": "Donec fermentum, nisi sed cursus eleifend, nulla tortor ultricies tellus, ut vehicula orci arcu ut velit. In volutpat egestas dapibus. \nMorbi condimentum vestibulum sapien. Etiam dignissim diam quis eros lobortis gravida vel lobortis est. Etiam gravida sed.",
+					"descriptionFormat": null,
+					"description": "The HTTP `DELETE` method is used to delete resources on a server. The exact\nuse of `DELETE` requests depends on the server implementation. In general, \n`DELETE` requests support both, Query String parameters as well as a Request \nBody.\n\nThis endpoint accepts an HTTP `DELETE` request and provides debug information\nsuch as the HTTP headers, Query String arguments, and the Request Body.",
+					"headers": "",
+					"method": "DELETE",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/delete",
+					"preRequestScript": "",
+					"tests": "tests[\"Body contains files\"] = responseBody.has(\"files\");\ntests[\"Body contains args\"] = responseBody.has(\"args\");\ntests[\"Body contains form\"] = responseBody.has(\"form\");\ntests[\"Body contains headers\"] = responseBody.has(\"headers\");\ntests[\"Body contains url\"] = responseBody.has(\"url\");\n\nvar responseJSON;\n\ntry { responseJSON = JSON.parse(responseBody); }\ncatch (e) { }\n\ntests[\"Data has been passed\"] = (responseJSON && responseJSON.data && responseJSON.data.length)",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140350,
+					"folder": "df815c41-a76b-4b5b-7129-ea59275f254b",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "2f79ab5b-9029-56c2-7b05-52047790d670",
+					"name": "OAuth1.0 Verify Signature",
+					"dataMode": "params",
+					"data": [
+						{
+							"key": "code",
+							"value": "xWnkliVQJURqB2x1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "abc123",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "ssh-secret",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "OAuth1.0a is a specification that defines a protocol that can be used by one\nservice to access \"protected\" resources (endpoints) on another service. A\nmajor part of OAuth1.0 is HTTP Request Signing. This endpoint allows you to \ncheck whether the request calculation works properly in the client. \n\nThe endpoint supports the HTTP ``Authorization`` header. In case the signature\nverification fails, the endpoint provides the four debug values,\n\n* ``base_uri``\n* ``normalized_param_string``\n* ``base_string``\n* ``signing_key``\n\nFor more details about these parameters, check the [OAuth1.0a Specification](http://oauth.net/core/1.0a/)\n\nIn order to use this endpoint, you can set the following values:\n\n> Consumer Key: ``RKCGzna7bv9YD57c``\n>\n> Consumer Secret: ``D+EdQ-gs$-%@2Nu7``\n\nIf you are using Postman, also check the \"Add params to header\" and \n\"Auto add parameters\" boxes.",
+					"headers": "Authorization: OAuth oauth_consumer_key=\"RKCGzna7bv9YD57c\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1442394747\",oauth_nonce=\"UIGipk\",oauth_version=\"1.0\",oauth_signature=\"CaeyGPr2mns1WCq4Cpm5aLvz6Gs=\"\n",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/oauth1",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;\nvar body = JSON.parse(responseBody);\ntests[\"Body contains status pass\"] = body[\"status\"] == \"pass\"",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140389,
+							"request": "2f79ab5b-9029-56c2-7b05-52047790d670",
+							"id": "e504bab6-3d35-fe24-1c4e-c36f5b7b269e",
+							"name": "Success",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "4663",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "95",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 11:06:58 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3ABp7Ij29KkCZa6ZDcop8c91ouBjNzAbD0.ejn6dE%2FhqlpsDh7QUsPXPozN7UBdAzW4i15PEFhHbZg"
+								},
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460717668.06945,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "getpostmanlogin",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "yes"
+								},
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460717668.069509,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "postman.sid",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "9f887f3b7f14b8c29ac4dc4109381b0b89a76e785c7b34251d6c8025b41b24013d2aa49f40e2deac19cbf0594dd984169455534d91ff98d4d1868d67ac857017629f137926e3a04a616bb83a2fb5ab9e6cbea9579ed5d5c1155d47545d72aad5be99f4abd0a7130805b3807d70cd507171dbe9d950d8e35a853f9ec075f5a767c95df4d57f7d521b66605b3bda3801700e26e651d1129c798b729ee3b91702d43ae64ab226c3f426893753def772c15442a7552dc84a3c773d6099a50b0a6af940b64c8176fedfcecd5fc31ccfc3bbc0124bfdaa0d62e4252d4aafb46a3c10963d12391e1fa97a1c0f19a636f57a3ac8cc35567d1cb6cb53b77f8adde3f6754a765596d7d00bdeb9acb5cc8d115e7c3f50ec3228e34d3e6c7464e9039b01868e03d10e9f87772397602453e9e91205de7b86021fad06eb26e69298e99ff1597a670faeb310f8c092041d544851de84f2bee89a92123da6eea286210524035c85361e2af42166a6"
+								}
+							],
+							"mime": "",
+							"text": "{\"status\":\"pass\",\"message\":\"OAuth-1.0a signature verification was successful\"}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/oauth1\",\"headers\":[{\"key\":\"Authorization\",\"value\":\"OAuth oauth_consumer_key=\\\"RKCGzna7bv9YD57c\\\",oauth_signature_method=\\\"HMAC-SHA1\\\",oauth_timestamp=\\\"1442394747\\\",oauth_nonce=\\\"UIGipk\\\",oauth_version=\\\"1.0\\\",oauth_signature=\\\"CaeyGPr2mns1WCq4Cpm5aLvz6Gs=\\\"\",\"enabled\":true}],\"data\":[{\"key\":\"code\",\"value\":\"xWnkliVQJURqB2x1\",\"type\":\"text\",\"enabled\":true},{\"key\":\"grant_type\",\"value\":\"authorization_code\",\"type\":\"text\",\"enabled\":true},{\"key\":\"redirect_uri\",\"value\":\"https://www.getpostman.com/oauth2/callback\",\"type\":\"text\",\"enabled\":true},{\"key\":\"client_id\",\"value\":\"abc123\",\"type\":\"text\",\"enabled\":true},{\"key\":\"client_secret\",\"value\":\"ssh-secret\",\"type\":\"text\",\"enabled\":true}],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140353,
+					"folder": "37368024-f6a8-0f70-85fc-7e876cde9e33",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "3de3b135-b3cc-3a68-ba27-b6d373e03c8c",
+					"name": "Set Cookies",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "The cookie setter endpoint accepts a list of cookies and their values as part of URL parameters of a `GET` request. These cookies are saved and can be subsequently retrieved or deleted. The response of this request returns a JSON with all cookies listed.\n\nTo set your own set of cookies, simply replace the URL parameters \"foo1=bar1&foo2=bar2\" with your own set of key-value pairs.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/cookies/set?foo1=bar1&foo2=bar",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry {\n    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");\n    responseJSON = JSON.parse(responseBody);\n    tests[\"Body contains cookie foo1\"] = 'foo1' in responseJSON.cookies;\n    tests[\"Body contains cookie foo2\"] = 'foo2' in responseJSON.cookies;    \n}\ncatch (e) { }\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140393,
+							"request": "3de3b135-b3cc-3a68-ba27-b6d373e03c8c",
+							"id": "6c09f286-f74c-4d60-c349-f4a7ff7bac28",
+							"name": "Cookies",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "3063",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "51",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 29 Oct 2015 06:15:28 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "{\"cookies\":{\"foo1\":\"bar\",\"foo2\":\"bar\"}}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "\"96a24790-4951-ba7e-aa4f-fb40a45a7fcb\"",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140351,
+					"folder": "df815c41-a76b-4b5b-7129-ea59275f254b",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "42c867ca-e72b-3307-169b-26a478b00641",
+					"name": "Basic Auth",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint simulates a **basic-auth** protected endpoint. \nThe endpoint accepts a default username and password and returns a status code of `200 ok` only if the same is provided. \nOtherwise it will return a status code `401 unauthorized`.\n\n> Username: `postman`\n> \n> Password: `password`\n\nTo use this endpoint, send a request with the header `Authorization: Basic cG9zdG1hbjpwYXNzd29yZA==`. \nThe cryptic latter half of the header value is a base64 encoded concatenation of the default username and password. \nUsing Postman, to send this request, you can simply fill in the username and password in the \"Authorization\" tab and Postman will do the rest for you.\n\nTo know more about basic authentication, refer to the [Basic Access Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) wikipedia article.\nThe article on [authentication helpers](https://www.getpostman.com/docs/helpers#basic-auth?source=echo-collection-app-onboarding) elaborates how to use the same within the Postman app.",
+					"headers": "Authorization: Basic cG9zdG1hbjpwYXNzd29yZA==\n",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/basic-auth",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;\ntests[\"Body contains authenticated\"] = responseBody.has(\"authenticated\");",
+					"currentHelper": "basicAuth",
+					"helperAttributes": "{\"id\":\"basic\",\"username\":\"postman\",\"password\":\"password\",\"saveToRequest\":true}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140390,
+							"request": "42c867ca-e72b-3307-169b-26a478b00641",
+							"id": "97223e54-e9ac-810d-41df-6b53e1c917e4",
+							"name": "200",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "377",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "42",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Sat, 31 Oct 2015 06:38:25 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "{\"authenticated\":true}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "\"ef90671a-ab14-16f5-0a57-41b32fc2a36f\"",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140366,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "5d3b31c0-fa26-ee03-5c1b-3715825d811d",
+					"name": "Deflate Compressed Response",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint returns the response using [deflate compression algoritm](https://en.wikipedia.org/wiki/DEFLATE). \nThe uncompressed response is a JSON string containing the details of the request sent by the client. For this endpoint to work, one should request with `Accept-encoding` header containing `deflate` as part of its value. Postman supports gzip, deflate and SDCH decoding and automatically sends them as part of the request.\n\nHTTP Compression allows the server to send responses in a compressed format, which is uncompressed by the client before processing. This reduces network bandwidth consumption at the cost of increase in CPU usage.\nTo know more about this, refer the [HTTP Compression](https://en.wikipedia.org/wiki/HTTP_compression) wikipedia article.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/deflate",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;\n\ntry {\n    var data = JSON.parse(responseBody);\n    tests[\"Body contains deflated\"] = responseBody.has(\"deflated\");\n    tests[\"Body contains headers\"] = responseBody.has(\"headers\");\n    tests[\"Body contains method\"] = responseBody.has(\"method\");\n}\ncatch(e) {\n    console.log('Cannot parse response,probably not a JSON');\n}\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140367,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "6cfd22d8-26cc-7d3e-cf50-16d400211a76",
+					"name": "Response Status Code",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint allows one to instruct the server which status code to respond with.\n\nEvery response is accompanied by a status code. The status code provides a summary of the nature of response sent by the server. For example, a status code of `200` means everything is okay with the response and a code of `404` implies that the requested URL does not exist on server. \nA list of all valid HTTP status code can be found at the [List of Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) wikipedia article. When using Postman, the response status code is described for easy reference.\n\nNote that if an invalid status code is requested to be sent, the server returns a status code of `400 Bad Request`.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/status/200",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry {\n    responseJSON = JSON.parse(responseBody); \n    tests[\"Status equals 200\"] = responseJSON.status === 200;\n}\ncatch (e) { }\ntests[\"Body contains status\"] = responseBody.has(\"status\");\n\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140399,
+							"request": "6cfd22d8-26cc-7d3e-cf50-16d400211a76",
+							"id": "a2bda27d-2c7b-eb8e-1740-be4e1fe9a079",
+							"name": "200",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "251",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "14",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 11:58:47 GMT",
+									"description": ""
+								},
+								{
+									"name": "ETag",
+									"key": "ETag",
+									"value": "W/\"e-1056260003\"",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460718898.059833,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "getpostmanlogin",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "yes"
+								},
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460718898.059992,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "postman.sid",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "df0c0256028d7ec4d641f766104a9571a8e249685bbc667d7cee030bbf44d3209495c70c03248e31e678a93812591d5e12187a8e99bf6bc5e80c40903f6ff6226938f24e413c0ffa613a7372064ec44a8594e8d3ede6945e34394f369573feeebc4a73a3e24b8c9ac18a53704addb5fd3f71f1ede488ff551feb059e9c1fb208164814e45e0312c4df8ea6e83c26702f42ae634c6afbe82d57c857bbf5598b5527961c1c28688dc2580070a4389f0cf4ec0a179b5b9c11b2ecbaa5460d374065bf5c7a3add9505df0fa89acb9f227f05ed2d4c6b58c39d6d728bd49f6f323ae67d4a75882aa7682f5d6fc5b981ba411d94aa93970bfaefa1953a73e440d50d012b5f288975c888e2345ee7777e746fb5aed3a7b2dbc087c6456621aa78c24a3c17c5f96cf59844933249a352f631e2008cffac6faf06d0e253dcc01cf0067bf56c1fbc5ed61fec1861b60c5accf35ffc2e56154a113004fa1db9d7171c3af8fc063918554092f5"
+								},
+								{
+									"domain": ".echo.getpostman.com",
+									"expirationDate": 1522494981,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "_ga",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "GA1.3.1703443399.1459422978"
+								},
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3AvuHU0EKeDbyNjVrEc7U30dMPzVu8CRaD.GOV1H9olcVzXqrwqP%2BC%2B6MVj2UczXivcN00jgPoDYfs"
+								}
+							],
+							"mime": "",
+							"text": "{\"status\":200}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/status/200\",\"headers\":[],\"data\":[],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140348,
+					"folder": "09ddd67c-13fe-4626-8dd4-fc64f1fc27b7",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "70ed7920-ead1-2d20-645a-c716ab0fd137",
+					"name": "DigestAuth Request",
+					"dataMode": "params",
+					"data": [
+						{
+							"key": "code",
+							"value": "xWnkliVQJURqB2x1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "abc123",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "ssh-secret",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "Performing a simple `GET` request to this endpoint returns status code `401 Unauthorized` with `WWW-Authenticate` header containing information to successfully authenticate subsequent requests.\nThe `WWW-Authenticate` header must be processed to extract `realm` and `nonce` values to hash subsequent requests.\n\nWhen this request is executed within Postman, the script attached with this request does the hard work of extracting realm and nonce from the header and set it as [global variables](https://www.getpostman.com/docs/environments#global-variables?source=echo-collection-app-onboarding) named `echo_digest_nonce` and `echo_digest_realm`.\nThese variables are re-used in subsequent request for seamless integration of the two requests.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/digest-auth",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 401\"] = responseCode.code === 401;\ntests[\"response has WWW-Authenticate header\"] = (postman.getResponseHeader('WWW-Authenticate'));\n\nvar authenticateHeader = postman.getResponseHeader('WWW-Authenticate'),\n    realmStart = authenticateHeader.indexOf('\"',authenticateHeader.indexOf(\"realm\")) + 1 ,\n    realmEnd = authenticateHeader.indexOf('\"',realmStart),\n    realm = authenticateHeader.slice(realmStart,realmEnd),\n    nonceStart = authenticateHeader.indexOf('\"',authenticateHeader.indexOf(\"nonce\")) + 1,\n    nonceEnd = authenticateHeader.indexOf('\"',nonceStart),\n    nonce = authenticateHeader.slice(nonceStart,nonceEnd);\n    \npostman.setGlobalVariable('echo_digest_realm', realm);\npostman.setGlobalVariable('echo_digest_nonce', nonce);",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140352,
+					"folder": "df815c41-a76b-4b5b-7129-ea59275f254b",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "843acf02-a33c-c4bb-d742-c07b9212e4b0",
+					"name": "Hawk Auth",
+					"dataMode": "params",
+					"data": [
+						{
+							"key": "access_token",
+							"value": "xyz1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "id",
+							"value": "U1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "server_secret",
+							"value": "zeppelin",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "admin",
+							"value": "true",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"rawModeData": null,
+					"descriptionFormat": "html",
+					"description": "This endpoint is a Hawk Authentication protected endpoint. [Hawk authentication](https://github.com/hueniverse/hawk) is a widely used protocol for protecting API endpoints. One of Hawk's main goals is to enable HTTP authentication for services that do not use TLS (although it can be used in conjunction with TLS as well).\n\nIn order to use this endpoint, select the \"Hawk Auth\" helper inside Postman, and set the following values:\n\nHawk Auth ID: `dh37fgj492je`\n\nHawk Auth Key: `werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn`\n\nAlgorithm: `sha256`\n\nThe rest of the values are optional, and can be left blank. Hitting send should give you a response with a status code of 200 OK.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/auth/hawk",
+					"preRequestScript": "",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;",
+					"currentHelper": "hawkAuth",
+					"helperAttributes": "{\"id\":\"hawk\",\"hawk_id\":\"dh37fgj492je\",\"hawk_key\":\"werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn\",\"algorithm\":\"sha256\",\"user\":\"\",\"saveToRequest\":true,\"nonce\":\"RZKGNz\",\"timestamp\":\"\"}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140391,
+							"request": "843acf02-a33c-c4bb-d742-c07b9212e4b0",
+							"id": "8bcfebdc-a6fe-7607-cef3-7ee28a0b75a2",
+							"name": "Success",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "1855",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 11:12:16 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Server-Authorization",
+									"key": "Server-Authorization",
+									"value": "Hawk mac=\"vRrUzDdcHu2NaNts/r4zg2xmXMdX8wPiTGTM398BDRg=\", hash=\"qmtflETMybaZiOQ2dLT17yiRunFT5OCIxZRZ0boQaiE=\"",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								},
+								{
+									"name": "transfer-encoding",
+									"key": "transfer-encoding",
+									"value": "chunked",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460717668.06945,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "getpostmanlogin",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "yes"
+								},
+								{
+									"domain": ".getpostman.com",
+									"expirationDate": 1460717668.069509,
+									"hostOnly": false,
+									"httpOnly": false,
+									"name": "postman.sid",
+									"path": "/",
+									"secure": false,
+									"session": false,
+									"storeId": "0",
+									"value": "9f887f3b7f14b8c29ac4dc4109381b0b89a76e785c7b34251d6c8025b41b24013d2aa49f40e2deac19cbf0594dd984169455534d91ff98d4d1868d67ac857017629f137926e3a04a616bb83a2fb5ab9e6cbea9579ed5d5c1155d47545d72aad5be99f4abd0a7130805b3807d70cd507171dbe9d950d8e35a853f9ec075f5a767c95df4d57f7d521b66605b3bda3801700e26e651d1129c798b729ee3b91702d43ae64ab226c3f426893753def772c15442a7552dc84a3c773d6099a50b0a6af940b64c8176fedfcecd5fc31ccfc3bbc0124bfdaa0d62e4252d4aafb46a3c10963d12391e1fa97a1c0f19a636f57a3ac8cc35567d1cb6cb53b77f8adde3f6754a765596d7d00bdeb9acb5cc8d115e7c3f50ec3228e34d3e6c7464e9039b01868e03d10e9f87772397602453e9e91205de7b86021fad06eb26e69298e99ff1597a670faeb310f8c092041d544851de84f2bee89a92123da6eea286210524035c85361e2af42166a6"
+								},
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3AryJV7v-PE4PuTjBK6nH5XOynQ4atuATV.n17KcaLhVmV8TBHNLwdwXgGR7lmqs3i478WPlTbRgZ4"
+								}
+							],
+							"mime": "",
+							"text": "{\"status\":\"pass\",\"message\":\"Hawk Authentication successful\"}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/auth/hawk\",\"headers\":[{\"key\":\"Authorization\",\"type\":\"text\",\"name\":\"Authorization\",\"value\":\"Hawk id=\\\"dh37fgj492je\\\", ts=\\\"1459422734\\\", nonce=\\\"XiwiCU\\\", mac=\\\"KzMHk67BYCC9zZqRy5hRdWFEFLHX5bNlRWGdmOAWKp0=\\\"\"}],\"data\":[{\"key\":\"access_token\",\"value\":\"xyz1\",\"type\":\"text\",\"enabled\":true},{\"key\":\"id\",\"value\":\"U1\",\"type\":\"text\",\"enabled\":true},{\"key\":\"server_secret\",\"value\":\"zeppelin\",\"type\":\"text\",\"enabled\":true},{\"key\":\"admin\",\"value\":\"true\",\"type\":\"text\",\"enabled\":true}],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140362,
+					"folder": "9a4c3bce-30f7-a496-c9ec-78afecbf1545",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "8c53212f-42cd-cb37-6e02-08c47a7c8bb1",
+					"name": "PATCH Request",
+					"dataMode": "raw",
+					"data": "Curabitur auctor, elit nec pulvinar porttitor, ex augue condimentum enim, eget suscipit urna felis quis neque.\nSuspendisse sit amet luctus massa, nec venenatis mi. Suspendisse tincidunt massa at nibh efficitur fringilla. Nam quis congue mi. Etiam volutpat.",
+					"rawModeData": "Curabitur auctor, elit nec pulvinar porttitor, ex augue condimentum enim, eget suscipit urna felis quis neque.\nSuspendisse sit amet luctus massa, nec venenatis mi. Suspendisse tincidunt massa at nibh efficitur fringilla. Nam quis congue mi. Etiam volutpat.",
+					"descriptionFormat": null,
+					"description": "The HTTP `PATCH` method is used to update resources on a server. The exact\nuse of `PATCH` requests depends on the server in question. There are a number\nof server implementations which handle `PATCH` differently. Technically, \n`PATCH` supports both Query String parameters and a Request Body.\n\nThis endpoint accepts an HTTP `PATCH` request and provides debug information\nsuch as the HTTP headers, Query String arguments, and the Request Body.",
+					"headers": "",
+					"method": "PATCH",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/patch",
+					"preRequestScript": "",
+					"tests": "tests[\"Body contains files\"] = responseBody.has(\"files\");\ntests[\"Body contains args\"] = responseBody.has(\"args\");\ntests[\"Body contains form\"] = responseBody.has(\"form\");\ntests[\"Body contains headers\"] = responseBody.has(\"headers\");\ntests[\"Body contains url\"] = responseBody.has(\"url\");\n\nvar responseJSON;\n\ntry { responseJSON = JSON.parse(responseBody); }\ncatch (e) { }\n\ntests[\"Data has been passed\"] = (responseJSON && responseJSON.data && responseJSON.data.length)",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140354,
+					"folder": "37368024-f6a8-0f70-85fc-7e876cde9e33",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "8dc08eee-a543-7c1c-297f-b0b7040c35c6",
+					"name": "Get Cookies",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "Use this endpoint to get a list of all cookies that are stored with respect to this domain. Whatever key-value pairs that has been previously set by calling the \"Set Cookies\" endpoint, will be returned as response JSON.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/cookies",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry {\n    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");\n    responseJSON = JSON.parse(responseBody);\n    tests[\"Cookies object is empty\"] = (Object.keys(responseJSON.cookies).length > 0)\n}\ncatch (e) { }\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140394,
+							"request": "8dc08eee-a543-7c1c-297f-b0b7040c35c6",
+							"id": "403109d9-a2e7-2bf7-9af3-1282aa7d74cd",
+							"name": "Cookies",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "462",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "46",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 29 Oct 2015 06:16:29 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "{\"cookies\":{\"foo2\":\"bar\"}}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "\"4118ca21-f216-410f-510c-2d0e465022c5\"",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140349,
+					"folder": "09ddd67c-13fe-4626-8dd4-fc64f1fc27b7",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "a4c04e32-72cf-0475-07dc-89c23f85cf0c",
+					"name": "DigestAuth Success",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint sends a hashed Digest Authorization header to gain access to a valid `200 Ok` response code. In Postman, it uses the stored [global variables](https://www.getpostman.com/docs/environments#gloval-variables?source=echo-collection-app-onboarding), `echo_digest_realm` and `echo_digest_nonce`, to generate the hashed authorisation header.\n\nWithin Postman, for this request to successfully authenticate, running the previous request \"DigestAuth Request\" stores the relevant information within the global variables.",
+					"headers": "Authorization: Digest username=\"postman\", realm=\"Users\", nonce=\"ni1LiL0O37PRRhofWdCLmwFsnEtH1lew\", uri=\"/digest-auth\", response=\"254679099562cf07df9b6f5d8d15db44\", opaque=\"\"\n",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/digest-auth",
+					"preRequestScript": "",
+					"tests": "tests[\"response code is 200\"] = responseCode.code === 200;\ntests[\"body contains authenticated\"] = responseBody.has(\"authenticated\");",
+					"currentHelper": "digestAuth",
+					"helperAttributes": "{\"id\":\"digest\",\"time\":1446551845396,\"algorithm\":\"MD5\",\"username\":\"postman\",\"realm\":\"{{echo_digest_realm}}\",\"password\":\"password\",\"nonce\":\"{{echo_digest_nonce}}\",\"nonceCount\":\"\",\"clientNonce\":\"\",\"opaque\":\"\",\"qop\":\"\",\"saveToRequest\":true}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140387,
+							"request": "a4c04e32-72cf-0475-07dc-89c23f85cf0c",
+							"id": "50a1e424-f5a6-3017-3777-6c5d0d381be0",
+							"name": "200",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "9843",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "42",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 29 Oct 2015 06:17:51 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "{\"authenticated\":true}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "\"eecb504e-1736-d34c-990a-b86d36f06ddd\"",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140355,
+					"folder": "37368024-f6a8-0f70-85fc-7e876cde9e33",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "a4f24593-448b-88de-963f-eeb952d38a57",
+					"name": "Delete Cookies",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "One or more cookies that has been set for this domain can be deleted by providing the cookie names as part of the URL parameter. The response of this request is a JSON containing the list of currently set cookies.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/cookies/delete?foo1",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry {\n    tests[\"Body contains cookies\"] = responseBody.has(\"cookies\");\n    responseJSON = JSON.parse(responseBody);\n    tests[\"Body contains cookie foo1\"] = ('foo1' in responseJSON.cookies);\n    tests[\"Body does not contain cookie foo2\"] = !('foo2' in responseJSON.cookies);\n}\ncatch (e) { }\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140395,
+							"request": "a4f24593-448b-88de-963f-eeb952d38a57",
+							"id": "522b3689-fb79-32fe-a253-7fb170b65555",
+							"name": "Cookies Response",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "1417",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "46",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 29 Oct 2015 06:16:00 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "{\"cookies\":{\"foo2\":\"bar\"}}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "\"4ac1e980-6990-fc1d-5f80-4e5cedce9812\"",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140356,
+					"folder": "5d3595b3-5e8e-9e33-05ed-855c77298e4e",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "da16c006-6293-c1fe-ea42-e9ba8a5e68b1",
+					"name": "Request Headers",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "A `GET` request to this endpoint returns the list of all request headers as part of the response JSON.\nIn Postman, sending your own set of headers through the [Headers tab](https://www.getpostman.com/docs/requests#headers?source=echo-collection-app-onboarding) will reveal the headers as part of the response.",
+					"headers": "my-sample-header: Lorem ipsum dolor sit amet\n",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/headers",
+					"preRequestScript": "",
+					"tests": "var responseJSON;\ntry {\n    tests[\"Body contains headers\"] = responseBody.has(\"headers\");\n    responseJSON = JSON.parse(responseBody);\n    tests[\"Header contains host\"] = \"host\" in responseJSON.headers;\n    tests[\"Header contains test parameter sent as part of request header\"] = \"my-sample-header\" in responseJSON.headers;\n}\ncatch (e) { }\n\n\n\n",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140396,
+							"request": "da16c006-6293-c1fe-ea42-e9ba8a5e68b1",
+							"id": "881f141f-44c5-702f-211d-475360c6ccb3",
+							"name": "my-sample-header",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "460",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "342",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 11:14:00 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3A9stja5zKmIILxq9Jvtha7Lp9LIz1VIdK.Vp8MHC%2BEUJe4ICZPXn2JAoXaV2bTgtoQd%2B3XJLNr51Y"
+								}
+							],
+							"mime": "",
+							"text": "{\"headers\":{\"host\":\"echo.getpostman.com\",\"accept\":\"*/*\",\"accept-encoding\":\"gzip, deflate, sdch\",\"accept-language\":\"en-US,en;q=0.8\",\"cache-control\":\"no-cache\",\"my-sample-header\":\"Lorem ipsum dolor sit amet\",\"postman-token\":\"3c8ea80b-f599-fba6-e0b4-a0910440e7b6\",\"user-agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36\",\"x-forwarded-port\":\"443\",\"x-forwarded-proto\":\"https\"}}",
+							"language": "javascript",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/headers\",\"headers\":[{\"key\":\"my-sample-header\",\"value\":\"Lorem ipsum dolor sit amet\",\"enabled\":true}],\"data\":[],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140357,
+					"folder": "5d3595b3-5e8e-9e33-05ed-855c77298e4e",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "e50f9111-3a52-a325-47f1-fc702bea1fff",
+					"name": "Response Headers",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint causes the server to send custom set of response headers. Providing header values as part of the URL parameters of a `GET` request to this endpoint returns the same as part of response header.\n\nTo send your own set of headers, simply add or replace the the URL parameters with your own set.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/response-headers?Content-Type=text/html&test=response_headers",
+					"preRequestScript": "",
+					"tests": "tests[\"Body contains Content-Type\"] = responseBody.has(\"Content-Type\");\ntests[\"response headers have key sent as part of request\"] = (postman.getResponseHeader('test') == 'response_headers')",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [
+						{
+							"owner": "981326",
+							"lastUpdatedBy": "981326",
+							"lastRevision": 528140397,
+							"request": "e50f9111-3a52-a325-47f1-fc702bea1fff",
+							"id": "85a7208f-3c37-f297-9772-81b97d28dae0",
+							"name": "Response headers",
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK"
+							},
+							"time": "568",
+							"headers": [
+								{
+									"name": "Access-Control-Allow-Credentials",
+									"key": "Access-Control-Allow-Credentials",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Headers",
+									"key": "Access-Control-Allow-Headers",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Methods",
+									"key": "Access-Control-Allow-Methods",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "",
+									"description": ""
+								},
+								{
+									"name": "Connection",
+									"key": "Connection",
+									"value": "keep-alive",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "71",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8",
+									"description": ""
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Thu, 31 Mar 2016 11:14:18 GMT",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "nginx/1.6.2",
+									"description": ""
+								},
+								{
+									"name": "Vary",
+									"key": "Vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "Sails <sailsjs.org>",
+									"description": ""
+								},
+								{
+									"name": "test",
+									"key": "test",
+									"value": "response_headers",
+									"description": ""
+								}
+							],
+							"cookies": [
+								{
+									"domain": "echo.getpostman.com",
+									"hostOnly": true,
+									"httpOnly": true,
+									"name": "sails.sid",
+									"path": "/",
+									"secure": false,
+									"session": true,
+									"storeId": "0",
+									"value": "s%3A9stja5zKmIILxq9Jvtha7Lp9LIz1VIdK.Vp8MHC%2BEUJe4ICZPXn2JAoXaV2bTgtoQd%2B3XJLNr51Y"
+								}
+							],
+							"mime": "",
+							"text": "{\"Content-Type\":\"text/html\",\"test\":\"response_headers\"}",
+							"language": "html",
+							"rawDataType": "text",
+							"state": {
+								"size": "normal"
+							},
+							"previewType": "html",
+							"searchResultScrolledTo": "-1",
+							"version": null,
+							"requestObject": "{\"url\":\"https://echo.getpostman.com/response-headers?Content-Type=text/html&test=response_headers\",\"headers\":[],\"data\":[],\"method\":\"GET\",\"dataMode\":\"params\"}",
+							"createdAt": "2016-09-02T09:25:05.000Z",
+							"updatedAt": "2016-09-02T09:25:05.000Z"
+						}
+					],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140368,
+					"folder": "930f54b4-c5cd-2363-7cf5-b9022d3c0aae",
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"id": "fd961ad0-ab24-68d8-4be5-573e8585d526",
+					"name": "GZip Compressed Response",
+					"dataMode": "params",
+					"data": [],
+					"rawModeData": null,
+					"descriptionFormat": null,
+					"description": "This endpoint returns the response using [gzip compression algoritm](https://en.wikipedia.org/wiki/Gzip).\nThe uncompressed response is a JSON string containing the details of the request sent by the client. For this endpoint to work, one should request with `Accept-encoding` header containing `gzip` as part of its value. Postman supports gzip, deflate and SDCH decoding and automatically sends them as part of the request.\n\nHTTP Compression allows the server to send responses in a compressed format, which is uncompressed by the client before processing. This reduces network bandwidth consumption at the cost of increase in CPU usage.\nTo know more about this, refer the [HTTP Compression](https://en.wikipedia.org/wiki/HTTP_compression) wikipedia article.",
+					"headers": "",
+					"method": "GET",
+					"pathVariables": {},
+					"url": "https://echo.getpostman.com/gzip",
+					"preRequestScript": "",
+					"tests": "try {\n    var data = JSON.parse(responseBody);\n    tests[\"Body contains gzipped\"] = responseBody.has(\"gzipped\");\n    tests[\"Body contains headers\"] = responseBody.has(\"headers\");\n    tests[\"Body contains method\"] = responseBody.has(\"method\");\n}\ncatch(e) {\n    console.log('Cannot parse response,probably not a JSON');\n}\ntests[\"response code is 200\"] = responseCode.code === 200;",
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:05.000Z",
+					"responses": [],
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65"
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
+			"name": "VLS PRD",
+			"values": [
+				{
+					"key": "host",
+					"value": "www.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "44d649fc66f6472f66470ba11e1614e0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roomId",
+					"value": "582ed985d34e9e5b8507f47e",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "courseId",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lessonId",
+					"value": "62",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "6086948",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400011613",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}&{{giftId}}&(null)&{{nickName}}&送了一个棒冰&1&{__time(,timeStamp)}&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&0&Popsicle&0&1.000000&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&1&1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickName",
+					"value": "压力试播",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "combo",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilePhone",
+					"value": "90000000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"team": null,
+			"timestamp": 1479694551295
+		},
+		{
+			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
+			"name": "VLS DEV",
+			"values": [
+				{
+					"key": "host",
+					"value": "dev.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "ce43531336d9e36df2342bff45737d6a",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roomId",
+					"value": "58325ba3e4b0060f749ae2b3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "100",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "courseId",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lessonId",
+					"value": "62",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "BOToken",
+					"value": "8bd9a01c5566191104547aba9b07890f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "7000096",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkF1rgzAUhv*LtxvNh8nsBr2QtoyuivtE8EYyE8OpM42aSuvYf58Ty26fh8P7vufbe4-eFsJakLlwud9K78HD3u2E1dlCq3JROtWOmHDOKcZX26u2g6MZBcWEE*pj-C9BKuOghOlQyBrMLDrQI4m3L*tdWJ-jONmd0sig5wplm*a1*hqaQbcMf6Bmf58ULJGK3phlCKGun2za34XoMcqy4YC2h3LfQYa00FZWkU2Dz4tG-WYZhKvVNUxW*bTtrz0b2xHKAjZLB7WaeMCxTyj2Zy6K4ngyLncXq6Zn-PwCyCBX0Q__",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400012474",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}&{{giftId}}&(null)&{{nickName}}&送了一个棒冰&1&{__time(,timeStamp)}&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&0&Popsicle&0&1.000000&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&1&1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickName",
+					"value": "DEV7000095",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "combo",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilePhone",
+					"value": "91000000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "vipabc",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"team": null,
+			"timestamp": 1479695402635
+		},
+		{
+			"id": "54d912aa-8ff7-a622-0659-449629ef890d",
+			"name": "VLS",
+			"values": [
+				{
+					"key": "host",
+					"value": "www.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "44d649fc66f6472f66470ba11e1614e0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "100",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "courseId",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lessonId",
+					"value": "62",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "BOToken",
+					"value": "8bd9a01c5566191104547aba9b07890f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "6086948",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roomId",
+					"value": "582ed985d34e9e5b8507f47e",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "IMhost",
+					"value": "https://console.tim.qq.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "IMPort",
+					"value": "443",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkF1rgzAUhv*LtxvNh8nsBr2QtoyuivtE8EYyE8OpM42aSuvYf58Ty26fh8P7vufbe4-eFsJakLlwud9K78HD3u2E1dlCq3JROtWOmHDOKcZX26u2g6MZBcWEE*pj-C9BKuOghOlQyBrMLDrQI4m3L*tdWJ-jONmd0sig5wplm*a1*hqaQbcMf6Bmf58ULJGK3phlCKGun2za34XoMcqy4YC2h3LfQYa00FZWkU2Dz4tG-WYZhKvVNUxW*bTtrz0b2xHKAjZLB7WaeMCxTyj2Zy6K4ngyLncXq6Zn-PwCyCBX0Q__",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400012474",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400011613",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "message",
+					"value": "Msg from Postman",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qcmessage",
+					"value": "QCloudMsg from Postman",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}&{{giftId}}&(null)&{{nickName}}&送了一个棒冰&1&{__time(,timeStamp)}&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&0&Popsicle&0&1.000000&http://{{host}}/M00/00/02/rBAEilfYF1aAR3MVAAAa3esKlDc127.png&1&1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickName",
+					"value": "压力试播",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "combo",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilePhone",
+					"value": "90000000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"timestamp": 1479695457234,
+			"_postman_variable_scope": "environment",
+			"_postman_exported_at": "2016-11-21T01:31:53.922Z",
+			"_postman_exported_using": "Postman/4.8.3"
+		}
+	],
+	"headerPresets": [],
+	"globals": [
+		{
+			"key": "IMhost",
+			"value": "https://console.tim.qq.com",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "IMPort",
+			"value": "443",
+			"type": "text",
+			"enabled": false
+		},
+		{
+			"key": "message",
+			"value": "Msg from Postman",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "qcmessage",
+			"value": "QCloudMsg from Postman",
+			"type": "text",
+			"enabled": true
+		}
+	]
+}
