@@ -135,7 +135,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479442548032,
+			"time": 1479716841587,
 			"name": "subscribeCourse",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -183,7 +183,7 @@
 		{
 			"id": "2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
 			"headers": "",
-			"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26Saved%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261&token={{token}}&timestamp=1479452000839&roomId={{roomId}}",
+			"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26Saved%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261&token={{token}}&timestamp=1479452000810&roomId={{roomId}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
@@ -193,7 +193,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479457454512,
+			"time": 1479721953798,
 			"name": "送礼物",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -231,12 +231,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479695542394,
+			"time": 1479721465022,
 			"name": "发送消息QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"115\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMTextElem\",\n                \"MsgContent\": {\n                  \"Text\": \"{{qcmessage}}\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"1105\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMTextElem\",\n                \"MsgContent\": {\n                  \"Text\": \"{{qcmessage}}\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "3721be10-7d14-40ac-843b-d2bf9ce47f03",
@@ -440,12 +440,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479695512890,
+			"time": 1479715493694,
 			"name": "进入房间QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"37\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"10&1\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"390\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"10&1\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "9c125e8d-e088-18c6-7e40-ec09ed5b6c26",
@@ -573,12 +573,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479695017028,
+			"time": 1479721454883,
 			"name": "点赞QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"112\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"189\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "ba2fac81-5f55-094a-d8ca-1a1ddd154979",
