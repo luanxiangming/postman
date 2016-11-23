@@ -34,7 +34,12 @@
 				"3468b175-21fe-db0a-0c70-17bd2fb1a6de",
 				"b8a588ea-946b-fd6e-6a15-9e40f5715828",
 				"2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
-				"e3ad7f89-08a9-f426-f215-baab66a3a4bc"
+				"e3ad7f89-08a9-f426-f215-baab66a3a4bc",
+				"cfad0986-993b-4aea-a741-202e756f57e9",
+				"a6346634-2e6f-ec1f-3adf-e7cc33c266f5",
+				"7692f2c1-5ced-8b31-2f6f-89015567809c",
+				"1b81a842-88ea-bb7b-e119-cdbc8ebff6c9",
+				"f0593ca4-0bca-27ca-08cd-ca77e05eaea5"
 			],
 			"owner": "981326",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
@@ -79,7 +84,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479447448790,
+			"time": 1479877530499,
 			"name": "广告列表",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -143,6 +148,25 @@
 			"rawModeData": "{\n\t\"courseId\": {{courseId}},\n\t\"subscriptionType\": {{subscriptionType}}\n}"
 		},
 		{
+			"id": "1b81a842-88ea-bb7b-e119-cdbc8ebff6c9",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/users/profile/base?token={{token}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479878130705,
+			"name": "用户信息",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
+		},
+		{
 			"id": "1c862001-0149-ecd9-6582-e4557fb3f900",
 			"headers": "",
 			"url": "{{host}}//vliveshow-api-app/v1/liveshow/{{roomId}}/detail?token={{token}}&roomId={{roomId}}",
@@ -183,8 +207,8 @@
 		{
 			"id": "2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
 			"headers": "",
-			"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{remark}}&token={{token}}&timestamp=1479724248140&roomId={{roomId}}",
-			"preRequestScript": null,
+			"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{remark}}&token={{token}}&timestamp={{$timestamp}}&roomId={{roomId}}",
+			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
 			"data": null,
@@ -193,7 +217,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479811177189,
+			"time": 1479878334487,
 			"name": "送礼物",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -221,7 +245,7 @@
 		{
 			"id": "3468b175-21fe-db0a-0c70-17bd2fb1a6de",
 			"headers": "Content-Type: application/json\n",
-			"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random=${__time(,)}",
+			"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
@@ -231,12 +255,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479809792226,
+			"time": 1479865743203,
 			"name": "发送消息QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"1109\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMTextElem\",\n                \"MsgContent\": {\n                  \"Text\": \"{{qcmessage}}\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"{{$randomInt}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMTextElem\",\n                \"MsgContent\": {\n                  \"Text\": \"{{qcmessage}}\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "3721be10-7d14-40ac-843b-d2bf9ce47f03",
@@ -408,6 +432,24 @@
 			"responses": []
 		},
 		{
+			"id": "7692f2c1-5ced-8b31-2f6f-89015567809c",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/users/fans/list?token={{token}}&userId={{userId}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479878124659,
+			"name": "粉丝列表",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
+		},
+		{
 			"id": "77df738c-517b-afcf-fa1e-3506d50747a9",
 			"headers": "Content-Type: application/json\n",
 			"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
@@ -440,12 +482,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479724611524,
+			"time": 1479865721682,
 			"name": "进入房间QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"3908\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"10&1\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"{{$randomInt}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"10&1\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "9c125e8d-e088-18c6-7e40-ec09ed5b6c26",
@@ -499,6 +541,25 @@
 			"helperAttributes": {},
 			"time": 1479457645334,
 			"name": "绑定手机",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
+		},
+		{
+			"id": "a6346634-2e6f-ec1f-3adf-e7cc33c266f5",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/users/stars/list?pageNum=1&pageSize=10&token={{token}}&userId={{userId}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479877878895,
+			"name": "关注列表",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
@@ -563,7 +624,7 @@
 		{
 			"id": "b8a588ea-946b-fd6e-6a15-9e40f5715828",
 			"headers": "Content-Type: application/json\n",
-			"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random=${__time(,)}",
+			"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
@@ -573,12 +634,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479809827694,
+			"time": 1479866063540,
 			"name": "点赞QCloud",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"2098\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"{{$randomInt}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "ba2fac81-5f55-094a-d8ca-1a1ddd154979",
@@ -614,6 +675,25 @@
 			"helperAttributes": {},
 			"time": 1479466854178,
 			"name": "账户余额",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
+		},
+		{
+			"id": "cfad0986-993b-4aea-a741-202e756f57e9",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/liveshow/heart_beat?token={{token}}&roomId={{roomId}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479877788788,
+			"name": "直播间心跳",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
@@ -675,6 +755,24 @@
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
 			"rawModeData": "{\"GroupId\": \"{{roomId}}\", \"ExitMemberList\" :[{\"Member_Account\":\"{{userId}}\"}]}"
+		},
+		{
+			"id": "f0593ca4-0bca-27ca-08cd-ca77e05eaea5",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app//v1/users/blacklist/list?pageNum=1&pageSize=10&token={{token}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1479878311310,
+			"name": "黑名单",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
 		},
 		{
 			"id": "f72e0537-2515-e417-9938-00355b786caa",
