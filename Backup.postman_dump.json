@@ -2121,7 +2121,11 @@
 					"description": "",
 					"write": true,
 					"order": [
+						"9777e2bf-86e4-9783-458d-05f387fd61bd",
 						"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
+						"fdd33643-6d83-d367-8b86-97645f80b337",
+						"54938026-11ab-7290-6a27-82ec029788ee",
+						"846db92c-757a-3eca-2838-1f4f0f590bcc",
 						"a2a1838c-2142-0bcd-7a90-ee2b78b0bec5",
 						"9c125e8d-e088-18c6-7e40-ec09ed5b6c26",
 						"53da554b-b0d1-fe02-23b8-eeec3c241d37",
@@ -2136,6 +2140,7 @@
 						"337a34b6-b9b8-f163-40bf-6ef39b08dd22",
 						"3468b175-21fe-db0a-0c70-17bd2fb1a6de",
 						"b8a588ea-946b-fd6e-6a15-9e40f5715828",
+						"2b085b95-b34a-9345-ef4b-eded036e3349",
 						"2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
 						"e3ad7f89-08a9-f426-f215-baab66a3a4bc",
 						"cfad0986-993b-4aea-a741-202e756f57e9",
@@ -2188,7 +2193,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1479890015608,
+			"updatedAt": 1479895445358,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2345,6 +2350,27 @@
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
+				},
+				{
+					"id": "2b085b95-b34a-9345-ef4b-eded036e3349",
+					"headers": "",
+					"url": "{{host}}//vliveshow-api-app/v1/config/gift/list?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": null,
+					"dataMode": "params",
+					"name": "礼物列表",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1479891779185,
+					"version": 2,
+					"responses": [],
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7"
 				},
 				{
 					"id": "2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
@@ -2516,6 +2542,25 @@
 					"responses": []
 				},
 				{
+					"id": "54938026-11ab-7290-6a27-82ec029788ee",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=WX&thirdpartyAccount=oQPxzwiB4v1x3QNq-iAMRYMepLmc&thirdpartyIconUrl=http%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fv0X3ZPbdSDJG9dibeoqVp7zESYHehicXFgnh0cVJIBXS4491brwjTpKv82sRzQDQtgNBpKGE1ULrM1TEcZRGALyHlBomgjxHjK%2F0&gender=MALE&nickName=%E7%A5%A5%E6%98%8E",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479894995730,
+					"name": "微信登录",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
 					"id": "596179a3-17b9-da79-f742-44fe3fa734c4",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/course/lessons?token={{token}}&courseId={{courseId}}",
@@ -2661,6 +2706,43 @@
 					"helperAttributes": {},
 					"time": 1479865721682,
 					"name": "进入房间QCloud",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "846db92c-757a-3eca-2838-1f4f0f590bcc",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=WB&thirdpartyAccount=2096387991&thirdpartyIconUrl=http%3A%2F%2Ftva3.sinaimg.cn%2Fcrop.0.0.640.640.50%2F7cf45797jw8ejfcr63w5ej20hs0hsjrg.jpg&gender=MALE&nickName=%E7%A5%A5_%E6%98%8E",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479895474954,
+					"name": "微博登录",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "9777e2bf-86e4-9783-458d-05f387fd61bd",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/phone/register?mobilePhone={{unregisteredPhone}}&nationCode={{nationCode}}&verificationCode={{verificationCode}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479892446088,
+					"name": "手机注册",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
@@ -2987,11 +3069,182 @@
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
+				},
+				{
+					"id": "fdd33643-6d83-d367-8b86-97645f80b337",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=QQ&thirdpartyAccount=1D939BA95A8FD7E75517D264FB01D27D&thirdpartyIconUrl=http%3A%2F%2Fq.qlogo.cn%2Fqqapp%2F1105390061%2F1D939BA95A8FD7E75517D264FB01D27D%2F100&gender=MALE&nickName=vivo%20x7",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1479894546977,
+					"name": "QQ登录",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
 				}
 			]
 		}
 	],
 	"environments": [
+		{
+			"id": "0325d1a7-0d1c-087d-5f77-680bfc3e7c8b",
+			"name": "VLS STAGING",
+			"values": [
+				{
+					"key": "host",
+					"value": "staging.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "a56cc110b8861cfa448bd12f8ef090e5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roomId",
+					"value": "583521fed34ee51732dccc04",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "courseId",
+					"value": "26",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lessonId",
+					"value": "62",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "6000008",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400018924",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickName",
+					"value": "压力试播",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "combo",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilePhone",
+					"value": "90000000000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userToUID",
+					"value": "6000025",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "90000002000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"team": null,
+			"timestamp": 1479894267539
+		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
 			"name": "VLS DEV",
@@ -3118,7 +3371,7 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "91000000000",
+					"value": "91000002000",
 					"type": "text",
 					"enabled": true
 				},
@@ -3133,10 +3386,22 @@
 					"value": "7000025",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "91000002000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1479889226798
+			"timestamp": 1479894267550
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -3150,7 +3415,7 @@
 				},
 				{
 					"key": "token",
-					"value": "a56cc110b8861cfa448bd12f8ef090e5",
+					"value": "6b931cb332e4c5c5f12e7aed9b8a52c9",
 					"type": "text",
 					"enabled": true
 				},
@@ -3273,10 +3538,22 @@
 					"value": "6000025",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "90000002000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1479889918137
+			"timestamp": 1479894267556
 		}
 	],
 	"headerPresets": [],
