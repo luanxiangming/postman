@@ -439,10 +439,10 @@
 				}
 			],
 			"dataMode": "urlencoded",
-			"tests": null,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479965326222,
+			"time": 1479983980845,
 			"name": "课程手动退费",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",

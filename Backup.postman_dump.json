@@ -2556,10 +2556,10 @@
 						}
 					],
 					"dataMode": "urlencoded",
-					"tests": null,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1479965326222,
+					"time": 1479983980845,
 					"name": "课程手动退费",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -3382,7 +3382,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1479955210193
+			"timestamp": 1479984606308
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -3540,7 +3540,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1479955633943
+			"timestamp": 1479984606327
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -3554,7 +3554,7 @@
 				},
 				{
 					"key": "token",
-					"value": "e993c263b3327ddd907491e796f1e963",
+					"value": "12ad4d2c108cdddbed8e9ff1067d5af0",
 					"type": "text",
 					"enabled": true
 				},
@@ -3578,7 +3578,7 @@
 				},
 				{
 					"key": "courseId",
-					"value": "48",
+					"value": "38",
 					"type": "text",
 					"enabled": true
 				},
@@ -3590,7 +3590,7 @@
 				},
 				{
 					"key": "subscriptionId",
-					"value": "188",
+					"value": "241",
 					"type": "text",
 					"enabled": true
 				},
@@ -3608,7 +3608,7 @@
 				},
 				{
 					"key": "userId",
-					"value": "7000053",
+					"value": "7000007",
 					"type": "text",
 					"enabled": true
 				},
@@ -3704,19 +3704,19 @@
 				},
 				{
 					"key": "refundDiamond",
-					"value": "1",
+					"value": "0",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "refundReason",
-					"value": "Too Busy",
+					"value": "最近实在太忙了",
 					"type": "text",
 					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1479965994158
+			"timestamp": 1479985019593
 		}
 	],
 	"headerPresets": [],
