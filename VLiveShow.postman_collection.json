@@ -32,6 +32,7 @@
 				"e335ee87-827b-358a-2503-54f19d668b19",
 				"a23a2305-9988-dc49-6b64-9649a70dcd2f",
 				"c37c0efd-1d70-e645-e5f7-3fd8f2d89b9c",
+				"1c4d7803-fd07-a83f-7cd5-31569d6de37c",
 				"1c862001-0149-ecd9-6582-e4557fb3f900",
 				"3721be10-7d14-40ac-843b-d2bf9ce47f03",
 				"794e0454-118b-2e5b-cbf4-ede6b98e396f",
@@ -196,6 +197,56 @@
 			"helperAttributes": {},
 			"time": 1479889113051,
 			"name": "关注",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
+		},
+		{
+			"id": "1c4d7803-fd07-a83f-7cd5-31569d6de37c",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/liveshow/create?token={{token}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "token",
+					"value": "{{token}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{roomTitle}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "geoLocaltion",
+					"value": "{{geoLocation}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "topics",
+					"value": "{{topics}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cover",
+					"value": "{{cover}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1480066559486,
+			"name": "创建直播间",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
@@ -558,7 +609,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479693705272,
+			"time": 1480066931765,
 			"name": "手机登录",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
