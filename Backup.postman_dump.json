@@ -2125,7 +2125,9 @@
 					"description": "",
 					"write": true,
 					"order": [
+						"446e98d2-f125-f0e7-d341-a47c43a7669d",
 						"9777e2bf-86e4-9783-458d-05f387fd61bd",
+						"cdebd434-ea8d-e000-5603-23fea29d6176",
 						"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
 						"fdd33643-6d83-d367-8b86-97645f80b337",
 						"54938026-11ab-7290-6a27-82ec029788ee",
@@ -2203,7 +2205,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1480301105381,
+			"updatedAt": 1480391127955,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2523,6 +2525,25 @@
 					"helperAttributes": {},
 					"time": 1479442569600,
 					"name": "rating",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "446e98d2-f125-f0e7-d341-a47c43a7669d",
+					"headers": "",
+					"url": "{{host}}//vliveshow-api-app/v1/users/phone/exist?mobilePhone={{mobilePhone}}&nationCode={{nationCode}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480394621636,
+					"name": "手机号检查",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
@@ -3148,6 +3169,27 @@
 					"responses": []
 				},
 				{
+					"id": "cdebd434-ea8d-e000-5603-23fea29d6176",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/phone/init_pwd?token={{token}}&password={{password}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": null,
+					"dataMode": "params",
+					"name": "初始化密码",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1480389924816,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7"
+				},
+				{
 					"id": "cfad0986-993b-4aea-a741-202e756f57e9",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/liveshow/heart_beat?token={{token}}&roomId={{roomId}}",
@@ -3510,7 +3552,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480330616477
+			"timestamp": 1480415303220
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -3524,7 +3566,7 @@
 				},
 				{
 					"key": "token",
-					"value": "b4b46c38f0ebb07274f72d8a896e8884",
+					"value": "9d1a478551eae0c511cb838941ea4482",
 					"type": "text",
 					"enabled": true
 				},
@@ -3638,7 +3680,7 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "91000000000",
+					"value": "91000001004",
 					"type": "text",
 					"enabled": true
 				},
@@ -3656,7 +3698,7 @@
 				},
 				{
 					"key": "unregisteredPhone",
-					"value": "91000002000",
+					"value": "91000001004",
 					"type": "text",
 					"enabled": true
 				},
@@ -3686,7 +3728,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480330616484
+			"timestamp": 1480415303227
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -3700,7 +3742,7 @@
 				},
 				{
 					"key": "token",
-					"value": "6b931cb332e4c5c5f12e7aed9b8a52c9",
+					"value": "8d0063ae79d723307575a72ca4d62c17",
 					"type": "text",
 					"enabled": true
 				},
@@ -3743,6 +3785,12 @@
 				{
 					"key": "subscriptionType",
 					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "BOToken",
+					"value": "533004ab8c51af9a275e947d99a90701",
 					"type": "text",
 					"enabled": true
 				},
@@ -3808,7 +3856,7 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "90000000000",
+					"value": "90000001008",
 					"type": "text",
 					"enabled": true
 				},
@@ -3826,7 +3874,7 @@
 				},
 				{
 					"key": "unregisteredPhone",
-					"value": "90000002000",
+					"value": "90000001008",
 					"type": "text",
 					"enabled": true
 				},
@@ -3856,7 +3904,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480330616489
+			"timestamp": 1480415303231
 		}
 	],
 	"headerPresets": [],

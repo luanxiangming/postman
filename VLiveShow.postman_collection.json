@@ -22,7 +22,9 @@
 			"name": "Backend",
 			"description": "",
 			"order": [
+				"446e98d2-f125-f0e7-d341-a47c43a7669d",
 				"9777e2bf-86e4-9783-458d-05f387fd61bd",
+				"cdebd434-ea8d-e000-5603-23fea29d6176",
 				"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
 				"fdd33643-6d83-d367-8b86-97645f80b337",
 				"54938026-11ab-7290-6a27-82ec029788ee",
@@ -409,6 +411,25 @@
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
 			"rawModeData": "{\n\t\"rating\": {{rating}},\n\t\"lessonId\": {{lessonId}}\n}"
+		},
+		{
+			"id": "446e98d2-f125-f0e7-d341-a47c43a7669d",
+			"headers": "",
+			"url": "{{host}}//vliveshow-api-app/v1/users/phone/exist?mobilePhone={{mobilePhone}}&nationCode={{nationCode}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1480394621636,
+			"name": "手机号检查",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": []
 		},
 		{
 			"id": "448b40f9-0c4b-dccd-0be4-7a48e59469b4",
@@ -1033,6 +1054,27 @@
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "cdebd434-ea8d-e000-5603-23fea29d6176",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/users/phone/init_pwd?token={{token}}&password={{password}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": null,
+			"dataMode": "params",
+			"name": "初始化密码",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1480389924816,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7"
 		},
 		{
 			"id": "cfad0986-993b-4aea-a741-202e756f57e9",
