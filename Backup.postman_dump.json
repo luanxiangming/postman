@@ -2688,7 +2688,7 @@
 				{
 					"id": "4d7e79fd-eb33-4fbd-f682-cc333b5b963c",
 					"headers": "Content-Type: application/json\n",
-					"url": "{{BOHost}}/vliveshow-api-app/v1/users/phone/sendmultisms?token={{BOToken}}",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/users/phone/sendmultisms?token={{BOToken}}",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
@@ -2698,7 +2698,7 @@
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1480476661890,
+					"time": 1480569746096,
 					"name": "短信群发",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -3694,7 +3694,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480503281398
+			"timestamp": 1480587530400
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -3702,25 +3702,25 @@
 			"values": [
 				{
 					"key": "host",
-					"value": "dev.vliveshow.com",
+					"value": "http://dev.vliveshow.com",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "BOHost",
-					"value": "dev.vliveshow.com",
+					"value": "http://dev.vliveshow.com",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "token",
-					"value": "9d1a478551eae0c511cb838941ea4482",
+					"value": "f585018e2dee19a52129a0f5bdf3a0f6",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "5837f809e4b05083ff68107d",
+					"value": "583f9354e4b0dfaa6c3f64f6",
 					"type": "text",
 					"enabled": true
 				},
@@ -3828,7 +3828,7 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "18616762525",
+					"value": "91000000003",
 					"type": "text",
 					"enabled": true
 				},
@@ -3879,10 +3879,16 @@
 					"value": "7000284",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "csvPath",
+					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1480503281402
+			"timestamp": 1480587530433
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -3890,13 +3896,13 @@
 			"values": [
 				{
 					"key": "host",
-					"value": "www.vliveshow.com",
+					"value": "http://www.vliveshow.com",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "BOHost",
-					"value": "172.16.14.118:8080",
+					"value": "http://172.16.14.118:8080",
 					"type": "text",
 					"enabled": true
 				},
@@ -4067,10 +4073,16 @@
 					"value": "6000008",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "csvPath",
+					"value": "{{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1480503281407
+			"timestamp": 1480587530437
 		}
 	],
 	"headerPresets": [],
@@ -4144,12 +4156,6 @@
 		{
 			"key": "content",
 			"value": "1234（V来秀验证码，请继续完成操作），本短信由系统自动发出，如非本人操作请忽略。",
-			"type": "text",
-			"enabled": true
-		},
-		{
-			"key": "csvPath",
-			"value": "http://www.vliveshow.com/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
 			"type": "text",
 			"enabled": true
 		},

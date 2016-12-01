@@ -571,7 +571,7 @@
 		{
 			"id": "4d7e79fd-eb33-4fbd-f682-cc333b5b963c",
 			"headers": "Content-Type: application/json\n",
-			"url": "{{BOHost}}/vliveshow-api-app/v1/users/phone/sendmultisms?token={{BOToken}}",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/users/phone/sendmultisms?token={{BOToken}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
@@ -581,7 +581,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1480476661890,
+			"time": 1480569746096,
 			"name": "短信群发",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
