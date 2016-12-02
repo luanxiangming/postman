@@ -31,6 +31,7 @@
 				"cdebd434-ea8d-e000-5603-23fea29d6176",
 				"f6e1938b-6ee2-89d6-4591-8f36a5cd9e51",
 				"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
+				"67c019b5-7bff-7d2e-cb19-013b6bb3567a",
 				"fdd33643-6d83-d367-8b86-97645f80b337",
 				"54938026-11ab-7290-6a27-82ec029788ee",
 				"846db92c-757a-3eca-2838-1f4f0f590bcc",
@@ -721,6 +722,25 @@
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "67c019b5-7bff-7d2e-cb19-013b6bb3567a",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/users/phone/password_reset_then_login?nationCode={{nationCode}}&mobilePhone={{mobilePhone}}&verificationCode={{verificationCode}}&newPwd={{password}}&language={{client_language}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1480672185921,
+			"name": "重置密码",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": [],
+			"rawModeData": ""
 		},
 		{
 			"id": "6e3bfc8b-c1b8-ec31-bb7e-00f1d1801fa2",
