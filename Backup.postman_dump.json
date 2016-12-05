@@ -2117,7 +2117,8 @@
 						"a9e3935f-48d1-c45c-11fb-df8f9ec25f3c",
 						"e0b2d75c-169b-823e-f8ce-531d4b0b9790",
 						"22f890cf-4ef8-814f-0102-e8fda22ff086",
-						"cf71030f-ff1d-d61c-8475-49fe3b8b19eb"
+						"cf71030f-ff1d-d61c-8475-49fe3b8b19eb",
+						"fafadb2d-1d42-847a-41b9-84ab1c96965e"
 					],
 					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"owner": "981326",
@@ -2135,7 +2136,7 @@
 						"f6e1938b-6ee2-89d6-4591-8f36a5cd9e51",
 						"63f2f9a3-23eb-e91f-2900-d7ffa8511f1a",
 						"67c019b5-7bff-7d2e-cb19-013b6bb3567a",
-						"fdd33643-6d83-d367-8b86-97645f80b337",
+						"d6a208d7-e0fb-d5e2-6535-c83386a74182",
 						"54938026-11ab-7290-6a27-82ec029788ee",
 						"846db92c-757a-3eca-2838-1f4f0f590bcc",
 						"a2a1838c-2142-0bcd-7a90-ee2b78b0bec5",
@@ -2202,6 +2203,23 @@
 					"owner": "981326",
 					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"collectionId": "188fd9f2-cfec-47dd-e3d9-21786929f08f"
+				},
+				{
+					"id": "66d78f55-f535-ab53-28d2-6d67fa09aca4",
+					"name": "MamaShow",
+					"description": "",
+					"write": true,
+					"order": [
+						"7b0108c8-6b49-f06c-e314-b0a08fd5a158",
+						"418882b3-55d3-7474-21f3-c2be2eff0ac3",
+						"e729296e-2336-9959-46f7-3f356d2c5bef",
+						"eab88b99-8e0a-7c2f-91ab-889306e44030",
+						"c4c729ca-e85a-4d03-a63b-82cf6a202341"
+					],
+					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"owner": "981326",
+					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
 				}
 			],
 			"timestamp": 1479180658804,
@@ -2213,7 +2231,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1480671553469,
+			"updatedAt": 1480934404820,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2483,7 +2501,7 @@
 				{
 					"id": "2b9aa9b7-5ab1-c359-7ceb-58588dcd75b7",
 					"headers": "",
-					"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{remark}}&token={{token}}&timestamp={{$timestamp}}&roomId={{roomId}}",
+					"url": "{{host}}/vliveshow-api-app/v1/gift/sendgift?giftId={{giftId}}&giftType={{giftType}}&num={{giftNum}}&remark={{remark}}&token={{token}}&timestamp={{$timestamp}}&roomId={{roomId}}&client_language={{client_language}}",
 					"preRequestScript": "",
 					"pathVariables": {},
 					"method": "POST",
@@ -2493,7 +2511,7 @@
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1479878334487,
+					"time": 1480923289536,
 					"name": "送礼物",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -2552,6 +2570,25 @@
 					"helperAttributes": {},
 					"time": 1479456468348,
 					"name": "房间观众",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "418882b3-55d3-7474-21f3-c2be2eff0ac3",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/channel/{{channelId}}/list?token={{token}}&client_language={{client_language}}&pageNum={{pageNum}}&pageSize={{pageSize}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480926075225,
+					"name": "channelDetail",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
@@ -2951,6 +2988,24 @@
 					"responses": []
 				},
 				{
+					"id": "7b0108c8-6b49-f06c-e314-b0a08fd5a158",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/channel/list?token={{token}}&client_language={{client_language}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480928292919,
+					"name": "channelList",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
 					"id": "846db92c-757a-3eca-2838-1f4f0f590bcc",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=WB&thirdpartyAccount=2096387991&thirdpartyIconUrl=http%3A%2F%2Ftva3.sinaimg.cn%2Fcrop.0.0.640.640.50%2F7cf45797jw8ejfcr63w5ej20hs0hsjrg.jpg&gender=MALE&nickName=%E7%A5%A5_%E6%98%8E",
@@ -3270,6 +3325,25 @@
 					"responses": []
 				},
 				{
+					"id": "c4c729ca-e85a-4d03-a63b-82cf6a202341",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/userInfo?token={{token}}&userId={{userId}}&roomId={{roomId}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480934426402,
+					"name": "userInfo",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
 					"id": "cdebd434-ea8d-e000-5603-23fea29d6176",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/phone/init_pwd?token={{token}}&password={{password}}",
@@ -3322,6 +3396,25 @@
 					"helperAttributes": {},
 					"time": 1479877788788,
 					"name": "直播间心跳",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
+					"id": "d6a208d7-e0fb-d5e2-6535-c83386a74182",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=QQ&thirdpartyAccount=FDD2654C8D0A0EDE5DF830A07B6D8006&thirdpartyIconUrl=http%3A%2F%2Fq.qlogo.cn%2Fqqapp%2F1105390061%2FFDD2654C8D0A0EDE5DF830A07B6D8006%2F100&gender=MALE&nickName=我就喜欢",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480913565600,
+					"name": "QQ登录",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
@@ -3441,6 +3534,45 @@
 					"responses": []
 				},
 				{
+					"id": "e729296e-2336-9959-46f7-3f356d2c5bef",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/vote?token={{token}}&playerId={{playerId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": null,
+					"dataMode": "params",
+					"name": "vote",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1480933901102,
+					"version": 2,
+					"responses": [],
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "66d78f55-f535-ab53-28d2-6d67fa09aca4"
+				},
+				{
+					"id": "eab88b99-8e0a-7c2f-91ab-889306e44030",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/forbidSendMsg?token={{token}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"roomId\":{{roomId}},\n\t\"shutUpTime\":{{shutUpTime}},\n\t\"userIds\":\"{{userId}}\"\n}",
+					"dataMode": "raw",
+					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1480934089845,
+					"name": "forbidSendMsg",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
 					"id": "f0593ca4-0bca-27ca-08cd-ca77e05eaea5",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app//v1/users/blacklist/list?pageNum={{pageNum}}&pageSize={{pageSize}}&token={{token}}",
@@ -3517,23 +3649,25 @@
 					"responses": []
 				},
 				{
-					"id": "fdd33643-6d83-d367-8b86-97645f80b337",
+					"id": "fafadb2d-1d42-847a-41b9-84ab1c96965e",
 					"headers": "",
-					"url": "{{host}}/vliveshow-api-app/v1/users/thirdparty/login?thirdpartyPlatform=QQ&thirdpartyAccount=1D939BA95A8FD7E75517D264FB01D27D&thirdpartyIconUrl=http%3A%2F%2Fq.qlogo.cn%2Fqqapp%2F1105390061%2F1D939BA95A8FD7E75517D264FB01D27D%2F100&gender=MALE&nickName=vivo%20x7",
-					"preRequestScript": null,
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/channels?token={{token}}",
 					"pathVariables": {},
-					"method": "POST",
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"data": null,
 					"dataMode": "params",
+					"name": "channelList",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1480934404779,
 					"version": 2,
-					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
+					"responses": [],
+					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1479894546977,
-					"name": "QQ登录",
-					"description": "",
-					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
-					"responses": []
+					"folder": "a1de3c76-9cd8-4fca-ee7d-1675378be703"
 				}
 			]
 		}
@@ -3719,7 +3853,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480669529530
+			"timestamp": 1480932847262
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -3739,13 +3873,13 @@
 				},
 				{
 					"key": "token",
-					"value": "f585018e2dee19a52129a0f5bdf3a0f6",
+					"value": "b3d0a95185e00fa78466db6aecc51f99",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "583f9354e4b0dfaa6c3f64f6",
+					"value": "58451b3de4b044e96b1de254",
 					"type": "text",
 					"enabled": true
 				},
@@ -3910,10 +4044,16 @@
 					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "channelId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1480671217960
+			"timestamp": 1480932847311
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -4107,7 +4247,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480675119679
+			"timestamp": 1480932847322
 		}
 	],
 	"headerPresets": [],
