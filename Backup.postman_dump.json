@@ -2172,7 +2172,8 @@
 						"1c33767f-2b8b-e933-d771-0c084241ca79",
 						"740db5aa-edc5-a586-5359-9ef73b0404a0",
 						"f58a9d54-0b1d-0825-e197-677b69cf7af9",
-						"a755a0e7-597d-613c-02ba-2ec88793df4e"
+						"a755a0e7-597d-613c-02ba-2ec88793df4e",
+						"164eefe9-0c41-1978-6a51-3898f02cc63d"
 					],
 					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"owner": "981326",
@@ -2214,6 +2215,7 @@
 						"418882b3-55d3-7474-21f3-c2be2eff0ac3",
 						"e729296e-2336-9959-46f7-3f356d2c5bef",
 						"eab88b99-8e0a-7c2f-91ab-889306e44030",
+						"22525808-03bd-a93b-a967-4b0df2335aa1",
 						"c4c729ca-e85a-4d03-a63b-82cf6a202341"
 					],
 					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -2231,7 +2233,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1480934404820,
+			"updatedAt": 1481024367732,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2294,6 +2296,27 @@
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
+				},
+				{
+					"id": "164eefe9-0c41-1978-6a51-3898f02cc63d",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/openim_dirty_words/get?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": "{\n\t\"a\" : \"\",\n\t\"b\" : \"\"\n}",
+					"dataMode": "raw",
+					"name": "脏字",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1481024367540,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7"
 				},
 				{
 					"id": "18581e9f-f7c2-69c2-4811-b3d0d71ea674",
@@ -2438,6 +2461,27 @@
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
+				},
+				{
+					"id": "22525808-03bd-a93b-a967-4b0df2335aa1",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/group_open_http_svc/get_group_shutted_uin?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": "{\n\t\"GroupId\" : \"{{roomId}}\"\n}",
+					"dataMode": "raw",
+					"name": "房间禁言查询",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1481023906454,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "66d78f55-f535-ab53-28d2-6d67fa09aca4"
 				},
 				{
 					"id": "22f890cf-4ef8-814f-0102-e8fda22ff086",
@@ -3561,13 +3605,13 @@
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\n\t\"roomId\":{{roomId}},\n\t\"shutUpTime\":{{shutUpTime}},\n\t\"userIds\":\"{{userId}}\"\n}",
+					"data": "{\n\t\"roomId\":\"{{roomId}}\",\n\t\"shutUpTime\":{{shutUpTime}},\n\t\"userIds\":\"{{silencedUserId}}\"\n}",
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1480934089845,
-					"name": "forbidSendMsg",
+					"time": 1481019083884,
+					"name": "禁言",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
@@ -3853,207 +3897,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480932847262
-		},
-		{
-			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
-			"name": "VLS DEV",
-			"values": [
-				{
-					"key": "host",
-					"value": "http://dev.vliveshow.com",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "BOHost",
-					"value": "http://dev.vliveshow.com",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "token",
-					"value": "b3d0a95185e00fa78466db6aecc51f99",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "roomId",
-					"value": "58451b3de4b044e96b1de254",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "rating",
-					"value": "100",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "client_language",
-					"value": "zh_CN",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "courseId",
-					"value": "38",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "lessonId",
-					"value": "45",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "subscriptionId",
-					"value": "241",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "subscriptionType",
-					"value": "0",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "BOToken",
-					"value": "8bd9a01c5566191104547aba9b07890f",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "userId",
-					"value": "7000007",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "usersig",
-					"value": "eJxFkF1rgzAUhv*LtxvNh8nsBr2QtoyuivtE8EYyE8OpM42aSuvYf58Ty26fh8P7vufbe4-eFsJakLlwud9K78HD3u2E1dlCq3JROtWOmHDOKcZX26u2g6MZBcWEE*pj-C9BKuOghOlQyBrMLDrQI4m3L*tdWJ-jONmd0sig5wplm*a1*hqaQbcMf6Bmf58ULJGK3phlCKGun2za34XoMcqy4YC2h3LfQYa00FZWkU2Dz4tG-WYZhKvVNUxW*bTtrz0b2xHKAjZLB7WaeMCxTyj2Zy6K4ngyLncXq6Zn-PwCyCBX0Q__",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "sdkappid",
-					"value": "1400012474",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "giftId",
-					"value": "57f9aa576dde204d83048445",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nickName",
-					"value": "DEV7000095",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "giftType",
-					"value": "0",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "giftNum",
-					"value": "1",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "combo",
-					"value": "3",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nationCode",
-					"value": "86",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "mobilePhone",
-					"value": "91000001003",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "vipabc",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "userToUID",
-					"value": "7000025",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "unregisteredPhone",
-					"value": "91000001004",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "verificationCode",
-					"value": "111111",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "userInBlackList",
-					"value": "7000006",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "refundDiamond",
-					"value": "0",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "refundReason",
-					"value": "最近实在太忙了",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "userBeBlocked",
-					"value": "7000284",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "csvPath",
-					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "channelId",
-					"value": "1",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"team": null,
-			"timestamp": 1480932847311
+			"timestamp": 1481021845636
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -4073,13 +3917,13 @@
 				},
 				{
 					"key": "token",
-					"value": "b3c27db94b3dc548ea8e4e540c437bc3",
+					"value": "35251b538eed7dbbb335dc601ebd8fbb",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "583521fed34ee51732dccc04",
+					"value": "58466fe8d34ea949d7ec7f81",
 					"type": "text",
 					"enabled": true
 				},
@@ -4127,7 +3971,7 @@
 				},
 				{
 					"key": "userId",
-					"value": "6086955",
+					"value": "6000008",
 					"type": "text",
 					"enabled": true
 				},
@@ -4157,7 +4001,7 @@
 				},
 				{
 					"key": "nickName",
-					"value": "压力试播",
+					"value": "新压力试播",
 					"type": "text",
 					"enabled": true
 				},
@@ -4175,7 +4019,7 @@
 				},
 				{
 					"key": "combo",
-					"value": "1",
+					"value": "3",
 					"type": "text",
 					"enabled": true
 				},
@@ -4187,7 +4031,7 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "90000001005",
+					"value": "90000000001",
 					"type": "text",
 					"enabled": true
 				},
@@ -4235,7 +4079,7 @@
 				},
 				{
 					"key": "userBeBlocked",
-					"value": "6343187",
+					"value": "6086949",
 					"type": "text",
 					"enabled": true
 				},
@@ -4247,7 +4091,213 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1480932847322
+			"timestamp": 1481021845643
+		},
+		{
+			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
+			"name": "VLS DEV",
+			"values": [
+				{
+					"key": "host",
+					"value": "http://dev.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "BOHost",
+					"value": "http://dev.vliveshow.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "100af1b555f0bbb13225af6c17cc567c",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "roomId",
+					"value": "58469c28e4b0d61b15178ab5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "rating",
+					"value": "100",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "courseId",
+					"value": "38",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lessonId",
+					"value": "45",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionId",
+					"value": "241",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subscriptionType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "BOToken",
+					"value": "8bd9a01c5566191104547aba9b07890f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "7000284",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkF1rgzAUhv*LtxvNh8nsBr2QtoyuivtE8EYyE8OpM42aSuvYf58Ty26fh8P7vufbe4-eFsJakLlwud9K78HD3u2E1dlCq3JROtWOmHDOKcZX26u2g6MZBcWEE*pj-C9BKuOghOlQyBrMLDrQI4m3L*tdWJ-jONmd0sig5wplm*a1*hqaQbcMf6Bmf58ULJGK3phlCKGun2za34XoMcqy4YC2h3LfQYa00FZWkU2Dz4tG-WYZhKvVNUxW*bTtrz0b2xHKAjZLB7WaeMCxTyj2Zy6K4ngyLncXq6Zn-PwCyCBX0Q__",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400012474",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%260%26Bicycle%26false%261.0%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftId",
+					"value": "57d80fd16dde58e8c98fd5c0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nickName",
+					"value": "DEV7000095",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "combo",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobilePhone",
+					"value": "91000000001",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "vipabc",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userToUID",
+					"value": "7000025",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "91000001001",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userInBlackList",
+					"value": "7000006",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refundDiamond",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refundReason",
+					"value": "最近实在太忙了",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userBeBlocked",
+					"value": "7000284",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "csvPath",
+					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channelId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "silencedUserId",
+					"value": "7000284",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"team": null,
+			"timestamp": 1481023138875
 		}
 	],
 	"headerPresets": [],
@@ -4327,6 +4377,12 @@
 		{
 			"key": "priority",
 			"value": "2",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "shutUpTime",
+			"value": "2147483647",
 			"type": "text",
 			"enabled": true
 		}

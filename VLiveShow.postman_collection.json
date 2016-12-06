@@ -69,7 +69,8 @@
 				"1c33767f-2b8b-e933-d771-0c084241ca79",
 				"740db5aa-edc5-a586-5359-9ef73b0404a0",
 				"f58a9d54-0b1d-0825-e197-677b69cf7af9",
-				"a755a0e7-597d-613c-02ba-2ec88793df4e"
+				"a755a0e7-597d-613c-02ba-2ec88793df4e",
+				"164eefe9-0c41-1978-6a51-3898f02cc63d"
 			],
 			"owner": "981326",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
@@ -105,6 +106,7 @@
 				"418882b3-55d3-7474-21f3-c2be2eff0ac3",
 				"e729296e-2336-9959-46f7-3f356d2c5bef",
 				"eab88b99-8e0a-7c2f-91ab-889306e44030",
+				"22525808-03bd-a93b-a967-4b0df2335aa1",
 				"c4c729ca-e85a-4d03-a63b-82cf6a202341"
 			],
 			"owner": "981326",
@@ -171,6 +173,28 @@
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "164eefe9-0c41-1978-6a51-3898f02cc63d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/openim_dirty_words/get?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": [],
+			"dataMode": "raw",
+			"name": "脏字",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1481024367540,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7",
+			"rawModeData": "{\n\t\"a\" : \"\",\n\t\"b\" : \"\"\n}"
 		},
 		{
 			"id": "18581e9f-f7c2-69c2-4811-b3d0d71ea674",
@@ -316,6 +340,28 @@
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "22525808-03bd-a93b-a967-4b0df2335aa1",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/group_open_http_svc/get_group_shutted_uin?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": [],
+			"dataMode": "raw",
+			"name": "房间禁言查询",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1481023906454,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "66d78f55-f535-ab53-28d2-6d67fa09aca4",
+			"rawModeData": "{\n\t\"GroupId\" : \"{{roomId}}\"\n}"
 		},
 		{
 			"id": "22f890cf-4ef8-814f-0102-e8fda22ff086",
@@ -1454,12 +1500,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1480934089845,
-			"name": "forbidSendMsg",
+			"time": 1481019083884,
+			"name": "禁言",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{\n\t\"roomId\":{{roomId}},\n\t\"shutUpTime\":{{shutUpTime}},\n\t\"userIds\":\"{{userId}}\"\n}"
+			"rawModeData": "{\n\t\"roomId\":\"{{roomId}}\",\n\t\"shutUpTime\":{{shutUpTime}},\n\t\"userIds\":\"{{silencedUserId}}\"\n}"
 		},
 		{
 			"id": "f0593ca4-0bca-27ca-08cd-ca77e05eaea5",
