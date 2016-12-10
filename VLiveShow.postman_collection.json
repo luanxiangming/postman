@@ -113,7 +113,8 @@
 				"fb1c816d-461a-d77b-ea0a-750af8feaace",
 				"2cff5302-17b8-a55c-b212-308fd025b89f",
 				"952134da-3f56-6393-046b-eef9c7779f42",
-				"098207ad-b09c-354a-d890-662d64dfc669"
+				"098207ad-b09c-354a-d890-662d64dfc669",
+				"dc072830-45da-b0c7-e76e-5fcb996da036"
 			],
 			"owner": "981326",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
@@ -145,7 +146,7 @@
 		{
 			"id": "098207ad-b09c-354a-d890-662d64dfc669",
 			"headers": "",
-			"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/week/rank/list?week_no ={{week_no}}",
+			"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/week/rank/list?week_no={{week_no}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "GET",
@@ -155,7 +156,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481276341011,
+			"time": 1481354477165,
 			"name": "排行榜",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -514,12 +515,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481281413582,
+			"time": 1481370050061,
 			"name": "妈妈报名",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": 91000001015,\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}"
+			"rawModeData": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"13538078157\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}"
 		},
 		{
 			"id": "3721be10-7d14-40ac-843b-d2bf9ce47f03",
@@ -1450,6 +1451,27 @@
 			"responses": []
 		},
 		{
+			"id": "dc072830-45da-b0c7-e76e-5fcb996da036",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/last/week/rank/list",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": null,
+			"dataMode": "params",
+			"name": "上周排行",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1481354407136,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "66d78f55-f535-ab53-28d2-6d67fa09aca4"
+		},
+		{
 			"id": "de09f4ce-78c7-50c2-81ef-ce061f635a44",
 			"headers": "",
 			"url": "{{host}}/vliveshow-api-app/v1/course/timing/lesson?token={{token}}&client_language={{client_language}}",
@@ -1577,12 +1599,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481281761012,
+			"time": 1481345222289,
 			"name": "亲友报名",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{\n    \"fansName\":\"PostFans\",\n    \"age\":40,\n    \"mobile\":\"91000001017\",\n    \"email\":\"1\",\n    \"gender\":\"\",\n    \"isNeedVipabcjrCourse\":\"true\"\n}\n"
+			"rawModeData": "{\n    \"fansName\":\"PostFans\",\n    \"age\":40,\n    \"mobile\":\"91000000019\",\n    \"email\":\"1\",\n    \"gender\":\"\",\n    \"isNeedVipabcjrCourse\":\"true\"\n}\n"
 		},
 		{
 			"id": "f0593ca4-0bca-27ca-08cd-ca77e05eaea5",

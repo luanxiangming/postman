@@ -2222,7 +2222,8 @@
 						"fb1c816d-461a-d77b-ea0a-750af8feaace",
 						"2cff5302-17b8-a55c-b212-308fd025b89f",
 						"952134da-3f56-6393-046b-eef9c7779f42",
-						"098207ad-b09c-354a-d890-662d64dfc669"
+						"098207ad-b09c-354a-d890-662d64dfc669",
+						"dc072830-45da-b0c7-e76e-5fcb996da036"
 					],
 					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"owner": "981326",
@@ -2239,7 +2240,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1481255355983,
+			"updatedAt": 1481354407191,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2268,7 +2269,7 @@
 				{
 					"id": "098207ad-b09c-354a-d890-662d64dfc669",
 					"headers": "",
-					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/week/rank/list?week_no ={{week_no}}",
+					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/week/rank/list?week_no={{week_no}}",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "GET",
@@ -2278,7 +2279,7 @@
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1481276341011,
+					"time": 1481354477165,
 					"name": "排行榜",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -2629,12 +2630,12 @@
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": 91000001015,\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}",
+					"data": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"13538078157\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}",
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1481281413582,
+					"time": 1481370050061,
 					"name": "妈妈报名",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -3562,6 +3563,27 @@
 					"responses": []
 				},
 				{
+					"id": "dc072830-45da-b0c7-e76e-5fcb996da036",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/last/week/rank/list",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": null,
+					"dataMode": "params",
+					"name": "上周排行",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1481354407136,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "66d78f55-f535-ab53-28d2-6d67fa09aca4"
+				},
+				{
 					"id": "de09f4ce-78c7-50c2-81ef-ce061f635a44",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/course/timing/lesson?token={{token}}&client_language={{client_language}}",
@@ -3681,12 +3703,12 @@
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\n    \"fansName\":\"PostFans\",\n    \"age\":40,\n    \"mobile\":\"91000001017\",\n    \"email\":\"1\",\n    \"gender\":\"\",\n    \"isNeedVipabcjrCourse\":\"true\"\n}\n",
+					"data": "{\n    \"fansName\":\"PostFans\",\n    \"age\":40,\n    \"mobile\":\"91000000019\",\n    \"email\":\"1\",\n    \"gender\":\"\",\n    \"isNeedVipabcjrCourse\":\"true\"\n}\n",
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1481281761012,
+					"time": 1481345222289,
 					"name": "亲友报名",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -4010,7 +4032,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1481282674343
+			"timestamp": 1481366767806
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -4201,10 +4223,28 @@
 					"value": "{{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "channelId",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "silencedUserId",
+					"value": "7000095",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "votedId",
+					"value": "7000098",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1481282674357
+			"timestamp": 1481369333399
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -4224,7 +4264,7 @@
 				},
 				{
 					"key": "token",
-					"value": "c00a8b093923a6f689a9295d3a74552d",
+					"value": "0cf2bc7953150ab12393bec82fd85c77",
 					"type": "text",
 					"enabled": true
 				},
@@ -4338,13 +4378,13 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "18616762525",
+					"value": "13538078157",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "password",
-					"value": "Dujun1205",
+					"value": "Zz123456",
 					"type": "text",
 					"enabled": true
 				},
@@ -4356,7 +4396,7 @@
 				},
 				{
 					"key": "unregisteredPhone",
-					"value": "91000001018",
+					"value": "17700000005",
 					"type": "text",
 					"enabled": true
 				},
@@ -4386,7 +4426,7 @@
 				},
 				{
 					"key": "userBeBlocked",
-					"value": "7000284",
+					"value": "7000053",
 					"type": "text",
 					"enabled": true
 				},
@@ -4410,13 +4450,13 @@
 				},
 				{
 					"key": "votedId",
-					"value": "7000097",
+					"value": "7000098",
 					"type": "text",
 					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1481282961873
+			"timestamp": 1481371979033
 		}
 	],
 	"headerPresets": [],
