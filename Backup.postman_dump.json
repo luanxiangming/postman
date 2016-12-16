@@ -2248,6 +2248,7 @@
 						"3468b175-21fe-db0a-0c70-17bd2fb1a6de",
 						"b8a588ea-946b-fd6e-6a15-9e40f5715828",
 						"6aaac34c-fe32-4f3c-c318-85bf0c467ac2",
+						"c863290f-b066-7e2b-c159-b417ebe39e3f",
 						"edfb6767-191d-e8d9-49de-42a4a8c8700f",
 						"d1506fde-f670-f78d-8cbb-2ffe3f5eebef",
 						"c2eb1ec9-cd32-e206-690a-29d518caee4c",
@@ -2271,7 +2272,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1481706545988,
+			"updatedAt": 1481868521927,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -3716,6 +3717,27 @@
 					"responses": []
 				},
 				{
+					"id": "c863290f-b066-7e2b-c159-b417ebe39e3f",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMhost}}/v4/group_open_http_svc/group_msg_get_simple?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": "{\n    \"GroupId\": \"{{roomId}}\",    \n    \"ReqMsgNumber\": 2\n}",
+					"dataMode": "raw",
+					"name": "漫游消息",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1481868521751,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "43c25124-9f82-1394-8af6-e279645b456e"
+				},
+				{
 					"id": "cdebd434-ea8d-e000-5603-23fea29d6176",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/phone/init_pwd?token={{token}}&password={{password}}",
@@ -4323,7 +4345,7 @@
 				},
 				{
 					"key": "usersig",
-					"value": "eJxlj1FPgzAYRd-5FQ2vGC2FEmviCzjIgEVhqHMvpK6FfCywDqpBjf9dxSWS*HzOzb33w0AImUW6Pue73eGl06V*U9JEV8jE5tkfVApEyXXp9OIflKOCXpa80rKfoE0pJRjPHRCy01DByeCihW6GB7Evp47fvPsdxox5ZK5APcHV4j5YZjf77XNiRWk4sGMinSZTbJNb6YZDU0S6yi*yJnyPk7YHWi-rkLT1cMvGRSGjPEguH1xX*HePYpsFlTqO-nplxUnsj8x6up5VamjlaZDnEpd49vzSq*wHOHSTQLBNbeL8zMam8Wl8AeHpXHA_",
+					"value": "eJxFkNFOgzAUQP*F1xltC92KyR4aQLcgRDMwy15IQ8tycdDKKkyN-y4SFl-Pyc0993472dPuVhgDshC2cDvp3DvIuZmwuhjoVCEqq7oRY0opQehqe9WdQbejIAhTTFyE-iVI1VqoYBoUsoF2Fmc4jiSJXoItF5F59nVvhy3*SsN62euHIQv9pj5VXe*mm-wV3i-1cBefOPBq8A4ZD1YRjr1FXIZJr4SOjl4Sp5sA57AgZP-YBpLmfL2*LpNvxXTbX7031o2VPpmlhUZNnGG2ZGzFZi7KUn*0trCfRk3P*PkFoMpXLA__",
 					"type": "text",
 					"enabled": true
 				},
@@ -4437,7 +4459,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1481794447493
+			"timestamp": 1481881138182
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -4457,13 +4479,13 @@
 				},
 				{
 					"key": "token",
-					"value": "275c0ee50fda36e3186a7ac056566f35",
+					"value": "9358caecfb51cb87597174c269410f15",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "584f553be4b01fedd7e56e8e",
+					"value": "583bfb1ae4b06851311422be",
 					"type": "text",
 					"enabled": true
 				},
@@ -4649,7 +4671,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1481794447506
+			"timestamp": 1481881138202
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -4669,13 +4691,13 @@
 				},
 				{
 					"key": "token",
-					"value": "8a63225c3417eef2bff1cf907697c2e6",
+					"value": "996dbfea478746d9458f90bbd0f90af4",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "58511e1ed34e31974c715b7b",
+					"value": "58539e55d34eb6daac3c66a2",
 					"type": "text",
 					"enabled": true
 				},
@@ -4723,7 +4745,7 @@
 				},
 				{
 					"key": "userId",
-					"value": "6107725",
+					"value": "6101326",
 					"type": "text",
 					"enabled": true
 				},
@@ -4861,7 +4883,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1481794582893
+			"timestamp": 1481881138215
 		}
 	],
 	"headerPresets": [],
