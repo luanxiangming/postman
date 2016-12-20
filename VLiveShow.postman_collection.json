@@ -18,9 +18,13 @@
 				"e0b2d75c-169b-823e-f8ce-531d4b0b9790",
 				"22f890cf-4ef8-814f-0102-e8fda22ff086",
 				"cf71030f-ff1d-d61c-8475-49fe3b8b19eb",
+				"bbbf89d9-0772-7686-fb38-b8f4360deb98",
+				"0869595b-c48f-a239-de69-3b9c0ff55c48",
 				"fafadb2d-1d42-847a-41b9-84ab1c96965e"
 			],
-			"owner": "981326"
+			"owner": "981326",
+			"lastUpdatedBy": "981326",
+			"lastRevision": 858895410
 		},
 		{
 			"id": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7",
@@ -171,6 +175,28 @@
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "0869595b-c48f-a239-de69-3b9c0ff55c48",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course/{{courseId}}?token={{BOToken}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": [],
+			"dataMode": "raw",
+			"name": "删除课程",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1482129358129,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a1de3c76-9cd8-4fca-ee7d-1675378be703",
+			"rawModeData": ""
 		},
 		{
 			"id": "08be2394-b4f8-796a-b05e-d2ed9eaaf85b",
@@ -448,7 +474,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1480494133639,
-			"name": "优先级列表",
+			"name": "直播间优先级列表",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
@@ -1008,12 +1034,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481767781730,
+			"time": 1482116240774,
 			"name": "消息记录",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{\n    \"ChatType\": \"C2C\",\n    \"MsgTime\": \"2016121416\"\n}"
+			"rawModeData": "{\n    \"ChatType\": \"group\",\n    \"MsgTime\": \"2016121821\"\n}"
 		},
 		{
 			"id": "6e3bfc8b-c1b8-ec31-bb7e-00f1d1801fa2",
@@ -1505,13 +1531,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479866063540,
+			"time": 1482218782002,
 			"name": "点赞",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"folder": "43c25124-9f82-1394-8af6-e279645b456e",
-			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"{{$randomInt}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomID}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{            \"From_Account\": \"{{userId}}\",\n            \"GroupId\": \"{{roomId}}\",\n            \"Random\": \"{{$randomInt}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"1&1000&2&${{userId}}}&{{roomId}}\",\n                \t\"'Desc\":\"\",\n                \t\"Ext\":\"\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "ba2fac81-5f55-094a-d8ca-1a1ddd154979",
@@ -1531,6 +1556,28 @@
 			"description": "CourseList",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
+		},
+		{
+			"id": "bbbf89d9-0772-7686-fb38-b8f4360deb98",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course?token={{BOToken}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": [],
+			"dataMode": "raw",
+			"name": "设置课程优先级",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1482123185700,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a1de3c76-9cd8-4fca-ee7d-1675378be703",
+			"rawModeData": "{\n\t\"id\": \"{{courseId}}\",\n\t\"priority\": \"{{priority}}\"\n}"
 		},
 		{
 			"id": "bf05d921-c7c5-1bd1-88f6-6f91886a41ae",
@@ -1666,7 +1713,7 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1480494162028,
-			"name": "设置优先级",
+			"name": "设置直播间优先级",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
