@@ -20,7 +20,9 @@
 				"cf71030f-ff1d-d61c-8475-49fe3b8b19eb",
 				"bbbf89d9-0772-7686-fb38-b8f4360deb98",
 				"0869595b-c48f-a239-de69-3b9c0ff55c48",
-				"fafadb2d-1d42-847a-41b9-84ab1c96965e"
+				"fafadb2d-1d42-847a-41b9-84ab1c96965e",
+				"efb89bf3-0851-12e0-51a8-e47bdbf82765",
+				"26115570-e2b0-1f19-1c15-ee36a113f287"
 			],
 			"owner": "981326",
 			"lastUpdatedBy": "981326",
@@ -480,6 +482,27 @@
 			"responses": []
 		},
 		{
+			"id": "26115570-e2b0-1f19-1c15-ee36a113f287",
+			"headers": "",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/all?token={{BOToken}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"data": null,
+			"dataMode": "params",
+			"name": "所有广告",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1482388547204,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a1de3c76-9cd8-4fca-ee7d-1675378be703"
+		},
+		{
 			"id": "2654840c-3fbd-49ec-7b46-ba9c47606711",
 			"headers": "",
 			"url": "dev.vliveshow.com/vliveshow-api-app/v1/course/mine?token={{token}}&client_language={{client_language}}",
@@ -609,12 +632,12 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481692039877,
+			"time": 1482311205375,
 			"name": "妈妈报名",
 			"description": "",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": [],
-			"rawModeData": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"91000000021\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}"
+			"rawModeData": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"90000000022\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}"
 		},
 		{
 			"id": "3721be10-7d14-40ac-843b-d2bf9ce47f03",
@@ -1971,6 +1994,25 @@
 			"rawModeData": "{\n\t\n}"
 		},
 		{
+			"id": "efb89bf3-0851-12e0-51a8-e47bdbf82765",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/?token={{BOToken}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482388474723,
+			"name": "插入广告",
+			"description": "",
+			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\": \"015\",\n\t\"position\": 0,\n\t\"outerUrl\": \"http://www.baidu.com\",\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/1D/rBAEilhbc3iAIZyaAAGMWxx4XCk751.png\",\n\t\"coverUrl\": \"http://dev.vliveshow.com/M00/00/26/rBAEiVhbc2eAd6rtAAAjxB9bKiI47.jpeg\",\n\t\"channelId\": 3,\n\t\"isDisabled\": false,\n\t\"isDeleted\": false\n}"
+		},
+		{
 			"id": "efbc1b2f-ef35-6d89-f23f-0943ede3ac5c",
 			"headers": "Content-Type: application/json\n",
 			"url": "{{IMhost}}/v4/openim_dirty_words/delete?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
@@ -2105,7 +2147,7 @@
 			"helperAttributes": {},
 			"time": 1479442527745,
 			"name": "subscription",
-			"description": "",
+			"description": "判断用户是否已经购买了课程",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 			"responses": []
 		},

@@ -2119,14 +2119,17 @@
 						"cf71030f-ff1d-d61c-8475-49fe3b8b19eb",
 						"bbbf89d9-0772-7686-fb38-b8f4360deb98",
 						"0869595b-c48f-a239-de69-3b9c0ff55c48",
-						"fafadb2d-1d42-847a-41b9-84ab1c96965e"
+						"fafadb2d-1d42-847a-41b9-84ab1c96965e",
+						"efb89bf3-0851-12e0-51a8-e47bdbf82765",
+						"26115570-e2b0-1f19-1c15-ee36a113f287"
 					],
 					"createdAt": "2016-11-16T07:09:19.000Z",
 					"updatedAt": "2016-12-19T06:36:02.000Z",
 					"owner": "981326",
 					"lastUpdatedBy": "981326",
 					"lastRevision": 858895410,
-					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55"
+					"collection": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"collection_id": "62d391f0-1550-0606-44ee-ac7c705bfd55"
 				},
 				{
 					"id": "75bec16b-9b23-8a5c-a57c-7f5a61f391b7",
@@ -2276,7 +2279,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1479180658824,
-			"updatedAt": 1482129358208,
+			"updatedAt": 1482388547276,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2602,6 +2605,27 @@
 					"responses": []
 				},
 				{
+					"id": "26115570-e2b0-1f19-1c15-ee36a113f287",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/all?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"data": null,
+					"dataMode": "params",
+					"name": "所有广告",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1482388547204,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "a1de3c76-9cd8-4fca-ee7d-1675378be703"
+				},
+				{
 					"id": "2654840c-3fbd-49ec-7b46-ba9c47606711",
 					"headers": "",
 					"url": "dev.vliveshow.com/vliveshow-api-app/v1/course/mine?token={{token}}&client_language={{client_language}}",
@@ -2725,12 +2749,12 @@
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"91000000021\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}",
+					"data": "{\n\t\"mamaName\": \"PostMama\",\n\t\"age\": 40,\n\t\"area\": \"上海市\",\n\t\"mobile\": \"90000000022\",\n\t\"email\": \"\",\n\t\"babyType\": \"男孩\",\n\t\"babyAge\": \"5~18岁\",\n\t\"talent\": \"舞蹈\",\n\t\"isNeedVipabcjrCourse\": true,\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/18/rBAEilhJG0yAVfcKAAATHWrhrAA190.png\"\n}",
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1481692039877,
+					"time": 1482311205375,
 					"name": "妈妈报名",
 					"description": "",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
@@ -4068,6 +4092,24 @@
 					"responses": []
 				},
 				{
+					"id": "efb89bf3-0851-12e0-51a8-e47bdbf82765",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"title\": \"015\",\n\t\"position\": 0,\n\t\"outerUrl\": \"http://www.baidu.com\",\n\t\"avatarUrl\": \"http://dev.vliveshow.com/M00/00/1D/rBAEilhbc3iAIZyaAAGMWxx4XCk751.png\",\n\t\"coverUrl\": \"http://dev.vliveshow.com/M00/00/26/rBAEiVhbc2eAd6rtAAAjxB9bKiI47.jpeg\",\n\t\"channelId\": 3,\n\t\"isDisabled\": false,\n\t\"isDeleted\": false\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1482388474723,
+					"name": "插入广告",
+					"description": "",
+					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
+					"responses": []
+				},
+				{
 					"id": "efbc1b2f-ef35-6d89-f23f-0943ede3ac5c",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim_dirty_words/delete?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
@@ -4199,7 +4241,7 @@
 					"helperAttributes": {},
 					"time": 1479442527745,
 					"name": "subscription",
-					"description": "",
+					"description": "判断用户是否已经购买了课程",
 					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55",
 					"responses": []
 				},
@@ -4326,7 +4368,7 @@
 	"environments": [
 		{
 			"id": "0325d1a7-0d1c-087d-5f77-680bfc3e7c8b",
-			"name": "VLS STAGING",
+			"name": "VLS STG",
 			"values": [
 				{
 					"key": "host",
@@ -4504,7 +4546,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1482226683681
+			"timestamp": 1482418137206
 		},
 		{
 			"id": "0aa355db-1ceb-5ce3-27e1-74b37118c8af",
@@ -4526,14 +4568,14 @@
 				},
 				{
 					"key": "token",
-					"value": "4ffd515e28fcba3a76bd7b621767d75b",
+					"value": "6b9b8a93f0d4bc2c2f9e551fc7c921df",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "roomId",
-					"value": "58576a04e4b074a38921718d",
+					"value": "585b9961e4b05762f3463b9d",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -4743,14 +4785,14 @@
 				},
 				{
 					"key": "votedId",
-					"value": "7000098",
+					"value": "7000522",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				}
 			],
 			"team": null,
-			"timestamp": 1482226683689
+			"timestamp": 1482418137210
 		},
 		{
 			"id": "6805f928-7a7a-989a-066e-dfb3a409585f",
@@ -4996,7 +5038,253 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1482226683694
+			"timestamp": 1482418137216
+		},
+		{
+			"id": "8de27f59-edd6-c636-72ab-1beed9f0bbd6",
+			"name": "VLS LOC",
+			"values": [
+				{
+					"key": "host",
+					"value": "http://localhost:8080",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "BOHost",
+					"value": "http://localhost:8080",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "token",
+					"value": "fa9741b8f53a7f6dd425dd7b2f6587a0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "roomId",
+					"value": "58576a04e4b074a38921718d",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "rating",
+					"value": "100",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "client_language",
+					"value": "zh_CN",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "courseId",
+					"value": "74",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "lessonId",
+					"value": "45",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "subscriptionId",
+					"value": "241",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "subscriptionType",
+					"value": "0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "BOToken",
+					"value": "cd30b4e2ef18dca8b43bfc07a3ecb316",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userId",
+					"value": "7000095",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkF1rgzAUhv*LtxvNh8nsBr2QtoyuivtE8EYyE8OpM42aSuvYf58Ty26fh8P7vufbe4-eFsJakLlwud9K78HD3u2E1dlCq3JROtWOmHDOKcZX26u2g6MZBcWEE*pj-C9BKuOghOlQyBrMLDrQI4m3L*tdWJ-jONmd0sig5wplm*a1*hqaQbcMf6Bmf58ULJGK3phlCKGun2za34XoMcqy4YC2h3LfQYa00FZWkU2Dz4tG-WYZhKvVNUxW*bTtrz0b2xHKAjZLB7WaeMCxTyj2Zy6K4ngyLncXq6Zn-PwCyCBX0Q__",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400012474",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%260%26Bicycle%26false%261.0%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftId",
+					"value": "57d80fd16dde58e8c98fd5c0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "nickName",
+					"value": "DEV0000",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "combo",
+					"value": "2",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "mobilePhone",
+					"value": "18616762525",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "password",
+					"value": "Dujun1205",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userToUID",
+					"value": "7000025",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "17700000005",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userInBlackList",
+					"value": "7000006",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "refundDiamond",
+					"value": "0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "refundReason",
+					"value": "最近实在太忙了",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userBeBlocked",
+					"value": "7000280",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "csvPath",
+					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "channelId",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "silencedUserId",
+					"value": "7000095",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "votedId",
+					"value": "7000098",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"team": null,
+			"timestamp": 1482418137220
 		}
 	],
 	"headerPresets": [],
@@ -5093,7 +5381,7 @@
 		},
 		{
 			"key": "dueShowTime",
-			"value": "2016-12-20",
+			"value": "2016-12-24",
 			"type": "text",
 			"enabled": true
 		},
@@ -5111,7 +5399,7 @@
 		},
 		{
 			"key": "week_no",
-			"value": "2",
+			"value": "3",
 			"type": "text",
 			"enabled": true
 		},
