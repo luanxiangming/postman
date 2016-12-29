@@ -2101,13 +2101,15 @@
 						"fe1f7690-373e-b82c-7903-12049f270d33",
 						"a9dd502e-ed06-80a0-d9dc-ab352ac3408f",
 						"d192f186-304c-6cab-06f2-53a5a22e2e49",
+						"1e2eaa3d-a00a-74d8-349c-615b30006c74",
 						"9c9e5042-71f7-3f8f-01c9-d9a44ad8e142",
 						"97681cbe-e315-1fef-93fa-65bfde190a5e",
 						"da8522f6-d147-49ac-4abd-d126efd23211",
 						"8666408e-2d64-fa6a-6627-3e283203dac3",
 						"ccda1171-7a61-303b-9f4d-2c4ea2a4a381",
 						"b34e17c1-6dc5-0679-a49f-6c9a8c9f337e",
-						"ec0ff0e8-e50b-839b-f31a-d3512e1e3922"
+						"ec0ff0e8-e50b-839b-f31a-d3512e1e3922",
+						"dd0e01b5-a20c-82e3-8813-4946d24c1f00"
 					],
 					"createdAt": "2016-11-16T07:09:19.000Z",
 					"updatedAt": "2016-12-19T06:36:02.000Z",
@@ -2115,7 +2117,8 @@
 					"lastUpdatedBy": "981326",
 					"lastRevision": 858895410,
 					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"collection_id": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+					"collection_id": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
@@ -2173,7 +2176,7 @@
 					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"owner": "981326",
 					"collection_id": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "e441abd3-e74a-2727-af43-f1f45c77bc07",
@@ -2273,7 +2276,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1482906651693,
-			"updatedAt": 1482906675121,
+			"updatedAt": 1483006733493,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2397,13 +2400,11 @@
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1481080152285,
+					"time": 1483002714488,
 					"name": "QQ登录",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": [],
-					"owner": "981326",
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"responses": []
 				},
 				{
 					"id": "0de45901-7993-a2bb-689f-694cbac819a1",
@@ -2510,6 +2511,25 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
+				},
+				{
+					"id": "1e2eaa3d-a00a-74d8-349c-615b30006c74",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/users/systemBlockedList?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1483006765288,
+					"name": "封停列表",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
 				},
 				{
 					"id": "1e5c1e9a-c22f-0fcf-3e33-7aaf4389f8ef",
@@ -4386,6 +4406,27 @@
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
 				},
 				{
+					"id": "dd0e01b5-a20c-82e3-8813-4946d24c1f00",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/{{userId}}/finance?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "用户财务信息",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483006733441,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "dd6b5da1-c7a0-0557-6229-3df60d35d611",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/key/record/create?token={{token}}&roomId={{roomId}}",
@@ -4682,24 +4723,21 @@
 				{
 					"id": "fc24c7b3-d610-d155-6cab-37ad59ec1a54",
 					"headers": "",
-					"url": "{{host}}//vliveshow-api-app/v1/liveshow/{{roomId}}/detail_bypass",
-					"pathVariables": {},
+					"url": "{{host}}/vliveshow-api-app/v1/liveshow/{{roomId}}/detail_bypass",
 					"preRequestScript": null,
+					"pathVariables": {},
 					"method": "GET",
-					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"data": null,
 					"dataMode": "params",
-					"name": "直播间旁路",
-					"description": "",
-					"descriptionFormat": "html",
-					"time": 1482818584630,
 					"version": 2,
-					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
-					"owner": "981326"
+					"time": 1482998324705,
+					"name": "直播间旁路",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
 				},
 				{
 					"id": "fe1f7690-373e-b82c-7903-12049f270d33",
@@ -4972,6 +5010,252 @@
 			"timestamp": 1482906711353
 		},
 		{
+			"id": "0a063e04-bf21-20c3-122c-bc7ad56f88c6",
+			"name": "VLS PRD",
+			"values": [
+				{
+					"key": "host",
+					"value": "http://www.vliveshow.com",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "BOHost",
+					"value": "http://172.16.14.118:8080",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "token",
+					"value": "bc8a088da6ee9fbb0d0005a61963ffa7",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "roomId",
+					"value": "58639b7ed34ef74eb38f24b7",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "rating",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "client_language",
+					"value": "zh-hant",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "courseId",
+					"value": "47",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "lessonId",
+					"value": "62",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "BOToken",
+					"value": "533004ab8c51af9a275e947d99a90701",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userId",
+					"value": "6086948",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "usersig",
+					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "sdkappid",
+					"value": "1400011613",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "remark",
+					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "nickName",
+					"value": "新压力试播",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftType",
+					"value": "0",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "giftNum",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "combo",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "nationCode",
+					"value": "86",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "mobilePhone",
+					"value": "90000000000",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userToUID",
+					"value": "6000025",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "unregisteredPhone",
+					"value": "90000001005",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userInBlackList",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "refundDiamond",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "refundReason",
+					"value": "最近实在太忙了",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "userBeBlocked",
+					"value": "6086949",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "csvPath",
+					"value": "{{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "channelId",
+					"value": "4",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "silencedUserId",
+					"value": "7000095",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "votedId",
+					"value": "6000025",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"team": null,
+			"timestamp": 1483006267745
+		},
+		{
 			"id": "75693747-2d60-8456-04c3-aade18b70622",
 			"name": "VLS LOC",
 			"values": [
@@ -5215,7 +5499,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1482922508271
+			"timestamp": 1483006267754
 		},
 		{
 			"id": "b3ca353f-26bd-7df2-7f28-59ee81172349",
@@ -5397,253 +5681,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1482922508277
-		},
-		{
-			"id": "0a063e04-bf21-20c3-122c-bc7ad56f88c6",
-			"name": "VLS PRD",
-			"values": [
-				{
-					"key": "host",
-					"value": "http://www.vliveshow.com",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "BOHost",
-					"value": "http://172.16.14.118:8080",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "token",
-					"value": "0551cd51b65d0e48ba4f07ce2eb8ad59",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "roomId",
-					"value": "58639cdad34eea5198a90e41",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "rating",
-					"value": "3",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "client_language",
-					"value": "zh-hant",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "courseId",
-					"value": "47",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "lessonId",
-					"value": "62",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "subscriptionId",
-					"value": "145",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "subscriptionType",
-					"value": "1",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "BOToken",
-					"value": "533004ab8c51af9a275e947d99a90701",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "userId",
-					"value": "6101326",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "usersig",
-					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "sdkappid",
-					"value": "1400011613",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "giftId",
-					"value": "57f9aa576dde204d83048445",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "nickName",
-					"value": "新压力试播",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "giftType",
-					"value": "0",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "giftNum",
-					"value": "1",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "combo",
-					"value": "3",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "nationCode",
-					"value": "86",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "mobilePhone",
-					"value": "90000000000",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "password",
-					"value": "111111",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "userToUID",
-					"value": "6000025",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "unregisteredPhone",
-					"value": "90000001005",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "verificationCode",
-					"value": "111111",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "userInBlackList",
-					"value": "6000025",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "refundDiamond",
-					"value": "1",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "refundReason",
-					"value": "最近实在太忙了",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "userBeBlocked",
-					"value": "6086949",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "csvPath",
-					"value": "{{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "channelId",
-					"value": "4",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "silencedUserId",
-					"value": "7000095",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				},
-				{
-					"key": "votedId",
-					"value": "6000025",
-					"type": "text",
-					"enabled": true,
-					"warning": ""
-				}
-			],
-			"team": null,
-			"timestamp": 1482923264506
+			"timestamp": 1483006267759
 		}
 	],
 	"headerPresets": [],
