@@ -2109,7 +2109,14 @@
 						"ccda1171-7a61-303b-9f4d-2c4ea2a4a381",
 						"b34e17c1-6dc5-0679-a49f-6c9a8c9f337e",
 						"ec0ff0e8-e50b-839b-f31a-d3512e1e3922",
-						"dd0e01b5-a20c-82e3-8813-4946d24c1f00"
+						"dd0e01b5-a20c-82e3-8813-4946d24c1f00",
+						"b1fd27ac-8937-3bae-c13f-f1eacbe92838",
+						"c399aec3-2de0-7951-4acd-6354393ace03",
+						"1d496df8-712b-69f0-5053-9a66635495b9",
+						"e2bb0fd4-e001-eb1a-96b4-d71b33ea28cf",
+						"b9879908-91d0-a4f7-16f7-537adc5f106f",
+						"c07765b2-2020-96e0-217b-0f40c8150ba5",
+						"f855955e-2474-bc7a-648b-eb12db57c254"
 					],
 					"createdAt": "2016-11-16T07:09:19.000Z",
 					"updatedAt": "2016-12-19T06:36:02.000Z",
@@ -2140,18 +2147,29 @@
 						"8a5c18b0-dbd3-2fd3-e054-9effedefdf0e",
 						"bda5db2b-2b5e-5884-ecc5-8cab2c6375ec",
 						"ab834aa8-1e3b-d8b0-7a3e-fa7478d00f4e",
+						"94a2a026-3eeb-b93f-0765-a1d98c64b495",
 						"be1c04a3-b2ce-cd27-6926-9dab7c9d51c9",
 						"366200f8-7f71-2cd1-b9a7-8b102886aa7a",
+						"5e6fa3c6-b9f2-cd91-2433-497d91447028",
 						"765060b9-dbca-6aa3-245a-bb970582ce1c",
+						"998940f9-cba2-92e7-6114-d714a40cda32",
 						"76dd863d-45a7-788b-20cc-cfad38abd946",
+						"23e6c814-ad22-e672-d908-4bbc0f3bc778",
+						"7e66f963-78f9-ed69-817e-92c73584e78e",
+						"b6ca9eea-4001-2c55-601a-b297bf197530",
+						"5447df8c-84c5-7198-5048-ca3afb81bd12",
 						"f1c0f629-e06a-b9c8-03e8-beb35401d945",
 						"f2fa4260-6e5a-0782-8ea3-39fe416abd3c",
 						"0de45901-7993-a2bb-689f-694cbac819a1",
 						"572657c5-f00a-c4f5-1fa2-ae85450c6d4d",
+						"aa8cade1-a8e6-7f38-bd01-ce5fcf220898",
 						"c1e21d5d-3660-e6f9-b4e0-9ede1ea93274",
+						"61f67dfb-8b60-0139-5e35-3cb262cd6ca3",
+						"97451609-bf82-5f31-8a79-f99bab6c23b0",
 						"698add4a-2dab-66d8-7848-5ae0ce1d3790",
 						"fc24c7b3-d610-d155-6cab-37ad59ec1a54",
 						"e068cfad-e797-afdb-0422-4bab4e0f77df",
+						"9beda43d-d019-6ba6-ef46-082ca2770a7a",
 						"2868a962-c823-85ac-d302-7e1ee66b38c4",
 						"4beb2efa-5d1d-44ae-e553-5c8888865924",
 						"13f35236-3ec0-bbf6-f3df-cb33d63ca685",
@@ -2285,7 +2303,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1482906651693,
-			"updatedAt": 1483518224175,
+			"updatedAt": 1483607289886,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2294,6 +2312,7 @@
 			"requests": [
 				{
 					"id": "004feded-af27-06a3-b9a6-90c280c2df68",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -2303,17 +2322,19 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482740147049,
 					"name": "送礼物",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "00a5cff7-a5b0-4939-21d8-733fa8bbaf8d",
+					"owner": 0,
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/course/subscription?token={{token}}",
 					"preRequestScript": null,
@@ -2323,17 +2344,19 @@
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479716841587,
 					"name": "subscribeCourse",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
+					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "03d78616-04c2-6c5d-7d10-7cd0a9b2e4ec",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/get_group_info?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
@@ -2350,12 +2373,14 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "085d18ed-5419-f4c7-15fc-4df6b23e1dca",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/users/phone/sendmultisms?token={{BOToken}}",
 					"preRequestScript": null,
@@ -2366,17 +2391,19 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1480569746096,
 					"name": "短信群发",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "0b99d5bc-2af8-82a7-deab-a9e6fd8adce5",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/get_joined_group_list?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -2387,14 +2414,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481523743962,
 					"name": "用户所在群组",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "0cc8bea7-0c5a-9e57-53bd-511ed0eca6d0",
@@ -2438,6 +2466,7 @@
 				},
 				{
 					"id": "131370e8-7115-5fa8-e924-7ae354f3a2af",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/profile/portrait_set?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
@@ -2454,9 +2483,11 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"isLastRequest": true,
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "13f35236-3ec0-bbf6-f3df-cb33d63ca685",
@@ -2519,6 +2550,27 @@
 					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
 				},
 				{
+					"id": "1d496df8-712b-69f0-5053-9a66635495b9",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/follower/list?token={{BOToken}}&userId={{userId}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "粉丝列表cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483586291609,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "1e2eaa3d-a00a-74d8-349c-615b30006c74",
 					"headers": "",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/users/systemBlockedList?token={{BOToken}}",
@@ -2539,6 +2591,7 @@
 				},
 				{
 					"id": "1e5c1e9a-c22f-0fcf-3e33-7aaf4389f8ef",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/fans/apply",
 					"preRequestScript": null,
@@ -2548,17 +2601,19 @@
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481692119565,
 					"name": "亲友报名",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "1f200d8f-06f0-cea0-8627-d604b91ccb45",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/group_msg_get_simple?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
@@ -2575,12 +2630,14 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "2013ec6b-1700-a0b8-6881-6f77a783f42b",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openconfigsvr/getnospeaking?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -2591,17 +2648,40 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481706890823,
 					"name": "禁言查询",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "23e6c814-ad22-e672-d908-4bbc0f3bc778",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/iap/products?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "充值套餐",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483607128688,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "2868a962-c823-85ac-d302-7e1ee66b38c4",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
 					"preRequestScript": null,
@@ -2612,14 +2692,15 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479694834061,
 					"name": "进入房间Callback",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "2cfd989e-f4f9-829f-d223-741b5f3bb565",
@@ -2698,7 +2779,7 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"time": 1479878130705,
-					"name": "用户信息",
+					"name": "用户信息cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
@@ -2791,6 +2872,7 @@
 				},
 				{
 					"id": "455cc501-dacb-f74b-88f7-ff00a2dae9fc",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/apply",
 					"preRequestScript": null,
@@ -2800,14 +2882,15 @@
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482311205375,
 					"name": "妈妈报名",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "485b0a4a-8b03-7d3b-9ac6-1edd0b8a8311",
@@ -2911,17 +2994,19 @@
 						},
 						{
 							"key": "avatar",
-							"value": "",
+							"value": {
+								"0": {}
+							},
 							"type": "file",
-							"enabled": false
+							"enabled": true
 						}
 					],
 					"dataMode": "params",
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1482913658529,
-					"name": "修改用户信息",
+					"time": 1483591539267,
+					"name": "修改用户信息cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": []
@@ -2969,6 +3054,7 @@
 				},
 				{
 					"id": "51f2953d-7c19-7cc6-dfd6-20e5afb35fba",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/open_msg_svc/get_history?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -2979,14 +3065,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482116240774,
 					"name": "消息记录",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "52e32b2b-db47-abb1-3274-1125283d151b",
@@ -3011,6 +3098,7 @@
 				},
 				{
 					"id": "5354a76e-80f9-0670-c75f-7245b3054358",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim_dirty_words/add?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
@@ -3027,9 +3115,31 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "5447df8c-84c5-7198-5048-ca3afb81bd12",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/money/bank?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "银行卡信息",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483607289796,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "55acecbc-10c4-7d69-4a5c-e675bd380c93",
@@ -3075,6 +3185,7 @@
 				},
 				{
 					"id": "57d8e885-accf-7c5b-e884-247fa9ab2e7c",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim_dirty_words/delete?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3085,14 +3196,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482805696438,
 					"name": "删除脏字",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "59e38e78-0896-1779-1f87-6d0789a2872d",
@@ -3137,6 +3249,7 @@
 				},
 				{
 					"id": "5cad223a-6495-419c-453c-8988410d8d8c",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -3146,14 +3259,15 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481539207067,
 					"name": "禁言qcloud",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "5e3cb982-9f03-5187-156b-adcc7a169bb4",
@@ -3177,24 +3291,48 @@
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
 				},
 				{
+					"id": "5e6fa3c6-b9f2-cd91-2433-497d91447028",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/search?token={{token}}&keyword={{userId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "搜索用户cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483584252718,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "5ed128ce-e14b-112a-a83f-82784074e12e",
+					"owner": "981326",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/phone/password_reset_then_login?nationCode={{nationCode}}&mobilePhone={{mobilePhone}}&verificationCode={{verificationCode}}&newPwd={{password}}&language={{client_language}}",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "",
+					"data": [],
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1480672185921,
 					"name": "重置密码",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"rawModeData": "",
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "5f3bc2d5-cb92-8342-cd90-f9ada29af1fc",
@@ -3217,6 +3355,24 @@
 					"helperAttributes": {},
 					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
 					"owner": "981326"
+				},
+				{
+					"id": "61f67dfb-8b60-0139-5e35-3cb262cd6ca3",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/host/skills?token={{token}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1483527035355,
+					"name": "技能列表",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
 				},
 				{
 					"id": "620083ba-0946-dd9f-34a3-d36a340f7d1e",
@@ -3242,6 +3398,7 @@
 				},
 				{
 					"id": "6244644c-4759-157e-9708-6d62172d124b",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/search_group?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3252,14 +3409,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481535836545,
 					"name": "搜索群组",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "65438403-8ee9-6c42-6a41-5efa9b9ed90d",
@@ -3296,7 +3454,7 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"time": 1479890050736,
-					"name": "用户基本信息",
+					"name": "用户基本信息cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
@@ -3576,6 +3734,27 @@
 					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
 				},
 				{
+					"id": "7e66f963-78f9-ed69-817e-92c73584e78e",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/money/payment/list?token={{token}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "充值记录",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483606481854,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "826c5653-21a8-906a-ad29-0d89f6d1ef62",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/liveshow/create",
@@ -3655,13 +3834,14 @@
 				},
 				{
 					"id": "8666408e-2d64-fa6a-6627-3e283203dac3",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course/{{courseId}}?token={{BOToken}}",
 					"pathVariables": {},
 					"preRequestScript": null,
 					"method": "DELETE",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"data": "",
+					"data": [],
 					"dataMode": "raw",
 					"name": "删除课程",
 					"description": "",
@@ -3671,9 +3851,11 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
-					"owner": "981326"
+					"timestamp": null,
+					"rawModeData": "",
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "86d60da9-d853-cfe9-18ab-875f0df62f4e",
@@ -3781,6 +3963,7 @@
 				},
 				{
 					"id": "8fc35720-4294-e7be-62b2-8c15acf42024",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterMemberExit&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
 					"preRequestScript": null,
@@ -3791,14 +3974,15 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479466778997,
 					"name": "退出房间Callback",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "93b6cba6-4f48-199c-ef88-6fd50ef9e455",
@@ -3843,7 +4027,29 @@
 					"owner": "981326"
 				},
 				{
+					"id": "94a2a026-3eeb-b93f-0765-a1d98c64b495",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/hosts/recommended/list?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "推荐主播列表cdn",
+					"description": "随机8条记录",
+					"descriptionFormat": "html",
+					"time": 1483593173754,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "9635c356-a993-5a23-8955-b0d5c6845203",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3854,17 +4060,19 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479865721682,
 					"name": "进入房间",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "96ab337f-64a6-f226-74f9-8cf379d705d6",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -3875,14 +4083,36 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482218782002,
 					"name": "点赞",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "97451609-bf82-5f31-8a79-f99bab6c23b0",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/user/skills?token={{token}}&pageSize={{pageSize}}&pageNum={{pageNum}}&client_language={{client_language}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "用户技能",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483588228014,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "97681cbe-e315-1fef-93fa-65bfde190a5e",
@@ -3907,6 +4137,7 @@
 				},
 				{
 					"id": "982d787f-ee4b-9d3c-4e8c-62c7bcd83579",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/get_group_member_info?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3917,17 +4148,40 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481514924965,
 					"name": "群组成员",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "998940f9-cba2-92e7-6114-d714a40cda32",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/related/list?token={{token}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "用户相关cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483592874471,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "99e80aa7-366d-85ba-f9c3-32eb18d95d38",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/get_appid_group_list?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3938,17 +4192,19 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481528805763,
 					"name": "群组列表",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "9ae55acc-2da1-c40b-ef5b-58a1f34d4e52",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openconfigsvr/getappinfo?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -3958,14 +4214,15 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481522829933,
 					"name": "运营数据",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "9bbf75df-d82f-d5e5-dfd9-48294f5b3813",
@@ -4007,6 +4264,27 @@
 					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
+					"id": "9beda43d-d019-6ba6-ef46-082ca2770a7a",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/users/search/guest/invite?token={{token}}&keyword={{userId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "搜索嘉宾cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483586965150,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "9c9e5042-71f7-3f8f-01c9-d9a44ad8e142",
 					"headers": "",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/list?token={{BOToken}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
@@ -4029,6 +4307,7 @@
 				},
 				{
 					"id": "9d27f624-ddd1-e4cf-8402-5608c399b1b6",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/send_group_msg?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -4039,14 +4318,15 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.ActionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479865743203,
 					"name": "发送消息",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "a7083692-8964-610d-aa4d-3fe401f268e0",
@@ -4071,13 +4351,14 @@
 				},
 				{
 					"id": "a70da88d-9dae-1b4f-3998-0dd209afb212",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim_dirty_words/get?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
 					"preRequestScript": null,
 					"method": "POST",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"data": "{\n\t\"a\" : \"\",\n\t\"b\" : \"\"\n}",
+					"data": "{\n  \"a\" : \"\",\n  \"b\" : \"\"\n}",
 					"dataMode": "raw",
 					"name": "脏字查询",
 					"description": "",
@@ -4087,9 +4368,14 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 907290385,
+					"createdAt": "2016-12-28T06:34:20.000Z",
+					"updatedAt": "2017-01-05T03:50:44.000Z"
 				},
 				{
 					"id": "a941afe1-efa5-439c-f099-d945b2b2630f",
@@ -4113,6 +4399,7 @@
 				},
 				{
 					"id": "a9dd502e-ed06-80a0-d9dc-ab352ac3408f",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/block?token={{BOToken}}",
 					"preRequestScript": null,
@@ -4122,14 +4409,36 @@
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1480490676505,
 					"name": "封停",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "aa8cade1-a8e6-7f38-bd01-ce5fcf220898",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/host/application?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "主播申请详情cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483587749833,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "ab834aa8-1e3b-d8b0-7a3e-fa7478d00f4e",
@@ -4152,6 +4461,7 @@
 				},
 				{
 					"id": "b085cee2-3d3a-cb8e-619e-2f20c625024f",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim/querystate?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -4161,14 +4471,36 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481527792836,
 					"name": "用户在线状态",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "b1fd27ac-8937-3bae-c13f-f1eacbe92838",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/detail?token={{BOToken}}&userId={{userId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "用户详细资料cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483584478026,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "b2c9a744-da94-0915-c61a-cbf24ae4d8d0",
@@ -4193,6 +4525,7 @@
 				},
 				{
 					"id": "b34e17c1-6dc5-0679-a49f-6c9a8c9f337e",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/?token={{BOToken}}",
 					"preRequestScript": null,
@@ -4202,14 +4535,36 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1482388474723,
 					"name": "插入广告",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "b6ca9eea-4001-2c55-601a-b297bf197530",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/money/payment/details?token={{token}}&id={{rechargeId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "充值详情",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483606931075,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "b8e86c2c-7921-d394-4411-2b45cd2e96ed",
@@ -4245,7 +4600,7 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"time": 1479959491033,
-					"name": "用户头像",
+					"name": "用户头像cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
@@ -4272,6 +4627,27 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "b9879908-91d0-a4f7-16f7-537adc5f106f",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course/subscription/info?token={{BOToken}}&courseId={{courseId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "课程共售出",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483595218898,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "bda5db2b-2b5e-5884-ecc5-8cab2c6375ec",
@@ -4315,6 +4691,27 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "c07765b2-2020-96e0-217b-0f40c8150ba5",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course/subscription/info?token={{BOToken}}&courseId={{courseId}}&flag=2",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "课程已退课",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483595309113,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "c1e21d5d-3660-e6f9-b4e0-9ede1ea93274",
@@ -4369,6 +4766,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
+					"id": "c399aec3-2de0-7951-4acd-6354393ace03",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/following/list?token={{BOToken}}&userId={{userId}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "关注列表cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483585008469,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "c525fda9-9706-afce-f97a-b609920f2cf8",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/extension/get?token={{token}}",
@@ -4413,6 +4831,7 @@
 				},
 				{
 					"id": "d192f186-304c-6cab-06f2-53a5a22e2e49",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/unlock?token={{BOToken}}",
 					"preRequestScript": null,
@@ -4423,17 +4842,19 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1480490687290,
 					"name": "解封",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "d3c8abfb-94b0-26a4-d07c-aaf53e7f782c",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/create_group?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"pathVariables": {},
@@ -4450,14 +4871,15 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "d4f081c0-af9d-552b-d483-15dc90ed93cf",
 					"headers": "",
-					"url": "{{host}}/vliveshow-api-app/v1/key/record/createslave?token={{token}}&slaveId=700043&roomId={{roomId}}",
+					"url": "{{host}}/vliveshow-api-app/v1/key/record/createslave?token={{token}}&slaveId={{userId}}&roomId={{roomId}}",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
@@ -4466,16 +4888,15 @@
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1482822049316,
+					"time": 1483607580442,
 					"name": "SLAVE KEY",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": [],
-					"owner": "981326",
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"responses": []
 				},
 				{
 					"id": "d82f1742-87ce-6e76-89fe-12239fc312b5",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/liveshow/forbidSendMsg?token={{token}}",
 					"preRequestScript": null,
@@ -4485,17 +4906,19 @@
 					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481272530850,
 					"name": "禁言",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "da8522f6-d147-49ac-4abd-d126efd23211",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course?token={{BOToken}}",
 					"pathVariables": {},
@@ -4512,12 +4935,14 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
-					"owner": "981326"
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "db59197a-c707-ccaa-5363-55f4e87fa7a5",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/group_open_http_svc/destroy_group?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -4528,14 +4953,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481529125660,
 					"name": "解散群组",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0"
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "dd0e01b5-a20c-82e3-8813-4946d24c1f00",
@@ -4599,6 +5025,7 @@
 				},
 				{
 					"id": "e043793f-8d3a-5af4-ca51-907895012663",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/host/mark?token={{token}}",
 					"preRequestScript": null,
@@ -4609,14 +5036,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1481606199008,
 					"name": "结果录入",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "e068cfad-e797-afdb-0422-4bab4e0f77df",
@@ -4632,7 +5060,7 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"time": 1479456468348,
-					"name": "房间观众",
+					"name": "房间观众cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
@@ -4682,6 +5110,27 @@
 					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
 				},
 				{
+					"id": "e2bb0fd4-e001-eb1a-96b4-d71b33ea28cf",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/host/application/{{applicationId}}?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "主播申请详情cdn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483592034715,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "e53ab8d4-2a9c-52cb-b6c9-59fb7c92cd10",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/tencent/signature?token={{token}}",
@@ -4704,6 +5153,7 @@
 				},
 				{
 					"id": "e570d0a6-dff3-b6fd-5380-9c9f3be363b5",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/course/lesson/rating?token={{token}}",
 					"preRequestScript": null,
@@ -4714,14 +5164,15 @@
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Success is true\"] = jsonData.success === true;",
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1479442569600,
 					"name": "rating",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": [],
-					"owner": "981326",
-					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
+					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "e5c4b032-adb7-ef81-cb6e-b4c0ff9c8b96",
@@ -4796,7 +5247,7 @@
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"data": null,
 					"dataMode": "params",
-					"name": "V票排行榜",
+					"name": "V票排行榜cdn",
 					"description": "",
 					"descriptionFormat": "html",
 					"time": 1483517348455,
@@ -4848,6 +5299,27 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
+				},
+				{
+					"id": "f855955e-2474-bc7a-648b-eb12db57c254",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/course/subscription/info?token={{BOToken}}&courseId={{courseId}}&flag=1",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "课程实际售出",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1483595398357,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "f9b91079-fed7-a58d-17ed-55f5f3c7cb6d",
@@ -4926,7 +5398,7 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"time": 1482998324705,
-					"name": "直播间旁路",
+					"name": "直播间旁路cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": []
@@ -4975,7 +5447,7 @@
 				},
 				{
 					"key": "token",
-					"value": "d1b2f60e6a55bddc8c23ef360d52be65",
+					"value": "3e7d39f8d7fc9668c271589919d42e7d",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -5003,7 +5475,7 @@
 				},
 				{
 					"key": "courseId",
-					"value": "74",
+					"value": "124",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -5150,7 +5622,7 @@
 				},
 				{
 					"key": "refundDiamond",
-					"value": "0",
+					"value": "10",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -5202,10 +5674,16 @@
 					"value": "7000201",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "rechargeId",
+					"value": "1420",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1483517300952
+			"timestamp": 1483607589785
 		},
 		{
 			"id": "0a063e04-bf21-20c3-122c-bc7ad56f88c6",
@@ -5451,7 +5929,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1483522865742
+			"timestamp": 1483608496114
 		},
 		{
 			"id": "75693747-2d60-8456-04c3-aade18b70622",
@@ -5697,7 +6175,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1483522865754
+			"timestamp": 1483608496125
 		},
 		{
 			"id": "b3ca353f-26bd-7df2-7f28-59ee81172349",
@@ -5711,13 +6189,13 @@
 				},
 				{
 					"key": "token",
-					"value": "c482aef0a4e5d0a3d78ba66897b7d9a7",
+					"value": "5468d87c0e5347d8972826d4d19c7fc1",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "5860d17ad34e19c0e8f52717",
+					"value": "586dfdf7d34ec666cc88e197",
 					"type": "text",
 					"enabled": true
 				},
@@ -5783,7 +6261,7 @@
 				},
 				{
 					"key": "giftId",
-					"value": "57f9aa576dde204d83048445",
+					"value": "5845597de4b0d1dd1bcfecd3",
 					"type": "text",
 					"enabled": true
 				},
@@ -5819,13 +6297,13 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "18616762525",
+					"value": "90000000000",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "password",
-					"value": "Dujun1205",
+					"value": "111111",
 					"type": "text",
 					"enabled": true
 				},
@@ -5879,7 +6357,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1483522865759
+			"timestamp": 1483608496130
 		}
 	],
 	"headerPresets": [],
@@ -6007,6 +6485,12 @@
 		{
 			"key": "client",
 			"value": "Windows",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "applicationId",
+			"value": "586dc050e4b0bca7d8a98414",
 			"type": "text",
 			"enabled": true
 		}
