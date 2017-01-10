@@ -2118,7 +2118,19 @@
 						"c07765b2-2020-96e0-217b-0f40c8150ba5",
 						"f855955e-2474-bc7a-648b-eb12db57c254",
 						"d02f7235-930d-83d4-afda-52ce68b9a83e",
-						"c1b9910c-6a2d-f0aa-a8df-3847842f6311"
+						"c1b9910c-6a2d-f0aa-a8df-3847842f6311",
+						"842b0885-24f0-e1ea-0ac5-a4aa9b73991d",
+						"683ce750-8ed5-15ce-036e-8ab21eef08c5",
+						"3308f51c-5089-3f62-835d-08af38b45f33",
+						"26b24802-354e-c049-01f5-da71586249f1",
+						"35ed6190-4daa-b0ac-baab-d54ae1ebaaf8",
+						"d4d4cf6f-ef23-197f-5dfd-04a2307be3dc",
+						"eaf43c24-fcee-de33-9131-1b93ac099010",
+						"91e36e43-1627-4530-be42-dfb81f68da89",
+						"61320d06-bb32-c8c0-944f-371f450093a8",
+						"c1658ce4-7894-6e37-96b5-0194e8c5937d",
+						"bab711ef-f964-121e-df80-1a57ae778a50",
+						"30a510d0-5739-ba7e-e18d-27d44dae5281"
 					],
 					"createdAt": "2016-11-16T07:09:19.000Z",
 					"updatedAt": "2016-12-19T06:36:02.000Z",
@@ -2167,7 +2179,9 @@
 						"f2fa4260-6e5a-0782-8ea3-39fe416abd3c",
 						"0de45901-7993-a2bb-689f-694cbac819a1",
 						"572657c5-f00a-c4f5-1fa2-ae85450c6d4d",
+						"d741d4bf-ff56-de04-9ae1-ece295cf5284",
 						"aa8cade1-a8e6-7f38-bd01-ce5fcf220898",
+						"5503dde5-4b40-e901-cc5c-0f7ef0a2ad18",
 						"c1e21d5d-3660-e6f9-b4e0-9ede1ea93274",
 						"61f67dfb-8b60-0139-5e35-3cb262cd6ca3",
 						"97451609-bf82-5f31-8a79-f99bab6c23b0",
@@ -2206,8 +2220,10 @@
 						"dd6b5da1-c7a0-0557-6229-3df60d35d611",
 						"d4f081c0-af9d-552b-d483-15dc90ed93cf",
 						"5216e142-61f8-9d41-3a8f-20771ec14cb0",
+						"55fac37b-e8bd-e898-b92b-6ad886a8f6bc",
 						"70ac9578-dc19-bc74-b4a1-37e423e636d4",
-						"55914d6f-c609-0fdc-dcad-8b2939abb37b"
+						"55914d6f-c609-0fdc-dcad-8b2939abb37b",
+						"b1b46831-7090-4a84-ffb8-0bd220883459"
 					],
 					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"owner": "981326",
@@ -2319,7 +2335,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1482906651693,
-			"updatedAt": 1483953888256,
+			"updatedAt": 1484039651557,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2350,7 +2366,7 @@
 				},
 				{
 					"id": "00a5cff7-a5b0-4939-21d8-733fa8bbaf8d",
-					"owner": 0,
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/course/subscription?token={{token}}",
 					"preRequestScript": null,
@@ -2396,6 +2412,7 @@
 				},
 				{
 					"id": "0578e546-1bf3-3d14-9c1b-4b1754861782",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/openim/im_push?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
 					"preRequestScript": null,
@@ -2405,12 +2422,15 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483948386476,
 					"name": "推送系统消息",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "085d18ed-5419-f4c7-15fc-4df6b23e1dca",
@@ -2500,6 +2520,7 @@
 				},
 				{
 					"id": "131370e8-7115-5fa8-e924-7ae354f3a2af",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{IMhost}}/v4/profile/portrait_set?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
 					"preRequestScript": null,
@@ -2510,12 +2531,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483668081310,
 					"name": "设置资料",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "18a0bf2b-48d0-7a8e-5727-75a0b0797ac0",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "13f35236-3ec0-bbf6-f3df-cb33d63ca685",
@@ -2665,6 +2689,7 @@
 				},
 				{
 					"id": "1f370b81-6fd0-2403-65a6-9aa8bd99fe56",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/users/message/all/send?token={{token}}",
 					"preRequestScript": null,
@@ -2674,12 +2699,15 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483948457693,
 					"name": "推送系统消息",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "2013ec6b-1700-a0b8-6881-6f77a783f42b",
@@ -2724,6 +2752,28 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "26b24802-354e-c049-01f5-da71586249f1",
+					"owner": "981326",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/livePlayback?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"channelId\": [1,2,3],\n\t\"priority\": {{priority}},\n\t\"title\":\"{{roomTitle}}\",\n\t\"detailTitle\":\"{{roomTitle}}\",\n\t\"custom\":\"xxxxxx\",\n\t\"outerUrl\":\"{{defaultURL}}\",\n\t\"coverUrl\":\"{{cover}}\",\n\t\"isDisabled\":true,\n\t\"isDeleted\":false,\n\t\"duration\":\"1:20:20\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"time": 1484029615482,
+					"name": "添加回放",
+					"description": "类型ID\n优先位\n正标题\n副标题\n自定义文案\n回放链接\n封面图片URL\n是否可用\n是否删除\n时长",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "2868a962-c823-85ac-d302-7e1ee66b38c4",
@@ -2791,6 +2841,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
+					"id": "30a510d0-5739-ba7e-e18d-27d44dae5281",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen?token={{BOToken}}&id={{coopenId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "DELETE",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "开屏广告删除",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484039488128,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "325f5fdb-4a73-68af-3c57-23072844f429",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/mamashow/mama/youduoduo?token={{token}}",
@@ -2810,6 +2881,27 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+				},
+				{
+					"id": "3308f51c-5089-3f62-835d-08af38b45f33",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/livePlayback/all?token={{BOToken}}&channelId=&title=",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "查询回放",
+					"description": "channelId和Title不传就查全部 ",
+					"descriptionFormat": "html",
+					"time": 1484028636556,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "345ca58f-8309-e1f5-bad0-8ed928c0e494",
@@ -2852,6 +2944,28 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "35ed6190-4daa-b0ac-baab-d54ae1ebaaf8",
+					"owner": "981326",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/livePlayback?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "PUT",
+					"data": "{\n\t\"id\": \"{{playbackId}}\",\n\t\"channelId\": [1,2],\n\t\"priority\": {{priority}},\n\t\"title\":\"{{roomTitle}}\",\n\t\"detailTitle\":\"{{roomTitle}}\",\n\t\"custom\":\"xxxxxx\",\n\t\"outerUrl\":\"{{defaultURL}}\",\n\t\"coverUrl\":\"{{cover}}\",\n\t\"isDisabled\":true,\n\t\"isDeleted\":false,\n\t\"duration\":\"1:20:20\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"time": 1484031259022,
+					"name": "修改回放",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "366200f8-7f71-2cd1-b9a7-8b102886aa7a",
@@ -3044,6 +3158,7 @@
 				},
 				{
 					"id": "4dff6133-137a-89a8-f00b-ce04dbca75a5",
+					"owner": "981326",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/users/profile/base",
 					"preRequestScript": null,
@@ -3092,12 +3207,15 @@
 					"dataMode": "params",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483669759222,
 					"name": "修改用户信息cdn",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "4fa30d10-2eba-f09e-d36f-f79b2ad24089",
@@ -3251,6 +3369,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
+					"id": "5503dde5-4b40-e901-cc5c-0f7ef0a2ad18",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/host/application/{{applicationId}}/confirm?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "主播申请确认",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484013487072,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "55914d6f-c609-0fdc-dcad-8b2939abb37b",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/splash/screen",
@@ -3291,6 +3430,25 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
+				},
+				{
+					"id": "55fac37b-e8bd-e898-b92b-6ad886a8f6bc",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/channel/{{channelId}}/detail?token={{token}}&client_language={{client_language}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1484015776353,
+					"name": "频道详情",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
 				},
 				{
 					"id": "572657c5-f00a-c4f5-1fa2-ae85450c6d4d",
@@ -3508,6 +3666,27 @@
 					"owner": "981326"
 				},
 				{
+					"id": "61320d06-bb32-c8c0-944f-371f450093a8",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen?token={{BOToken}}&id={{coopenId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "开屏广告查询",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484039226241,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "61f67dfb-8b60-0139-5e35-3cb262cd6ca3",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/host/skills?token={{token}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
@@ -3590,6 +3769,24 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "683ce750-8ed5-15ce-036e-8ab21eef08c5",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace/all?token={{BOToken}}&channelId",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1484029394579,
+					"name": "查询banner",
+					"description": "channelId不传查全部",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
 				},
 				{
 					"id": "68888eae-1d27-d415-4816-476393bf6d1d",
@@ -4002,6 +4199,29 @@
 					"folder": "e441abd3-e74a-2727-af43-f1f45c77bc07"
 				},
 				{
+					"id": "842b0885-24f0-e1ea-0ac5-a4aa9b73991d",
+					"owner": "981326",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveadspace?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"channelId\": [1,2,3],\n\t\"position\": 1,\n\t\"avatarUrl\": \"{{avatarURL}}\",\n\t\"title\":\"{{roomTitle}}\",\n\t\"detailTitle\":\"{{roomTitle}}\",\n\t\"custom\":\"xxxxxx\",\n\t\"outerUrl\":\"{{defaultURL}}\",\n\t\"coverUrl\":\"{{cover}}\",\n\t\"isDisabled\":true,\n\t\"isDeleted\":false\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"time": 1484029590053,
+					"name": "添加banner",
+					"description": "类型ID\n广告位\n头像URL\n正标题\n副标题\n自定义文案\n广告链接URL\n广告封面URL\n是否可用\n是否删除",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
 					"id": "85e210fb-0d65-6542-e05e-59610032e7d1",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/course/lessons?token={{token}}&courseId={{courseId}}",
@@ -4173,6 +4393,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
 					"timestamp": null,
 					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
+					"id": "91e36e43-1627-4530-be42-dfb81f68da89",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen/all?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "开屏广告列表",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484039072131,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "93b6cba6-4f48-199c-ef88-6fd50ef9e455",
@@ -4520,6 +4761,7 @@
 				},
 				{
 					"id": "9e571126-43c4-e3fd-af9b-b1a117497e35",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-api-app/v1/users/extension/save?token={{token}}",
 					"pathVariables": {},
@@ -4536,8 +4778,10 @@
 					"responses": [],
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+					"helperAttributes": "{}",
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "9fda4247-d117-2f49-9df5-6288dea687c4",
@@ -4714,6 +4958,27 @@
 					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
+					"id": "b1b46831-7090-4a84-ffb8-0bd220883459",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/host/topics?token={{token}}&client_language={{client_language}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "主播标签",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484012920795,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
 					"id": "b1fd27ac-8937-3bae-c13f-f1eacbe92838",
 					"headers": "",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/detail?token={{BOToken}}&userId={{userId}}",
@@ -4880,6 +5145,28 @@
 					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
+					"id": "bab711ef-f964-121e-df80-1a57ae778a50",
+					"owner": "981326",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "PUT",
+					"data": "{\n\t\"id\": \"\",\n\t\"title\":\"xxxxxxxxxxxx\",\n\t\"coopenImage\":[\n\t\t{\n\t\t\t\"imgUrl\":\"http://dev.vliveshow.com/M00/00/2A/rBAEiVhuDY6ANMvfAAMfFtdIHcY695.png\",\n\t\t\t\"resolutionRatio\":\"640*784\"\n\t\t}\n\t],\n\t\"coopenOuterUrl\":\"xxxx\",\n\t\"startValidTime\":\"\",\n\t\"endValidTime\":\"\",\n\t\"isDisabled\":false,\n\t\"isDeleted\":false\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": "{}",
+					"time": 1484039440663,
+					"name": "开屏广告修改",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+				},
+				{
 					"id": "bda5db2b-2b5e-5884-ecc5-8cab2c6375ec",
 					"headers": "",
 					"url": "{{host}}//vliveshow-api-app/v1/liveshow/followed/list?token={{token}}&pageNo={{pageNum}}&pageSize={{pageSize}}",
@@ -4944,7 +5231,26 @@
 					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
+					"id": "c1658ce4-7894-6e37-96b5-0194e8c5937d",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen?token={{BOToken}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"title\":\"{{roomTitle}}\",\n\t\"coopenImage\":[\n\t\t{\n\t\t\t\"imgUrl\":\"{{cover}}\",\n\t\t\t\"resolutionRatio\":\"640*784\"\n\t\t}\n\t],\n\t\"coopenOuterUrl\":\"{{defaultURL}}\",\n\t\"startValidTime\":\"\",\n\t\"endValidTime\":\"\",\n\t\"isDisabled\":false,\n\t\"isDeleted\":false\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1484039747325,
+					"name": "开屏广告添加",
+					"description": "",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"responses": []
+				},
+				{
 					"id": "c1b9910c-6a2d-f0aa-a8df-3847842f6311",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/list?token={{BOToken}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
 					"preRequestScript": null,
@@ -4954,12 +5260,15 @@
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483688563050,
 					"name": "用户管理查询",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "c1e21d5d-3660-e6f9-b4e0-9ede1ea93274",
@@ -5079,6 +5388,7 @@
 				},
 				{
 					"id": "d02f7235-930d-83d4-afda-52ce68b9a83e",
+					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/role/set?token={{BOToken}}&userId={{userId}}",
 					"preRequestScript": null,
@@ -5089,12 +5399,15 @@
 					"version": 2,
 					"tests": null,
 					"currentHelper": "normal",
-					"helperAttributes": {},
+					"helperAttributes": "{}",
 					"time": 1483674456915,
 					"name": "权限设置",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": []
+					"responses": [],
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
+					"timestamp": null,
+					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
 				},
 				{
 					"id": "d192f186-304c-6cab-06f2-53a5a22e2e49",
@@ -5165,6 +5478,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
+					"id": "d4d4cf6f-ef23-197f-5dfd-04a2307be3dc",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/livePlayback?token={{BOToken}}&id={{playbackId}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "DELETE",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "删除回放",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484030414616,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "d4f081c0-af9d-552b-d483-15dc90ed93cf",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/key/record/createslave?token={{token}}&slaveId={{userId}}&roomId={{roomId}}",
@@ -5181,6 +5515,27 @@
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 					"responses": []
+				},
+				{
+					"id": "d741d4bf-ff56-de04-9ae1-ece295cf5284",
+					"headers": "",
+					"url": "{{host}}/vliveshow-api-app/v1/host/application/status?token={{token}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "主播申请状态",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484013261901,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
 					"id": "d82f1742-87ce-6e76-89fe-12239fc312b5",
@@ -5500,6 +5855,27 @@
 					"currentHelper": "normal",
 					"helperAttributes": {},
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+				},
+				{
+					"id": "eaf43c24-fcee-de33-9131-1b93ac099010",
+					"headers": "",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/channel/info?token={{BOToken}}&client_language={{client_language}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": null,
+					"dataMode": "params",
+					"name": "频道信息",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484038262677,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "ec0ff0e8-e50b-839b-f31a-d3512e1e3922",
@@ -6008,10 +6384,16 @@
 					"value": "1420",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "avatarURL",
+					"value": "http://asset-dev.vliveshow.com/M00/00/2A/rBAEiVhtxwCATo6eAAAKfeRIIoY320.png",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1483949308991
+			"timestamp": 1484029014968
 		},
 		{
 			"id": "0a063e04-bf21-20c3-122c-bc7ad56f88c6",
@@ -6260,10 +6642,16 @@
 					"value": "25187",
 					"type": "text",
 					"enabled": true
+				},
+				{
+					"key": "avatarURL",
+					"value": "http://asset.vliveshow.com/M00/05/41/rBAOgFhkw1qALdz2AAAKfeRIIoY177.png",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1483957638960
+			"timestamp": 1484044008202
 		},
 		{
 			"id": "75693747-2d60-8456-04c3-aade18b70622",
@@ -6509,7 +6897,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1483957638989
+			"timestamp": 1484044008207
 		},
 		{
 			"id": "b3ca353f-26bd-7df2-7f28-59ee81172349",
@@ -6691,7 +7079,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1483957638996
+			"timestamp": 1484044008214
 		}
 	],
 	"headerPresets": [],
@@ -6752,7 +7140,7 @@
 		},
 		{
 			"key": "cover",
-			"value": "clipmicroMsg.1474533230779.jpg",
+			"value": "http://source.vipabc.com/Ext/images/website/share/logo/logo.png",
 			"type": "text",
 			"enabled": true
 		},
@@ -6825,6 +7213,24 @@
 		{
 			"key": "applicationId",
 			"value": "586dc050e4b0bca7d8a98414",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "defaultURL",
+			"value": "http://www.vliveshow.com",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "playbackId",
+			"value": "58747ff9e4b06394af8ec631",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "coopenId",
+			"value": "5874a84ee4b018c12bc30b97",
 			"type": "text",
 			"enabled": true
 		}
