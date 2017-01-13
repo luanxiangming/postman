@@ -48,7 +48,8 @@
 				"c1658ce4-7894-6e37-96b5-0194e8c5937d",
 				"bab711ef-f964-121e-df80-1a57ae778a50",
 				"30a510d0-5739-ba7e-e18d-27d44dae5281",
-				"828c3318-f6eb-1bf3-c1b4-55810831a495"
+				"828c3318-f6eb-1bf3-c1b4-55810831a495",
+				"99e9d83a-1d5d-0ba7-02b3-36c3aad77e1f"
 			],
 			"owner": "981326",
 			"lastUpdatedBy": "981326",
@@ -110,6 +111,7 @@
 				"e5c4b032-adb7-ef81-cb6e-b4c0ff9c8b96",
 				"8fc35720-4294-e7be-62b2-8c15acf42024",
 				"345ca58f-8309-e1f5-bad0-8ed928c0e494",
+				"ba2c03b8-f54d-cfeb-a9d4-21a97eb6b04a",
 				"4daacd0b-5cfa-0921-f8f9-2678b56e0cc4",
 				"485b0a4a-8b03-7d3b-9ac6-1edd0b8a8311",
 				"34fd045c-d0b8-3797-c4e2-93026d647432",
@@ -769,12 +771,11 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1480066931765,
+			"time": 1484292903032,
 			"name": "手机登录",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-			"responses": [],
-			"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+			"responses": []
 		},
 		{
 			"id": "2e8abe83-678d-563f-d858-9967aa23e88e",
@@ -1856,7 +1857,7 @@
 		{
 			"id": "72dbe4ba-da4e-ebce-59a8-5af2cd982e2f",
 			"headers": "",
-			"url": "{{host}}/vliveshow-api-app//v1/users/blacklist/list?pageNum={{pageNum}}&pageSize={{pageSize}}&token={{token}}",
+			"url": "{{host}}/vliveshow-api-app/v1/users/blacklist/list?pageNum={{pageNum}}&pageSize={{pageSize}}&token={{token}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "GET",
@@ -1865,12 +1866,11 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1479878589843,
+			"time": 1484293546156,
 			"name": "黑名单",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-			"responses": [],
-			"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+			"responses": []
 		},
 		{
 			"id": "73d76b20-dc9c-c704-5d67-9ee8995a8314",
@@ -2546,6 +2546,24 @@
 			"rawModeData": "{\n\t\"a\" : \"\",\n\t\"b\" : \"\"\n}"
 		},
 		{
+			"id": "99e9d83a-1d5d-0ba7-02b3-36c3aad77e1f",
+			"headers": "",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=10&userIds=80000727",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484274650518,
+			"name": "手动送钻",
+			"description": "",
+			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+			"responses": []
+		},
+		{
 			"id": "9ae55acc-2da1-c40b-ef5b-58a1f34d4e52",
 			"headers": "Content-Type: application/json\n",
 			"url": "{{IMhost}}/v4/openconfigsvr/getappinfo?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json",
@@ -3059,6 +3077,27 @@
 			"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 		},
 		{
+			"id": "ba2c03b8-f54d-cfeb-a9d4-21a97eb6b04a",
+			"headers": "",
+			"url": "{{host}}/vliveshow-api-app/v1/liveshow/{{roomId}}/destroy?token={{token}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+			"data": null,
+			"dataMode": "params",
+			"name": "销毁直播间",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1484293710901,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+		},
+		{
 			"id": "bab711ef-f964-121e-df80-1a57ae778a50",
 			"headers": "Content-Type: application/json\n",
 			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/liveCoopen?token={{BOToken}}",
@@ -3172,7 +3211,7 @@
 			"helperAttributes": "{}",
 			"time": 1483688563050,
 			"name": "用户管理查询",
-			"description": "",
+			"description": "HOST(\"HOST\",1), SUPER_USER(\"SUPER_USER\",2), SPECIAL_GUEST(\"SPECIAL_GUEST\",4), GUEST(\"GUEST\",8), AUDIENCES(\"AUDIENCES\",16), ADMINISTRATOR(\"ADMINISTRATOR\",32), TRIAL_HOST(\"TRIAL_HOST\",64), COURSE_VIP(\"COURSE_VIP\",128);",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 			"responses": [],
 			"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
@@ -3304,12 +3343,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1484121059563,
+			"time": 1484294484942,
 			"name": "权限设置",
 			"description": "HOST(\"HOST\",1),\nSUPER_USER(\"SUPER_USER\",2), \nSPECIAL_GUEST(\"SPECIAL_GUEST\",4), \nGUEST(\"GUEST\",8), \nAUDIENCES(\"AUDIENCES\",16),\nADMINISTRATOR(\"ADMINISTRATOR\",32),\nTRIAL_HOST(\"TRIAL_HOST\",64),\nCOURSE_VIP(\"COURSE_VIP\",128);",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 			"responses": [],
-			"rawModeData": "[\n\t{\"HOST\":true},\n\t{\"SUPER_USER\":false},\n\t{\"SPECIAL_GUEST\":false},\n\t{\"GUEST\":false},\n\t{\"AUDIENCES\":true},\n\t{\"ADMINISTRATOR\":false},\n\t{\"TRIAL_HOST\":true},\n\t{\"COURSE_VIP\":false}\n]"
+			"rawModeData": "[\n\t{\"HOST\":true},\n\t{\"SUPER_USER\":false},\n\t{\"SPECIAL_GUEST\":false},\n\t{\"GUEST\":false},\n\t{\"AUDIENCES\":true},\n\t{\"ADMINISTRATOR\":false},\n\t{\"TRIAL_HOST\":false},\n\t{\"COURSE_VIP\":false}\n]"
 		},
 		{
 			"id": "d192f186-304c-6cab-06f2-53a5a22e2e49",
