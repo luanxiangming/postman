@@ -2105,6 +2105,7 @@
 						"9c9e5042-71f7-3f8f-01c9-d9a44ad8e142",
 						"97681cbe-e315-1fef-93fa-65bfde190a5e",
 						"da8522f6-d147-49ac-4abd-d126efd23211",
+						"54e2bee5-77a2-9c77-2f77-e5ff3ac44615",
 						"8666408e-2d64-fa6a-6627-3e283203dac3",
 						"ccda1171-7a61-303b-9f4d-2c4ea2a4a381",
 						"10d052f9-b943-a93d-08a5-db0a3ae6627e",
@@ -2119,6 +2120,7 @@
 						"c07765b2-2020-96e0-217b-0f40c8150ba5",
 						"f855955e-2474-bc7a-648b-eb12db57c254",
 						"d02f7235-930d-83d4-afda-52ce68b9a83e",
+						"5bccec11-9a1f-7b47-b317-8b3563b9ab8b",
 						"c1b9910c-6a2d-f0aa-a8df-3847842f6311",
 						"842b0885-24f0-e1ea-0ac5-a4aa9b73991d",
 						"683ce750-8ed5-15ce-036e-8ab21eef08c5",
@@ -2343,7 +2345,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1482906651693,
-			"updatedAt": 1484293711000,
+			"updatedAt": 1484554677379,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2844,26 +2846,22 @@
 				},
 				{
 					"id": "2868a962-c823-85ac-d302-7e1ee66b38c4",
-					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\"GroupId\": \"{{roomId}}\", \"NewMemberList\" :[{\"Member_Account\":\"{{userId}}\"}]}",
+					"data": "{\n\t\"GroupId\": \"{{roomId}}\", \n\t\"NewMemberList\" :[{\n\t\t\"Member_Account\":\"{{userId}}\"\n\t}]\n\t\n}",
 					"dataMode": "raw",
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": "{}",
-					"time": 1479694834061,
+					"helperAttributes": {},
+					"time": 1484552891504,
 					"name": "进入房间Callback",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": [],
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
-					"timestamp": null,
-					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+					"responses": []
 				},
 				{
 					"id": "2a335378-75e5-8b18-cff0-7ba90ce4c9df",
@@ -3451,6 +3449,27 @@
 					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 				},
 				{
+					"id": "54e2bee5-77a2-9c77-2f77-e5ff3ac44615",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/livePlayback?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "PUT",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": "{\n\t\"id\": \"{{playbackId}}\", \n\t\"position\": \"{{position}}\"\n}",
+					"dataMode": "raw",
+					"name": "设置回放优先级",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484554677299,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+				},
+				{
 					"id": "5503dde5-4b40-e901-cc5c-0f7ef0a2ad18",
 					"headers": "",
 					"url": "{{host}}/vliveshow-api-app/v1/host/application/{{applicationId}}/confirm?token={{token}}",
@@ -3635,6 +3654,27 @@
 					"responses": [],
 					"owner": "981326",
 					"folder": "49d0abc0-7f2e-5b85-a20e-284ca0860fcc"
+				},
+				{
+					"id": "5bccec11-9a1f-7b47-b317-8b3563b9ab8b",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/hostChannel/save?token={{BOToken}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+					"data": "{\n\t\"userId\": \"7000009\", \n\t\"channelId\": [2, 4, 3]\n}",
+					"dataMode": "raw",
+					"name": "主播频道设置",
+					"description": "2: \"妈妈来秀\"\n3: \"总裁来秀\"\n4: \"官方出品\"\n",
+					"descriptionFormat": "html",
+					"time": 1484551895735,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
 				},
 				{
 					"id": "5cad223a-6495-419c-453c-8988410d8d8c",
@@ -4466,26 +4506,22 @@
 				},
 				{
 					"id": "8fc35720-4294-e7be-62b2-8c15acf42024",
-					"owner": "981326",
 					"headers": "Content-Type: application/json\n",
 					"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterMemberExit&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\"GroupId\": \"{{roomId}}\", \"ExitMemberList\" :[{\"Member_Account\":\"{{userId}}\"}]}",
+					"data": "{\n\t\"GroupId\": \"{{roomId}}\", \n\t\"ExitMemberList\" :[{\n\t\t\"Member_Account\":\"{{userId}}\"\n\t}]\n}",
 					"dataMode": "raw",
 					"version": 2,
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": "{}",
-					"time": 1479466778997,
+					"helperAttributes": {},
+					"time": 1484552926058,
 					"name": "退出房间Callback",
 					"description": "",
 					"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-					"responses": [],
-					"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd",
-					"timestamp": null,
-					"collection": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc"
+					"responses": []
 				},
 				{
 					"id": "91e36e43-1627-4530-be42-dfb81f68da89",
@@ -6291,14 +6327,14 @@
 				},
 				{
 					"key": "token",
-					"value": "8d318aa95432733a4cb0192b3ff8363f",
+					"value": "0f2f0af0577819b182d7d5813aa23953",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "roomId",
-					"value": "58788a3ee4b0e71e8a559248",
+					"value": "587b5eb0e4b0bed6244c090d",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6319,21 +6355,21 @@
 				},
 				{
 					"key": "courseId",
-					"value": "115",
+					"value": "55",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "lessonId",
-					"value": "45",
+					"value": "115",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "subscriptionId",
-					"value": "241",
+					"value": "373",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6347,7 +6383,7 @@
 				},
 				{
 					"key": "BOToken",
-					"value": "cd30b4e2ef18dca8b43bfc07a3ecb316",
+					"value": "6f49e6a9a55410b40035be88bb182fd6",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6445,7 +6481,7 @@
 				},
 				{
 					"key": "unregisteredPhone",
-					"value": "17700000005",
+					"value": "17700000007",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6533,7 +6569,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1484295267910
+			"timestamp": 1484534751820
 		},
 		{
 			"id": "0a063e04-bf21-20c3-122c-bc7ad56f88c6",
@@ -6555,14 +6591,14 @@
 				},
 				{
 					"key": "token",
-					"value": "0a0c4a3e0cf6db639ae4cc26266e11c0",
+					"value": "2d2f6aba3d807d94e5fd358902e26048",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "roomId",
-					"value": "586b582cd34e5cbc62cb574d",
+					"value": "587b45add34e8ee73e577c25",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6688,14 +6724,14 @@
 				},
 				{
 					"key": "mobilePhone",
-					"value": "18616762525",
+					"value": "13094810946",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
 				},
 				{
 					"key": "password",
-					"value": "Dujun1205",
+					"value": "vipabc",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6791,7 +6827,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1484299060932
+			"timestamp": 1484556460217
 		},
 		{
 			"id": "75693747-2d60-8456-04c3-aade18b70622",
@@ -7037,7 +7073,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1484299060955
+			"timestamp": 1484556460232
 		},
 		{
 			"id": "b3ca353f-26bd-7df2-7f28-59ee81172349",
@@ -7219,7 +7255,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1484299060969
+			"timestamp": 1484556460243
 		}
 	],
 	"headerPresets": [],
@@ -7376,7 +7412,7 @@
 		},
 		{
 			"key": "playbackId",
-			"value": "58772c23e4b0f315f6d9819e",
+			"value": "58775922e4b0c0d9fa018c20",
 			"type": "text",
 			"enabled": true
 		},
