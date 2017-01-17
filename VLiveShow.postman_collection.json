@@ -2515,12 +2515,11 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1480494162028,
+			"time": 1484649485417,
 			"name": "设置直播间优先级",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-			"responses": [],
-			"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249"
+			"responses": []
 		},
 		{
 			"id": "982d787f-ee4b-9d3c-4e8c-62c7bcd83579",
@@ -3270,7 +3269,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "{{token}}",
+					"value": "bb3010eaa0bebff9b486d15e27f9fd69",
 					"type": "text",
 					"enabled": true
 				},
@@ -3304,12 +3303,11 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1481702504587,
+			"time": 1484649544601,
 			"name": "创建直播间",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
-			"responses": [],
-			"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
+			"responses": []
 		},
 		{
 			"id": "c399aec3-2de0-7951-4acd-6354393ace03",
