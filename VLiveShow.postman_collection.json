@@ -232,6 +232,15 @@
 			],
 			"owner": "981326",
 			"collectionId": "62d391f0-1550-0606-44ee-ac7c705bfd55"
+		},
+		{
+			"id": "87d41e0c-8910-756a-7f76-9a2bf4d30b31",
+			"name": "Runner",
+			"description": "",
+			"order": [
+				"76d2c860-5af1-fb9e-3f2a-f947647ebfd7"
+			],
+			"owner": "981326"
 		}
 	],
 	"timestamp": 1479180658804,
@@ -484,7 +493,7 @@
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1483514550042,
+			"time": 1484714222719,
 			"name": "礼物列表",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
@@ -1997,6 +2006,27 @@
 			"folder": "68b2f8bd-02ec-0195-b44d-175b2ae230dd"
 		},
 		{
+			"id": "76d2c860-5af1-fb9e-3f2a-f947647ebfd7",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{host}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484552891504,
+			"name": "进入房间Callback",
+			"description": "",
+			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
+			"responses": [],
+			"folder": "87d41e0c-8910-756a-7f76-9a2bf4d30b31",
+			"rawModeData": "{\n\t\"GroupId\": \"{{roomId}}\", \n\t\"NewMemberList\" :[{\n\t\t\"Member_Account\":\"{{userId}}\"\n\t}]\n\t\n}"
+		},
+		{
 			"id": "76dd863d-45a7-788b-20cc-cfad38abd946",
 			"headers": "",
 			"url": "{{host}}/vliveshow-api-app/v1/money/user/balance?token={{token}}",
@@ -2589,16 +2619,23 @@
 		{
 			"id": "99e9d83a-1d5d-0ba7-02b3-36c3aad77e1f",
 			"headers": "",
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=10&userIds=80000727",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=100",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
-			"data": null,
+			"data": [
+				{
+					"key": "userIds",
+					"value": "80000994|80000965|80000968|80000990",
+					"type": "text",
+					"enabled": true
+				}
+			],
 			"dataMode": "params",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1484274650518,
+			"time": 1484726691027,
 			"name": "手动送钻",
 			"description": "",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
@@ -3249,14 +3286,12 @@
 			"dataMode": "raw",
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": "{}",
-			"time": 1483688563050,
+			"helperAttributes": {},
+			"time": 1484721623130,
 			"name": "用户管理查询",
 			"description": "HOST(\"HOST\",1), SUPER_USER(\"SUPER_USER\",2), SPECIAL_GUEST(\"SPECIAL_GUEST\",4), GUEST(\"GUEST\",8), AUDIENCES(\"AUDIENCES\",16), ADMINISTRATOR(\"ADMINISTRATOR\",32), TRIAL_HOST(\"TRIAL_HOST\",64), COURSE_VIP(\"COURSE_VIP\",128);",
 			"collectionId": "3c89af12-66de-e59d-c2a3-4f5d0c2f90fc",
 			"responses": [],
-			"folder": "abe35f3d-ef79-bf55-26a6-676adfc7d249",
-			"timestamp": null,
 			"rawModeData": "{\n\t\"role\":[\"HOST\",\"SUPER_USER\",\"SPECIAL_GUEST\",\"AUDIENCES\"],\n\t\"sortFields\":{\"userId\":\"asc\"},\n\t\"registerTime\":{}\n}"
 		},
 		{
