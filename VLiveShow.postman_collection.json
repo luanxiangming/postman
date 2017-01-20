@@ -44,7 +44,6 @@
 				"2d79fdab-7479-bc19-5f84-cd317bf68335",
 				"bdc8e33a-120e-2803-5ef5-2a56d69bb0bd",
 				"0f5e3e2b-9800-f92f-f1d8-8c1611604e80",
-				"5e5a19ca-c9c5-bed4-686f-31241ef285cb",
 				"091771c1-f136-3408-8a3e-cca971666e39",
 				"53aa8643-42b1-c30d-9514-f0cf6edfa26c",
 				"96a94521-ca6c-ff17-fda4-2ffe247bab1f",
@@ -56,7 +55,7 @@
 			"owner": "981326",
 			"lastUpdatedBy": "981326",
 			"lastRevision": 858895410,
-			"collectionId": "873b23f5-0ff3-7729-ab3b-8dfc3f639246"
+			"collectionId": "51c07c1d-63ec-ccf9-70fd-930c08b6dce8"
 		},
 		{
 			"id": "ef018f87-1d7c-7e90-d7d1-1b0baa5104d0",
@@ -144,6 +143,7 @@
 				"8ed89b17-556d-f44c-85bc-31aa6e0ed04d",
 				"7fb691a7-5e2f-4443-69f5-917b66df95d6",
 				"0f7f6f62-e69a-6874-1420-bb9c45489ebe",
+				"6ba25ee5-0131-1f0f-6904-91275e91e77c",
 				"b944d55d-5e77-d69c-1151-271b087355c2",
 				"7ab35934-0c9d-a921-811b-5b58247d58cc",
 				"8f702651-802b-74db-1d96-a07949ae3dae",
@@ -1793,27 +1793,6 @@
 			"rawModeData": "{\n\t\"GroupId\": \"{{roomId}}\", \n\t\"NewMemberList\" :[{\n\t\t\"Member_Account\":\"{{userId}}\"\n\t}]\n\t\n}"
 		},
 		{
-			"id": "5e5a19ca-c9c5-bed4-686f-31241ef285cb",
-			"headers": "",
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/channel/info?token={{BOToken}}&client_language={{client_language}}",
-			"pathVariables": {},
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "51c07c1d-63ec-ccf9-70fd-930c08b6dce8",
-			"data": null,
-			"dataMode": "params",
-			"name": "频道信息",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1484038262677,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"folder": "f001b41a-1faa-f7ec-cd0c-692d5e3a368f"
-		},
-		{
 			"id": "60a4ba69-20fb-e45f-0737-996b98b6aa3e",
 			"headers": "",
 			"url": "{{APIHost}}/vliveshow-api-app/v1/users/logout?token={{token}}",
@@ -1955,6 +1934,27 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "f001b41a-1faa-f7ec-cd0c-692d5e3a368f"
+		},
+		{
+			"id": "6ba25ee5-0131-1f0f-6904-91275e91e77c",
+			"headers": "",
+			"url": "{{APIHost}}/vliveshow-api-app/v1/host/topics?token={{token}}&client_language={{client_language}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "51c07c1d-63ec-ccf9-70fd-930c08b6dce8",
+			"data": null,
+			"dataMode": "params",
+			"name": "技能列表",
+			"description": "mongo hosttag",
+			"descriptionFormat": "html",
+			"time": 1484906927664,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "ef018f87-1d7c-7e90-d7d1-1b0baa5104d0"
 		},
 		{
 			"id": "6be98c75-7cb1-c8d1-ce06-5743bae626cc",
@@ -2214,7 +2214,7 @@
 		{
 			"id": "7ab35934-0c9d-a921-811b-5b58247d58cc",
 			"headers": "",
-			"url": "{{APIHost}}/vliveshow-api-app/v1/hotFix/patch?client=android&version_name=2.6.0",
+			"url": "{{APIHost}}/vliveshow-api-app/v1/hotfix/patch?client=android&version_name=2.6.0&client_language={{client_language}}",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "GET",
@@ -2224,12 +2224,11 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1484880224965,
+			"time": 1484904473831,
 			"name": "热补丁",
 			"description": "",
 			"collectionId": "51c07c1d-63ec-ccf9-70fd-930c08b6dce8",
-			"responses": [],
-			"folder": "ef018f87-1d7c-7e90-d7d1-1b0baa5104d0"
+			"responses": []
 		},
 		{
 			"id": "7adfd67e-af75-bcc6-bc50-549596e5271f",
