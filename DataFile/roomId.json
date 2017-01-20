@@ -1,0 +1,61 @@
+[
+      {
+        "id": "588163e9e4b06e854cc4505d",
+        "roomId": "588163e9e4b06e854cc4505d",
+        "host": "7000397",
+        "hostNickName": "feeling123",
+        "guests": null,
+        "title": "gffghbvgg",
+        "actualStartTime": 1484874770000,
+        "actualEndTime": null,
+        "createTime": 1484874770000,
+        "updateTime": 1484874770000,
+        "city": null,
+        "cover": {
+          "groupName": "vipabc",
+          "fileName": "M00/00/17/rBAEjViBY-mAcBFjAABzMYrB7aM732.png"
+        },
+        "coverUrl": "http://asset-dev.vliveshow.com/M00/00/17/rBAEjViBY-mAcBFjAABzMYrB7aM732.png",
+        "location": "上海市",
+        "topics": [
+          "4",
+          "名媛"
+        ],
+        "living": true,
+        "onlineNum": 36,
+        "robotNum": 11,
+        "watchNum": 84,
+        "priority": 0,
+        "cNum": 0,
+        "scNum": 442,
+        "layout": {
+          "roomId": "588163e9e4b06e854cc4505d",
+          "anchors": [
+            {
+              "userType": "master",
+              "voice": "muted",
+              "video": "opened",
+              "userId": 7000397
+            }
+          ]
+        },
+        "reCalculate": false,
+        "skillTag": null,
+        "geoPoint": {
+          "lat": 31.236071749559,
+          "lon": 121.49822215676
+        },
+        "gainTicket": 0,
+        "cklickLikeNum": 0,
+        "orientation": 1,
+        "source": 1,
+        "courseId": null,
+        "lessonId": null,
+        "teacherId": null,
+        "teacherName": null,
+        "maxOnlineNum": 36,
+        "peakTime": 1484891143000,
+        "giftNum": 0,
+        "trialHost": false
+      }
+    ]

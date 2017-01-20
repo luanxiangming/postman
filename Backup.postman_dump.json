@@ -6343,7 +6343,7 @@
 				},
 				{
 					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{host}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
+					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6455,7 +6455,7 @@
 				},
 				{
 					"key": "csvPath",
-					"value": "{{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
+					"value": "{{APIHost}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6587,7 +6587,7 @@
 				},
 				{
 					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%26{{$timestamp}}%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%26{{giftType}}%26Bicycle%26false%261.0%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
+					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%26{{$timestamp}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%26{{giftType}}%26Bicycle%26false%261.0%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
 					"type": "text",
 					"enabled": true
 				},
@@ -6683,7 +6683,7 @@
 				},
 				{
 					"key": "csvPath",
-					"value": " {{host}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
+					"value": " {{APIHost}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
 					"type": "text",
 					"enabled": true
 				},
@@ -6801,7 +6801,7 @@
 				},
 				{
 					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%260%26Bicycle%26false%261.0%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
+					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%260%26Bicycle%26false%261.0%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -6913,7 +6913,7 @@
 				},
 				{
 					"key": "csvPath",
-					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
+					"value": "{{APIHost}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -7047,7 +7047,7 @@
 				},
 				{
 					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{host}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%26{{$timestamp}}%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%26{{giftType}}%26Bicycle%26false%261.0%26http://{{host}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
+					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%26{{$timestamp}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%26{{giftType}}%26Bicycle%26false%261.0%26http://{{APIHost}}/vliveshow-api-app/v1/users/7000008/avatars.png%261%261",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
@@ -7159,7 +7159,7 @@
 				},
 				{
 					"key": "csvPath",
-					"value": "{{host}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
+					"value": "{{APIHost}}/M00/00/15/rBAEilg_tJ6AEPwkAAAX-8kKyxo924.csv",
 					"type": "text",
 					"enabled": true,
 					"warning": ""
