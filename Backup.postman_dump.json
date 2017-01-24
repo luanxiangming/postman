@@ -2239,7 +2239,8 @@
 						"a0485a4c-8f2c-5e11-e66c-bcc46e061a45",
 						"29439026-32b3-5e23-ece3-3a2f243d6f36",
 						"3f43e2b3-9797-f5c3-c0f2-3ccb7bb1abf8",
-						"e3ba95cf-fa1f-f373-aa6e-74b6b154c136"
+						"e3ba95cf-fa1f-f373-aa6e-74b6b154c136",
+						"10ca9391-c767-ff04-884f-2e4b154acdb1"
 					],
 					"collection": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 					"owner": "981326",
@@ -2391,14 +2392,12 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": 1485135469049,
-			"updatedAt": 1485135469049,
+			"updatedAt": 1485243304205,
 			"write": true,
 			"published": false,
 			"favorite": true,
 			"permissions": {},
 			"syncedPermissions": {},
-			"shared": false,
-			"hasRequests": true,
 			"requests": [
 				{
 					"id": "0078dcf7-8e55-ff1e-5ced-569749991933",
@@ -2547,6 +2546,27 @@
 					"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 					"responses": [],
 					"owner": "981326",
+					"folder": "5168223b-d83b-deff-0fdd-7b966f072274"
+				},
+				{
+					"id": "10ca9391-c767-ff04-884f-2e4b154acdb1",
+					"headers": "",
+					"url": "{{APIHost}}/vliveshow-api-app/v1/liveshow/robot/info?token={{token}}&date=2017-01-24",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
+					"data": null,
+					"dataMode": "params",
+					"name": "机器人参数",
+					"description": "机器人注册（每天零点触发）\n\n注册基数 registerNum = 7675\n\n注册新增浮动 registerIncreaseEnd - registerIncreaseBegin = 0.5 - (-0.2) = 0.7\n\n注册随机数 registerRandom = 随机数[0.0,1.0) x 注册新增浮动 + registerIncreaseBegin\n\n今日注册数 registerNumDay = 注册基数 + 注册基数 x 注册随机数\n\n[当天注册上限:1.5 x 7675, 下限:0.8 x 7675]\n\n0~6点需要新增的机器人数 lowRegister = 今日注册数 x 0.05\n\n6~24点需要新增的机器人数 highRegister = 今日注册数 - (0~6点需要新增的机器人数)\n\nMONGO: basesysconfig\n\nPG：user/user_device_info/t_robot_register_day/t_robot_register_history\n\n活跃基数 activeNumBase = 8566 \n\n当天活跃 activeDay = 活跃基数 x (随机数[0.0,1.0) x 0.6 + (0.9 - 0.6))\n\n[当天活跃上限:0.9 x 8566, 下限:0.3 x 8566]\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_NUM\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_SURPLUS_NUM\n\n历史活跃 activeHistory = 历史累积机器人数x(随机数[0.0,1.0) x 0.3 + (0.7 - 0.3))\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_NUM\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_SURPLUS_NUM\n\nMONGO: useractiontracking",
+					"descriptionFormat": "html",
+					"time": 1485243304073,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
 					"folder": "5168223b-d83b-deff-0fdd-7b966f072274"
 				},
 				{
@@ -6892,13 +6912,13 @@
 				},
 				{
 					"key": "token",
-					"value": "fdaf89e39e0c9f094ff91103a840f3f0",
+					"value": "c093b670fddc833bbdf5447538236f50",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "roomId",
-					"value": "5881d87bd34ed5525706c160",
+					"value": "5886f7fcd34e40e9551f3c2e",
 					"type": "text",
 					"enabled": true
 				},
@@ -7072,7 +7092,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1485163415929
+			"timestamp": 1485249862761
 		},
 		{
 			"id": "4b88c710-be58-5b16-70b4-d19e9a0fbff8",
@@ -7318,7 +7338,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1485163415943
+			"timestamp": 1485249862778
 		},
 		{
 			"id": "5adc47fb-a641-d3d2-68ec-78bee2b12dde",
@@ -7576,7 +7596,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1485163415948
+			"timestamp": 1485249862784
 		},
 		{
 			"id": "eb781e4e-d059-7db1-3b00-62753beccba5",
@@ -7840,7 +7860,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1485163415954
+			"timestamp": 1485249862790
 		}
 	],
 	"headerPresets": [],
