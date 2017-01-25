@@ -248,7 +248,9 @@
 				"c1cc36d7-2ed7-3c21-3620-67723db36460",
 				"845a1baa-afe4-90f7-549f-1b0e4e29e7d7",
 				"14b0c84c-47ba-25ca-1569-9517202d4e92",
-				"ef175709-0f59-f244-5be6-c2ac128d5d35"
+				"ef175709-0f59-f244-5be6-c2ac128d5d35",
+				"8b46030c-e00b-7f89-f8bd-4261d36483e7",
+				"8a241317-4133-e96b-980b-3cb41034b77a"
 			],
 			"owner": "981326",
 			"collectionId": "a6d7f423-6e07-15eb-3180-48de8ef6da51"
@@ -427,23 +429,20 @@
 		{
 			"id": "10ca9391-c767-ff04-884f-2e4b154acdb1",
 			"headers": "",
-			"url": "{{APIHost}}/vliveshow-api-app/v1/liveshow/robot/info?token={{token}}&date=2017-01-24",
-			"pathVariables": {},
+			"url": "{{APIHost}}/vliveshow-api-app/v1/liveshow/robot/info?token={{token}}&date=2017-01-27",
 			"preRequestScript": null,
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"data": null,
 			"dataMode": "params",
-			"name": "机器人参数",
-			"description": "机器人注册（每天零点触发）\n\n注册基数 registerNum = 7675\n\n注册新增浮动 registerIncreaseEnd - registerIncreaseBegin = 0.5 - (-0.2) = 0.7\n\n注册随机数 registerRandom = 随机数[0.0,1.0) x 注册新增浮动 + registerIncreaseBegin\n\n今日注册数 registerNumDay = 注册基数 + 注册基数 x 注册随机数\n\n[ 当天注册上限:1.5 x 7675, 下限:0.8 x 7675 ]\n\n0~6点需要新增的机器人数 lowRegister = 今日注册数 x 0.05\n\n6~24点需要新增的机器人数 highRegister = 今日注册数 - (0~6点需要新增的机器人数)\n\nMONGO: basesysconfig\n\nPG：user/user_device_info/t_robot_register_day/t_robot_register_history\n\n活跃基数 activeNumBase = 8566 \n\n当天活跃 activeDay = 活跃基数 x (随机数[0.0,1.0) x (0.9 - 0.6) + 0.6)\n\n[ 当天活跃上限:0.9 x 8566, 下限:0.6 x 8566 ]\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_NUM\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_SURPLUS_NUM\n\n历史活跃 activeHistory = 历史累积机器人数x(随机数[0.0,1.0) x (0.7 - 0.3) + 0.3)\n\n[ 历史活跃上限:0.7 x 历史累积机器人数, 下限:0.3 x 历史累积机器人数 ]\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_NUM\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_SURPLUS_NUM\n\nMONGO: useractiontracking",
-			"descriptionFormat": "html",
-			"time": 1485243304073,
-			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "5168223b-d83b-deff-0fdd-7b966f072274"
+			"time": 1485337734603,
+			"name": "机器人参数",
+			"description": "机器人注册（每天零点触发）\n\n注册基数 registerNum = 7675\n\n注册新增浮动 registerIncreaseEnd - registerIncreaseBegin = 0.5 - (-0.2) = 0.7\n\n注册随机数 registerRandom = 随机数[0.0,1.0) x 注册新增浮动 + registerIncreaseBegin\n\n今日注册数 registerNumDay = 注册基数 + 注册基数 x 注册随机数\n\n[ 当天注册上限:1.5 x 7675, 下限:0.8 x 7675 ]\n\n0~6点需要新增的机器人数 lowRegister = 今日注册数 x 0.05\n\n6~24点需要新增的机器人数 highRegister = 今日注册数 - (0~6点需要新增的机器人数)\n\nMONGO: basesysconfig\n\nPG：user/user_device_info/t_robot_register_day/t_robot_register_history\n\n活跃基数 activeNumBase = 8566 \n\n当天活跃 activeDay = 活跃基数 x (随机数[0.0,1.0) x (0.9 - 0.6) + 0.6)\n\n[ 当天活跃上限:0.9 x 8566, 下限:0.6 x 8566 ]\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_NUM\n\n当天活跃存入redis ROBOT_DAY_ACTIVE_SURPLUS_NUM\n\n历史活跃 activeHistory = 历史累积机器人数x(随机数[0.0,1.0) x (0.7 - 0.3) + 0.3)\n\n[ 历史活跃上限:0.7 x 历史累积机器人数, 下限:0.3 x 历史累积机器人数 ]\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_NUM\n\n历史活跃存入redis ROBOT_HISTORY_ACTIVE_SURPLUS_NUM\n\nMONGO: useractiontracking",
+			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
+			"responses": []
 		},
 		{
 			"id": "1188b877-b574-82f4-8098-2f72df9e8db6",
@@ -457,13 +456,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1484880197175,
+			"time": 1485311907433,
 			"name": "推送系统消息",
 			"description": "",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
-			"folder": "5168223b-d83b-deff-0fdd-7b966f072274",
-			"rawModeData": "{\n\t\"messageCode\": 1000,\n\t\"languages\": [\"en-US\",\"zh-Hans-CN\"],\n\t\"title\": \"V团队\",\n\t\"content\": \"来自V团队的消息 \",\n\t\"cover\": \"http://asset-dev.vliveshow.com/M00/00/2A/rBAEiVhtxwCATo6eAAAKfeRIIoY320.png\",\n\t\"link\": \"http://asset-dev.vliveshow.com/M00/00/2A/rBAEiVhtxwCATo6eAAAKfeRIIoY320.png\"\n}"
+			"rawModeData": "{\n\t\"messageCode\": 1000,\n\t\"languages\": [\"en-US\",\"zh-Hans-CN\"],\n\t\"title\": \"V团队\",\n\t\"content\": \"来自V团队的消息 \",\n\t\"cover\": \"http://www.vliveshow.com/images/logo.png\",\n\t\"link\": \"http://www.vliveshow.com/\"\n}"
 		},
 		{
 			"id": "1349f4a1-7154-c89c-bbfd-f3be026ddda7",
@@ -602,12 +600,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1485155894337,
+			"time": 1485256922648,
 			"name": "用户查询",
 			"description": "HOST(\"HOST\",1), SUPER_USER(\"SUPER_USER\",2), SPECIAL_GUEST(\"SPECIAL_GUEST\",4), GUEST(\"GUEST\",8), AUDIENCES(\"AUDIENCES\",16), ADMINISTRATOR(\"ADMINISTRATOR\",32), TRIAL_HOST(\"TRIAL_HOST\",64), COURSE_VIP(\"COURSE_VIP\",128);",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
-			"rawModeData": "{\n\t\"role\":[\"AUDIENCES\"],\n\t\"mobilePhone\":null,\n\t\"userId\":null,\n\t\"nickName\":\"半仙儿\",\n\t\"sortFields\":{\"update_time\":\"desc\"},\n\t\"registerTime\":{\"from\": \"2016-01-01\", \"to\": \"2017-01-01\"}\n}\n"
+			"rawModeData": "{\n\t\"role\":[\"SUPER_USER\"],\n\t\"mobilePhone\":null,\n\t\"userId\":null,\n\t\"nickName\":null,\n\t\"sortFields\":{\"update_time\":\"desc\"},\n\t\"registerTime\":{\"from\": \"2016-01-01\", \"to\": \"2017-01-01\"}\n}\n"
 		},
 		{
 			"id": "1a311794-8bb2-8b7e-9f54-a1f946c946b6",
@@ -860,7 +858,7 @@
 			"helperAttributes": {},
 			"time": 1485067958831,
 			"name": "*群组普通消息",
-			"description": "在回调开关打开的情况下，用户通过ForbidCallbackControl控制单条消息是否发起回调，默认情况发起回调。\n\n消息格式描述: https://www.qcloud.com/document/product/269/2720\n\n{\n\n    \"GroupId\": \"@TGS#2C5SZEAEF\",\n    \"Random\": 8912345, // 随机数字，五分钟数字相同认为是重复消息\n    \"MsgPriority\": \"High\", // 消息优先级\n    \"ForbidCallbackControl\":[\n            \"ForbidBeforeSendMsgCallback\",\n            \"ForbidAfterSendMsgCallback\"], //禁止回调控制选项\n    \"MsgBody\": [  // 消息体，由一个element数组组成，详见字段说明\n        {\n            \"MsgType\": \"TIMTextElem\", // 文本\n            \"MsgContent\": {\n                \"Text\": \"red packet\"\n            }\n        },\n        {\n            \"MsgType\": \"TIMFaceElem\", // 表情\n            \"MsgContent\": {\n                \"Index\": 6,\n                \"Data\": \"abc\\u0000\\u0001\"\n            }\n        }\n    ]，\n    \"OfflinePushInfo\": {\n        \"PushFlag\": 0,  // 正常推送，\n        \"Desc\": \"离线推送内容\",\n        \"Ext\": \"这是透传的内容\",\n        \"Sound\": \"这是推送的声音\"\n    }\n}\n\n自定义消息元素\n\n{\n\n    \"MsgType\": \"TIMCustomElem\", \n    \"MsgContent\": {\n        \"Data\": \"message\", \n        \"Desc\": \"notification\", \n        \"Ext\": \"url\", \n        \"Sound\": \"dingdong.aiff\"\n    }\n}\n\nData  String  自定义消息数据。 不作为APNS的payload中字段下发，故从payload中无法获取Data字段。\n\nDesc  String  自定义消息描述信息；当接收方为iPhone后台在线时，做iOS离线Push时文本展示。\n\nExt  String  扩展字段；当接收方为iOS系统且应用处在后台时，此字段作为APNS请求包Payloads中的ext键值下发，Ext的协议格式由业务方确定，APNS只做透传。\n\nSound  String  自定义APNS推送铃音。\n\nGroup：\n\n进房间:10&1\n\n出房间:11&\n\n送礼物:0&\n\n点赞:1&\n\n点赞:120&送了一个 💗\n\n封停:205&\n\n禁言:121&\n\n解禁:122&\n\n静音:105&{{userId}}&1\n\n取消静音:105&{{userId}}&0\n\n主播取消连线:102&{{userId}}\n\n嘉宾取消连线:108&1\n\n嘉宾上镜:109&1\n\n更新直播间人数:31&{{scNum}}&0\n\n更新V票:115&{{V_TICKET}}\n\nC2C:\n\n粉丝关注:203&\n\nV团队消息:201&\n\nBatch:\n\n直播邀请:201&",
+			"description": "在回调开关打开的情况下，用户通过ForbidCallbackControl控制单条消息是否发起回调，默认情况发起回调。\n\n消息格式描述: https://www.qcloud.com/document/product/269/2720\n\n{\n\n    \"GroupId\": \"@TGS#2C5SZEAEF\",\n    \"Random\": 8912345, // 随机数字，五分钟数字相同认为是重复消息\n    \"MsgPriority\": \"High\", // 消息优先级\n    \"ForbidCallbackControl\":[\n            \"ForbidBeforeSendMsgCallback\",\n            \"ForbidAfterSendMsgCallback\"], //禁止回调控制选项\n    \"MsgBody\": [  // 消息体，由一个element数组组成，详见字段说明\n        {\n            \"MsgType\": \"TIMTextElem\", // 文本\n            \"MsgContent\": {\n                \"Text\": \"red packet\"\n            }\n        },\n        {\n            \"MsgType\": \"TIMFaceElem\", // 表情\n            \"MsgContent\": {\n                \"Index\": 6,\n                \"Data\": \"abc\\u0000\\u0001\"\n            }\n        }\n    ]，\n    \"OfflinePushInfo\": {\n        \"PushFlag\": 0,  // 正常推送，\n        \"Desc\": \"离线推送内容\",\n        \"Ext\": \"这是透传的内容\",\n        \"Sound\": \"这是推送的声音\"\n    }\n}\n\n自定义消息元素\n\n{\n\n    \"MsgType\": \"TIMCustomElem\", \n    \"MsgContent\": {\n        \"Data\": \"message\", \n        \"Desc\": \"notification\", \n        \"Ext\": \"url\", \n        \"Sound\": \"dingdong.aiff\"\n    }\n}\n\nData  String  自定义消息数据。 不作为APNS的payload中字段下发，故从payload中无法获取Data字段。\n\nDesc  String  自定义消息描述信息；当接收方为iPhone后台在线时，做iOS离线Push时文本展示。\n\nExt  String  扩展字段；当接收方为iOS系统且应用处在后台时，此字段作为APNS请求包Payloads中的ext键值下发，Ext的协议格式由业务方确定，APNS只做透传。\n\nSound  String  自定义APNS推送铃音。\n\nGroup：\n\n进房间:10&1\n\n机器人进房间: 32&\n\n出房间:11&\n\n送礼物:0&\n\n点赞:1&\n\n点赞:120&送了一个 💗\n\n封停:205&\n\n禁言:121&\n\n解禁:122&\n\n静音:105&{{userId}}&1\n\n取消静音:105&{{userId}}&0\n\n主播取消连线:102&{{userId}}\n\n嘉宾取消连线:108&1\n\n嘉宾上镜:109&1\n\n更新直播间人数:31&{{scNum}}&0\n\n更新V票:115&{{V_TICKET}}\n\nC2C:\n\n粉丝关注:203&\n\nV团队消息:201&\n\nBatch:\n\n直播邀请:201&",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
 			"folder": "b6469b28-eda8-3e05-5ccc-b60714da8bea",
@@ -2641,13 +2639,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1485097970160,
+			"time": 1485312004617,
 			"name": "获取推送报告",
 			"description": "根据任务ID查询推送任务状态。注意：每次最多只能查询500个任务。\n\n0(未处理) / 1（推送中) / 2（推送完成） 。注意：推送完成不代表完全推送成功，具体发送情况见Finished和Total字段数据。",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
-			"folder": "b6469b28-eda8-3e05-5ccc-b60714da8bea",
-			"rawModeData": "{\n    \"TaskIds\": [\n        \"144115198526055997_429_429\",\n        \"144115198526055997_896_896\",\n        \"144115198526055997_768_768\",\n        \"144115198526055997_686_686\",\n        \"144115198526055997_164_164\"\n    ]\n}"
+			"rawModeData": "{\n    \"TaskIds\": [\n        \"144115198526055997_429_429\",\n        \"144115198526055997_896_896\",\n        \"144115198526055997_768_768\",\n        \"144115198526055997_686_686\",\n        \"144115198526055997_164_164\",\n        \"144115198526055997_31_31\"\n    ]\n}"
 		},
 		{
 			"id": "84e0c66f-109b-8527-6e89-c7c1bdef7326",
@@ -2733,6 +2730,28 @@
 			"folder": "5168223b-d83b-deff-0fdd-7b966f072274"
 		},
 		{
+			"id": "8a241317-4133-e96b-980b-3cb41034b77a",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/im_open_login_svc/multiaccount_import?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
+			"data": [],
+			"dataMode": "raw",
+			"name": "帐号批量导入",
+			"description": "本接口适用于将应用自有帐号信息批量导入腾讯云。该接口的功能是在腾讯内部创建一个内部ID，使没有登录腾讯云的应用自有帐号能够使用腾讯云服务。\n\n举个例子：APP开发者通过腾讯云服务给APP用户A发送一条消息，用户A如果没有登录过云通信服务，由于腾讯内部没有用户A对应的内部ID，那么给用户A发送消息将会失败。此时需要把用户A的帐号同步给腾讯，在腾讯内部会为用户A创建一个内部ID，这样就可以给用户A发送消息了。",
+			"descriptionFormat": "html",
+			"time": 1485328389801,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "b6469b28-eda8-3e05-5ccc-b60714da8bea",
+			"rawModeData": "{\n\t\"Accounts\":[\"{{userId}}\",\"{{userId}}\"]\n}"
+		},
+		{
 			"id": "8b06909e-16d2-5e1a-20f8-664f4b6478f8",
 			"headers": "",
 			"url": "{{APIHost}}/vliveshow-api-app/v1/course/subscription?id={{subscriptionId}}&token={{token}}",
@@ -2751,6 +2770,25 @@
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
 			"folder": "df24f0bb-336c-d29d-4913-4a6917721588"
+		},
+		{
+			"id": "8b46030c-e00b-7f89-f8bd-4261d36483e7",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/im_open_login_svc/account_import?identifier=admin&usersig={{usersig}}&sdkappid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485328281378,
+			"name": "*账号导入",
+			"description": "本接口适用于将应用自有帐号信息导入腾讯云。该接口的功能是在腾讯内部创建一个内部ID，使没有登录腾讯云的应用自有帐号能够使用腾讯云服务。\n举个例子：APP开发者通过腾讯云服务给APP用户A发送一条消息，用户A如果没有登录过云通信服务，由于腾讯内部没有用户A对应的内部ID，那么给用户A发送消息将会失败。此时需要把用户A的帐号同步给腾讯，在腾讯内部会为用户A创建一个内部ID，这样就可以给用户A发送消息了。\n\n说明：开发者可根据自身业务场景考虑是否需要调用该接口，接口支持一次同步一个帐号，批量帐号导入请查看。",
+			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
+			"responses": [],
+			"rawModeData": "{\n   \"Identifier\":\"{{userId}}\",\n   \"Nick\":\"test\",\n   \"FaceUrl\":\"http://www.vliveshow.com/images/logo.png\"\n}"
 		},
 		{
 			"id": "8f74adce-034a-83ff-86d0-2664e3cc3930",
@@ -3595,13 +3633,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1485097960271,
-			"name": "推送系统消息",
+			"time": 1485312171668,
+			"name": "*推送系统消息",
 			"description": "https://www.qcloud.com/document/product/269/4123\n\n功能说明\n\n支持全员推送；\n\n支持按用户属性推送；\n\n支持按用户标签推送；\n\n管理员向账号推送消息，接收方看到消息发送者是管理员；\n\n管理员指定某一账户向其他账户推送消息，接收方看到发送者不是管理员，而是管理员指定的账号；\n\n支持消息离线存储。",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
-			"folder": "b6469b28-eda8-3e05-5ccc-b60714da8bea",
-			"rawModeData": "{        \t\"MsgRandom\": {{$randomInt}},\n            \"Condition\":{\"TagsOr\":[\"en-US\",\"zh-Hans-CN\"]},\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"201&{'title':'VTeam','content':'Message from V team','imageURL':'http://asset-dev.vliveshow.com/M00/00/2A/rBAEiVhtxwCATo6eAAAKfeRIIoY320.png'}\",\n                \t\"Desc\":\"VTeam\",\n                \t\"Ext\":\"201\"\n                }\n              }\n            ]\n          }"
+			"rawModeData": "{        \t\"MsgRandom\": {{$randomInt}},\n            \"Condition\":{\"TagsOr\":[\"en-US\",\"zh-Hans-CN\"]},\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                \t\"Data\":\"201&{\\\"title\\\":\\\"VTeam\\\",\\\"content\\\":\\\"Message from V team\\\",\\\"imageURL\\\":\\\"http://www.vliveshow.com/images/logo.png\\\"}\",\n                \t\"Desc\":\"VTeam\",\n                \t\"Ext\":\"201\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"id": "c33a11c0-bb36-8620-5747-a87e3c4b664d",
