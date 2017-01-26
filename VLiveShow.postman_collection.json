@@ -800,7 +800,7 @@
 		{
 			"id": "240eaeca-9eaf-8874-ae77-420d0683841d",
 			"headers": "",
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=100",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=10",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
@@ -816,12 +816,11 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1484726691027,
+			"time": 1485398037978,
 			"name": "手动送钻",
 			"description": "",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
-			"responses": [],
-			"folder": "afb0883c-54d6-3b55-0394-a5d6e1281ef5"
+			"responses": []
 		},
 		{
 			"id": "25b93237-a49c-afeb-2846-865d6ac65274",
@@ -858,7 +857,7 @@
 			"helperAttributes": {},
 			"time": 1485067958831,
 			"name": "*群组普通消息",
-			"description": "在回调开关打开的情况下，用户通过ForbidCallbackControl控制单条消息是否发起回调，默认情况发起回调。\n\n消息格式描述: https://www.qcloud.com/document/product/269/2720\n\n{\n\n    \"GroupId\": \"@TGS#2C5SZEAEF\",\n    \"Random\": 8912345, // 随机数字，五分钟数字相同认为是重复消息\n    \"MsgPriority\": \"High\", // 消息优先级\n    \"ForbidCallbackControl\":[\n            \"ForbidBeforeSendMsgCallback\",\n            \"ForbidAfterSendMsgCallback\"], //禁止回调控制选项\n    \"MsgBody\": [  // 消息体，由一个element数组组成，详见字段说明\n        {\n            \"MsgType\": \"TIMTextElem\", // 文本\n            \"MsgContent\": {\n                \"Text\": \"red packet\"\n            }\n        },\n        {\n            \"MsgType\": \"TIMFaceElem\", // 表情\n            \"MsgContent\": {\n                \"Index\": 6,\n                \"Data\": \"abc\\u0000\\u0001\"\n            }\n        }\n    ]，\n    \"OfflinePushInfo\": {\n        \"PushFlag\": 0,  // 正常推送，\n        \"Desc\": \"离线推送内容\",\n        \"Ext\": \"这是透传的内容\",\n        \"Sound\": \"这是推送的声音\"\n    }\n}\n\n自定义消息元素\n\n{\n\n    \"MsgType\": \"TIMCustomElem\", \n    \"MsgContent\": {\n        \"Data\": \"message\", \n        \"Desc\": \"notification\", \n        \"Ext\": \"url\", \n        \"Sound\": \"dingdong.aiff\"\n    }\n}\n\nData  String  自定义消息数据。 不作为APNS的payload中字段下发，故从payload中无法获取Data字段。\n\nDesc  String  自定义消息描述信息；当接收方为iPhone后台在线时，做iOS离线Push时文本展示。\n\nExt  String  扩展字段；当接收方为iOS系统且应用处在后台时，此字段作为APNS请求包Payloads中的ext键值下发，Ext的协议格式由业务方确定，APNS只做透传。\n\nSound  String  自定义APNS推送铃音。\n\nGroup：\n\n进房间:10&1\n\n机器人进房间: 32&\n\n出房间:11&\n\n送礼物:0&\n\n点赞:1&\n\n点赞:120&送了一个 💗\n\n封停:205&\n\n禁言:121&\n\n解禁:122&\n\n静音:105&{{userId}}&1\n\n取消静音:105&{{userId}}&0\n\n主播取消连线:102&{{userId}}\n\n嘉宾取消连线:108&1\n\n嘉宾上镜:109&1\n\n更新直播间人数:31&{{scNum}}&0\n\n更新V票:115&{{V_TICKET}}\n\nC2C:\n\n粉丝关注:203&\n\nV团队消息:201&\n\nBatch:\n\n直播邀请:201&",
+			"description": "在回调开关打开的情况下，用户通过ForbidCallbackControl控制单条消息是否发起回调，默认情况发起回调。\n\n消息格式描述: https://www.qcloud.com/document/product/269/2720\n\n{\n\n    \"GroupId\": \"@TGS#2C5SZEAEF\",\n    \"Random\": 8912345, // 随机数字，五分钟数字相同认为是重复消息\n    \"MsgPriority\": \"High\", // 消息优先级\n    \"ForbidCallbackControl\":[\n            \"ForbidBeforeSendMsgCallback\",\n            \"ForbidAfterSendMsgCallback\"], //禁止回调控制选项\n    \"MsgBody\": [  // 消息体，由一个element数组组成，详见字段说明\n        {\n            \"MsgType\": \"TIMTextElem\", // 文本\n            \"MsgContent\": {\n                \"Text\": \"red packet\"\n            }\n        },\n        {\n            \"MsgType\": \"TIMFaceElem\", // 表情\n            \"MsgContent\": {\n                \"Index\": 6,\n                \"Data\": \"abc\\u0000\\u0001\"\n            }\n        }\n    ]，\n    \"OfflinePushInfo\": {\n        \"PushFlag\": 0,  // 正常推送，\n        \"Desc\": \"离线推送内容\",\n        \"Ext\": \"这是透传的内容\",\n        \"Sound\": \"这是推送的声音\"\n    }\n}\n\n自定义消息元素\n\n{\n\n    \"MsgType\": \"TIMCustomElem\", \n    \"MsgContent\": {\n        \"Data\": \"message\", \n        \"Desc\": \"notification\", \n        \"Ext\": \"url\", \n        \"Sound\": \"dingdong.aiff\"\n    }\n}\n\nData  String  自定义消息数据。 不作为APNS的payload中字段下发，故从payload中无法获取Data字段。\n\nDesc  String  自定义消息描述信息；当接收方为iPhone后台在线时，做iOS离线Push时文本展示。\n\nExt  String  扩展字段；当接收方为iOS系统且应用处在后台时，此字段作为APNS请求包Payloads中的ext键值下发，Ext的协议格式由业务方确定，APNS只做透传。\n\nSound  String  自定义APNS推送铃音。\n\nGroup：\n\n观众进房间:10&1\n\n超管进房间:10&2\n\n机器人进房间: 32&1\n\n出房间:11&\n\n送礼物:0&\n\n点赞:1&1000&1\n\n文字点赞:120&送了一个 💗\n\n封停:205&\n\n禁言:121&\n\n解禁:122&\n\n主播静音:105&{{userId}}&1\n\n主播取消静音:105&{{userId}}&0\n\n主播取消连线:102&{{userId}}\n\n主播切换:104&{{fromId}}&{{toId}}\n\n主播邀请:111&\n\n嘉宾静音: 106&1\n\n嘉宾取消静音: 106&0\n\n嘉宾取消连线:108&1\n\n嘉宾上镜:109&1\n\n更新直播间人数:31&{{scNum}}&0\n\n更新V票:115&{{V_TICKET}}\n\nC2C:\n\n粉丝关注:203&\n\nV团队消息:201&\n\n拉黑:40&1\n\n主播同意连线:103&1\n\n主播拒绝连线:101&\n\n观众申请连线:100&1\n\n观众取消连线（失败）:107&1\n\n嘉宾结束连线（成功）:108&1\n\nBatch:\n\n直播邀请:201&",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
 			"folder": "b6469b28-eda8-3e05-5ccc-b60714da8bea",
@@ -1060,12 +1059,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1485155423028,
+			"time": 1485412960987,
 			"name": "消息记录下载",
 			"description": "1 功能说明\n\nAPP管理员可以通过该接口获取APP中某天某小时的所有单发或群组消息记录的下载地址。\n\n2 注意事项\n\n消息记录以日志文件形式存在并GZip压缩，通过该接口获取到下载地址后，请自行下载并处理；\n消息记录文件每小时产生一次，例如0点(00:00~00:59)的数据在01:00后开始处理，一般1小时内处理完毕（消息较多则处理时间较长）；\n文件有效期3天，无论是否下载过，都会在3天后删除；\n获取到的下载地址存在有效期，请在过期前进行下载，若地址失效，请通过该接口重新获取。",
 			"collectionId": "94b1bc0e-0097-a575-a8b3-9dcbbed35871",
 			"responses": [],
-			"rawModeData": "{\n    \"ChatType\": \"group\",\n    \"MsgTime\": \"2017012314\"\n}"
+			"rawModeData": "{\n    \"ChatType\": \"group\",\n    \"MsgTime\": \"2017012519\"\n}"
 		},
 		{
 			"id": "3115117a-e594-19b4-667c-e21933fe9d22",
