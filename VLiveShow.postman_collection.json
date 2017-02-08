@@ -59,7 +59,7 @@
 		{
 			"owner": "981326",
 			"lastUpdatedBy": "981326",
-			"lastRevision": 1007818211,
+			"lastRevision": 1022666440,
 			"id": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4",
 			"name": "Backend",
 			"description": "",
@@ -140,6 +140,8 @@
 				"99bb7599-fcc7-2c12-61a7-8d41198a18ff",
 				"9502a3fe-fc60-d3df-6459-9f47e9dd5077",
 				"c9f2b5a7-5769-7b7e-8512-abc6d63b5ba5",
+				"b5f723fa-0813-8332-bc99-e662996f1bc7",
+				"b397a6a4-39a6-bf27-c12f-860569a6084f",
 				"d65c28a6-7408-1272-5332-b404974abbff",
 				"ee6c31a4-6680-941f-0ae9-09080ab94b82",
 				"ec8e2bae-c22d-a2ad-ba41-fd8a94d244fa",
@@ -155,7 +157,8 @@
 				"394b9967-cc52-9955-c27c-d4845819f390",
 				"6c490de5-2aea-f5e5-9320-e2c60b7a7217",
 				"b31e587f-6d40-e2ad-9e98-2da93befeee5"
-			]
+			],
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
 			"owner": "981326",
@@ -257,7 +260,9 @@
 				"e5490e30-34ac-c339-d138-2b2de3b63c18",
 				"03a570ff-f613-ceeb-acb2-736e9c655c99",
 				"5b5d6723-4c7d-7d26-1ffd-7d8eae8b1cfd",
-				"533c58ec-6127-0fdf-2dac-f99a1de1e62d"
+				"533c58ec-6127-0fdf-2dac-f99a1de1e62d",
+				"47a1cc53-a2fe-f3ab-4a0c-3237ecc833f2",
+				"38c82941-7a91-0226-2422-1d92807af2f5"
 			]
 		},
 		{
@@ -792,22 +797,20 @@
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
-			"folder": "5aeb428c-1e38-c50d-745d-fbdcb2578aa8",
 			"id": "1cef4ca2-3447-6d5b-84cf-c35dfa932daf",
-			"name": "直播间列表",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
 			"headers": "",
-			"method": "GET",
-			"pathVariables": {},
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/list?token={{BOToken}}&pageSize={{pageSize}}&pageNum={{pageNum}}",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/list?token={{BOToken}}&pageSize={{pageSize}}&pageNum={{pageNum}}&excludesTrial=false&title=&host=",
 			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
+			"time": 1486524529466,
+			"name": "直播间列表",
+			"description": "",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
@@ -1152,23 +1155,22 @@
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
-			"folder": "5aeb428c-1e38-c50d-745d-fbdcb2578aa8",
 			"id": "2e9f48aa-04fc-c42d-c93e-a148a1a13402",
-			"name": "设置权限",
-			"dataMode": "raw",
-			"data": [],
-			"descriptionFormat": null,
-			"description": "HOST(\"HOST\",1),\n\nSUPER_USER(\"SUPER_USER\",2), \n\nSPECIAL_GUEST(\"SPECIAL_GUEST\",4), \n\nGUEST(\"GUEST\",8), \n\nAUDIENCES(\"AUDIENCES\",16),\n\nADMINISTRATOR(\"ADMINISTRATOR\",32),\n\nTRIAL_HOST(\"TRIAL_HOST\",64),\n\nCOURSE_VIP(\"COURSE_VIP\",128);",
 			"headers": "Content-Type: application/json\n",
-			"method": "PUT",
-			"pathVariables": {},
 			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/backoffice/users/role/set?token={{BOToken}}&userId={{userId}}",
 			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
+			"time": 1486524479199,
+			"name": "设置权限",
+			"description": "HOST(\"HOST\",1),\n\nSUPER_USER(\"SUPER_USER\",2), \n\nSPECIAL_GUEST(\"SPECIAL_GUEST\",4), \n\nGUEST(\"GUEST\",8), \n\nAUDIENCES(\"AUDIENCES\",16),\n\nADMINISTRATOR(\"ADMINISTRATOR\",32),\n\nTRIAL_HOST(\"TRIAL_HOST\",64),\n\nCOURSE_VIP(\"COURSE_VIP\",128);",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
-			"rawModeData": "[\n  {\"HOST\":true},\n  {\"SUPER_USER\":true},\n  {\"SPECIAL_GUEST\":false},\n  {\"GUEST\":false},\n  {\"AUDIENCES\":true},\n  {\"ADMINISTRATOR\":false},\n  {\"TRIAL_HOST\":false},\n  {\"COURSE_VIP\":false}\n]"
+			"rawModeData": "[\n  {\"HOST\":false},\n  {\"SUPER_USER\":false},\n  {\"SPECIAL_GUEST\":false},\n  {\"GUEST\":false},\n  {\"AUDIENCES\":true},\n  {\"ADMINISTRATOR\":false},\n  {\"TRIAL_HOST\":true},\n  {\"COURSE_VIP\":false}\n]"
 		},
 		{
 			"folder": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4",
@@ -1302,6 +1304,25 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
+		},
+		{
+			"id": "38c82941-7a91-0226-2422-1d92807af2f5",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/openim/batchsendmsg?identifier=admin&usersig={{usersig}}&SdkAppid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486538381610,
+			"name": "*发送开播信息",
+			"description": "根据{{To_Account}}发开播信息，不同于backend API, 不需要关注{{userId}}",
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
+			"responses": [],
+			"rawModeData": "{           \n\t\t\t\"From_Account\":\"{{userId}}\",\n\t\t\t\"MsgRandom\": {{$randomInt}},\n            \"To_Account\":[\"7000280\",\"7000009\"],\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                  \"Data\":\"202&{\\\"content\\\":\\\"content\\\",\\\"roomID\\\":\\\"{{roomId}}\\\",\\\"imageURL\\\":\\\"{{cover}}\\\",\\\"title\\\":\\\"{{roomTitle}}\\\",\\\"anchorName\\\":\\\"{{nickName}}\\\",\\\"anchorID\\\":\\\"{{userId}}\\\"}\",\n                  \"Desc\":\"{{nickName}}\",\n                  \"Ext\":\"202&{\\\"anchorID\\\":\\\"{{userId}}\\\",\\\"roomID\\\":\\\"{{roomId}}\\\",\\\"imageURL\\\":\\\"{{cover}}\\\"}\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"folder": "5aeb428c-1e38-c50d-745d-fbdcb2578aa8",
@@ -1644,6 +1665,24 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
+		},
+		{
+			"id": "47a1cc53-a2fe-f3ab-4a0c-3237ecc833f2",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{IMhost}}/v4/openim/sendmsg?identifier=admin&usersig={{usersig}}&SdkAppid={{sdkappid}}&contenttype=json&random={{$randomInt}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486524889076,
+			"name": "*发送关注消息",
+			"description": "",
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
+			"rawModeData": "{           \n\t\t\t\"MsgRandom\": {{$randomInt}},\n            \"To_Account\":\"{{userId}}\",\n            \"MsgBody\": [\n              {\n                \"MsgType\": \"TIMCustomElem\",\n                \"MsgContent\": {\n                  \"Data\":\"203&{\\\"nickName\\\":\\\"{{nickName}}\\\",\\\"userId\\\":\\\"7000008\\\"}\",\n                  \"Desc\":\"{{nickName}}\",\n                  \"Ext\":\"203\"\n                }\n              }\n            ]\n          }"
 		},
 		{
 			"folder": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4",
@@ -3406,6 +3445,25 @@
 			"rawModeData": "{\n  \"roomIds\": [\n    \"5895440ae4b011b3b7a5a445\"\n  ]\n}"
 		},
 		{
+			"id": "b397a6a4-39a6-bf27-c12f-860569a6084f",
+			"headers": "",
+			"url": "{{APIHost}}/vliveshow-api-app/v1/users/message/live/send?token={{token}}&uid={{userId}}&roomId={{roomId}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486532590617,
+			"name": "发送开播消息",
+			"description": "只发送给所有关注{{uid}}的用户，{{roomId}}不一定是{{uid}}的直播间,但是需要living",
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
+			"responses": []
+		},
+		{
 			"folder": "8b691937-6fe8-4e43-22c0-2fece1090f56",
 			"id": "b40569cf-8c79-cb61-b3e1-58a81d016e43",
 			"name": "漫游消息",
@@ -3422,6 +3480,23 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
+		},
+		{
+			"id": "b5f723fa-0813-8332-bc99-e662996f1bc7",
+			"headers": "",
+			"url": "{{APIHost}}/vliveshow-api-app/v1/users/message/fans/send?token={{token}}&touid={{userId}}&fansuid=7000008",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486524826595,
+			"name": "发送关注消息",
+			"description": "只是发送关注消息，不实际关注 ",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
@@ -4014,22 +4089,20 @@
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
-			"folder": "5aeb428c-1e38-c50d-745d-fbdcb2578aa8",
 			"id": "e4412b9a-6cbf-8b69-8686-e5c12bdda3dc",
-			"name": "设置直播间优先级",
-			"dataMode": "params",
-			"data": null,
-			"rawModeData": null,
-			"descriptionFormat": null,
-			"description": "",
 			"headers": "",
-			"method": "POST",
-			"pathVariables": {},
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/priority/config?token={{BOToken}}&roomId={{roomId}}&priority={{priority}}",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/liveshow/priority/config?token={{BOToken}}&roomId={{roomId}}&priority=2",
 			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
 			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.success === true;",
 			"currentHelper": "normal",
 			"helperAttributes": {},
+			"time": 1486524474604,
+			"name": "设置直播间优先级",
+			"description": "",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
 		{
