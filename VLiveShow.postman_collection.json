@@ -167,7 +167,8 @@
 				"eaab016a-479c-17a2-3261-2670f5716d32",
 				"f615f734-fc18-8634-4b53-1333c5b06643",
 				"bc7d82cf-2cd5-813e-9d99-4be2f911a0f2",
-				"f9fd2b8f-5ca1-ca65-89d0-64dfca1f7795"
+				"f9fd2b8f-5ca1-ca65-89d0-64dfca1f7795",
+				"596047b4-0d70-6e29-3820-6c9c4b723c9e"
 			],
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 		},
@@ -563,14 +564,14 @@
 		{
 			"id": "109a62e7-4a38-b50d-696e-85207e876036",
 			"headers": "",
-			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=600",
+			"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=300",
 			"preRequestScript": null,
 			"pathVariables": {},
 			"method": "POST",
 			"data": [
 				{
 					"key": "userIds",
-					"value": "6507011",
+					"value": "7422205",
 					"type": "text",
 					"enabled": true
 				}
@@ -579,7 +580,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1487234771491,
+			"time": 1487326047441,
 			"name": "手动送钻",
 			"description": "",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
@@ -1981,6 +1982,27 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
+		},
+		{
+			"id": "596047b4-0d70-6e29-3820-6c9c4b723c9e",
+			"headers": "",
+			"url": "{{APIHost}}/vliveshow-api-app/v2/rank/list/weekly/all/{{end_day}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
+			"data": null,
+			"dataMode": "params",
+			"name": "二月日榜",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1487730655622,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4"
 		},
 		{
 			"folder": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4",
@@ -4631,7 +4653,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1487244670090,
+			"time": 1487652625190,
 			"name": "二月时间榜",
 			"description": "",
 			"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",

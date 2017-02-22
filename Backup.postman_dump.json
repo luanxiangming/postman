@@ -2256,7 +2256,8 @@
 						"eaab016a-479c-17a2-3261-2670f5716d32",
 						"f615f734-fc18-8634-4b53-1333c5b06643",
 						"bc7d82cf-2cd5-813e-9d99-4be2f911a0f2",
-						"f9fd2b8f-5ca1-ca65-89d0-64dfca1f7795"
+						"f9fd2b8f-5ca1-ca65-89d0-64dfca1f7795",
+						"596047b4-0d70-6e29-3820-6c9c4b723c9e"
 					],
 					"createdAt": "2017-01-31T15:18:07.000Z",
 					"updatedAt": "2017-02-09T06:02:54.000Z",
@@ -2430,7 +2431,7 @@
 			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": "2017-01-31T15:18:07.000Z",
-			"updatedAt": 1487300424760,
+			"updatedAt": 1487730655727,
 			"write": true,
 			"published": false,
 			"favorite": true,
@@ -2783,14 +2784,14 @@
 				{
 					"id": "109a62e7-4a38-b50d-696e-85207e876036",
 					"headers": "",
-					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=600",
+					"url": "{{BOHost}}/vliveshow-backoffice-app/v1/campaign/rdm?token={{BOToken}}&campaignId=10000000000&diamond=300",
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
 					"data": [
 						{
 							"key": "userIds",
-							"value": "6507011",
+							"value": "7422205",
 							"type": "text",
 							"enabled": true
 						}
@@ -2799,7 +2800,7 @@
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1487234771491,
+					"time": 1487326047441,
 					"name": "手动送钻",
 					"description": "",
 					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
@@ -4649,6 +4650,27 @@
 					"updatedAt": "2017-01-31T15:18:08.000Z",
 					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
 					"write": true
+				},
+				{
+					"id": "596047b4-0d70-6e29-3820-6c9c4b723c9e",
+					"headers": "",
+					"url": "{{APIHost}}/vliveshow-api-app/v2/rank/list/weekly/all/{{end_day}}",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
+					"data": null,
+					"dataMode": "params",
+					"name": "二月日榜",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1487730655622,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": "fc05cb47-f3e8-f5ba-87b2-f383ee3d54a4"
 				},
 				{
 					"owner": "981326",
@@ -8130,7 +8152,7 @@
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1487244670090,
+					"time": 1487652625190,
 					"name": "二月时间榜",
 					"description": "",
 					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
@@ -8400,7 +8422,7 @@
 				{
 					"enabled": true,
 					"key": "token",
-					"value": "f72c9f750ab655362612b6851dc1b27f",
+					"value": "dc9ff486282d627e722f54e920c31b22",
 					"type": "text"
 				},
 				{
@@ -8448,7 +8470,7 @@
 				{
 					"enabled": true,
 					"key": "BOToken",
-					"value": "140dda6225c60b69e034994a16b082b8",
+					"value": "00d485363f614258efa91f7edb9f865d",
 					"type": "text"
 				},
 				{
@@ -8609,7 +8631,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487325088913
+			"timestamp": 1487756872688
 		},
 		{
 			"id": "a7f86e6d-59d3-38bb-1df7-7d0acf5d9588",
@@ -8809,7 +8831,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487325088931
+			"timestamp": 1487756872735
 		},
 		{
 			"id": "b478dad2-c0ad-9b91-4fe5-897e02b3ec6b",
@@ -9027,7 +9049,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487325088949
+			"timestamp": 1487756872777
 		},
 		{
 			"id": "cf9eae7c-e084-7ab2-d084-c715653ec77e",
@@ -9239,7 +9261,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487325088958
+			"timestamp": 1487756872801
 		}
 	],
 	"headerPresets": [],
@@ -9415,6 +9437,12 @@
 		{
 			"key": "columnId",
 			"value": "1",
+			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "end_day",
+			"value": "20170222",
 			"type": "text",
 			"enabled": true
 		}
