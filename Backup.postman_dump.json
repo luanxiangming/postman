@@ -2,21 +2,127 @@
 	"version": 1,
 	"collections": [
 		{
-			"favoriters": [],
+			"id": "464f73c5-6932-6c4d-1f50-42233662f89e",
+			"name": "CHECK",
+			"description": "",
+			"order": [
+				"e6b15ffe-bdc0-766c-566f-5609737f3919",
+				"b76c40d6-1ad7-024d-9f09-f766b35e7f74"
+			],
+			"folders": [],
+			"timestamp": 1493030916669,
+			"synced": false,
+			"remote_id": 0,
 			"owner": "981326",
-			"lastUpdatedBy": "981326",
-			"lastRevision": 528140329,
-			"team": null,
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1493030916669,
+			"updatedAt": 1493086611702,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "b76c40d6-1ad7-024d-9f09-f766b35e7f74",
+					"headers": "",
+					"url": "http://tpehrweb.tutorabc.com/TIMG_inout/form/SystemHttp.json",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "card_number",
+							"value": "160721960",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inout",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "handlerName",
+							"value": "Index.Index",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "method",
+							"value": "Check_InOUT",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493030946544,
+					"name": "OUT",
+					"description": "",
+					"collectionId": "464f73c5-6932-6c4d-1f50-42233662f89e",
+					"responses": []
+				},
+				{
+					"id": "e6b15ffe-bdc0-766c-566f-5609737f3919",
+					"headers": "",
+					"url": "http://tpehrweb.tutorabc.com/TIMG_inout/form/SystemHttp.json",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "464f73c5-6932-6c4d-1f50-42233662f89e",
+					"data": [
+						{
+							"key": "card_number",
+							"value": "160721960",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inout",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "handlerName",
+							"value": "Index.Index",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "method",
+							"value": "Check_InOUT",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"name": "IN",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1493084010404,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				}
+			]
+		},
+		{
 			"id": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2",
 			"name": "Postman Echo",
 			"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://echo.getpostman.com](https://echo.getpostman.com?source=echo-collection-app-onboarding)",
-			"remote_id": "0",
-			"remoteLink": "",
 			"order": [],
-			"shared": false,
-			"write": true,
-			"createdAt": 1486370856114,
-			"updatedAt": 1486370856114,
 			"folders": [
 				{
 					"owner": "981326",
@@ -29,6 +135,23 @@
 					"order": [
 						"24f59567-75c0-242d-8b26-290bce5f42f1",
 						"43beb531-0741-de34-9ba8-34f26707b774"
+					],
+					"createdAt": "2016-09-02T09:25:05.000Z",
+					"updatedAt": "2016-09-02T09:25:06.000Z",
+					"collection_id": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2"
+				},
+				{
+					"owner": "981326",
+					"lastUpdatedBy": "981326",
+					"lastRevision": 528140414,
+					"collection": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2",
+					"id": "0dcf63bd-7342-5669-5401-01a9da0364b5",
+					"name": "Auth: Others",
+					"description": "",
+					"order": [
+						"0716ded9-2a36-6a12-e65e-5115175048e4",
+						"36bd4952-f768-ea4f-336e-3dce67e4d812",
+						"c4786956-9dba-d1c7-07f0-c70e1f2282f2"
 					],
 					"createdAt": "2016-09-02T09:25:05.000Z",
 					"updatedAt": "2016-09-02T09:25:06.000Z",
@@ -70,26 +193,6 @@
 				{
 					"owner": "981326",
 					"lastUpdatedBy": "981326",
-					"lastRevision": 528140417,
-					"collection": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2",
-					"id": "bebb8fcb-7794-a1f9-ce53-1ca2e36248ea",
-					"name": "Utilities",
-					"description": "",
-					"order": [
-						"72706d8a-00a4-42ba-a725-148e7f0bd089",
-						"12cfbbd3-9019-255b-abc2-9f1363fa2cfa",
-						"2ce64454-8624-4334-d023-6d1e85a7392e",
-						"0ce4e644-6986-ec1f-8c52-7783459cc382",
-						"7149c526-5c0f-3c5f-df11-2f194c9469bd",
-						"1d9d89c8-3f79-54de-8d06-2ec728a5da93"
-					],
-					"createdAt": "2016-09-02T09:25:05.000Z",
-					"updatedAt": "2016-09-02T09:25:06.000Z",
-					"collection_id": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2"
-				},
-				{
-					"owner": "981326",
-					"lastUpdatedBy": "981326",
 					"lastRevision": 528140401,
 					"collection": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2",
 					"id": "8882e738-40ba-9369-5dcc-87ec6d9522fe",
@@ -109,28 +212,40 @@
 				{
 					"owner": "981326",
 					"lastUpdatedBy": "981326",
-					"lastRevision": 528140414,
+					"lastRevision": 528140417,
 					"collection": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2",
-					"id": "0dcf63bd-7342-5669-5401-01a9da0364b5",
-					"name": "Auth: Others",
+					"id": "bebb8fcb-7794-a1f9-ce53-1ca2e36248ea",
+					"name": "Utilities",
 					"description": "",
 					"order": [
-						"0716ded9-2a36-6a12-e65e-5115175048e4",
-						"36bd4952-f768-ea4f-336e-3dce67e4d812",
-						"c4786956-9dba-d1c7-07f0-c70e1f2282f2"
+						"72706d8a-00a4-42ba-a725-148e7f0bd089",
+						"12cfbbd3-9019-255b-abc2-9f1363fa2cfa",
+						"2ce64454-8624-4334-d023-6d1e85a7392e",
+						"0ce4e644-6986-ec1f-8c52-7783459cc382",
+						"7149c526-5c0f-3c5f-df11-2f194c9469bd",
+						"1d9d89c8-3f79-54de-8d06-2ec728a5da93"
 					],
 					"createdAt": "2016-09-02T09:25:05.000Z",
 					"updatedAt": "2016-09-02T09:25:06.000Z",
 					"collection_id": "8b7b66ce-86d4-1ebe-8f83-fcc233864fc2"
 				}
 			],
-			"favorite": false,
-			"subscribed": false,
-			"sharedWithTeam": false,
-			"hasRequests": true,
+			"timestamp": 0,
 			"synced": true,
-			"published": false,
+			"remote_id": "0",
+			"owner": "981326",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
 			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1486370856114,
+			"updatedAt": 1486370856114,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
 				{
 					"owner": "981326",
@@ -2084,6 +2199,5615 @@
 			]
 		},
 		{
+			"id": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+			"name": "VQS",
+			"description": "",
+			"order": [
+				"ab783cba-c510-9e73-b2f2-8907fb48615b",
+				"f916e608-1505-3331-ab29-d346db4465a9",
+				"b11025df-19ac-13fa-5e06-63016028ad27",
+				"de3eb440-7816-a412-3e94-3b3f703aa418",
+				"681fbc9e-755e-c39a-c0f8-cbfeb53e90b2",
+				"f593f9de-84f6-0630-611c-fcded2cc559e",
+				"923f9327-6325-12d2-eb4b-db401ffbacbd",
+				"115c5e7c-14b0-6865-3b63-9d65994ca40e",
+				"cc181acb-6608-1c0b-cfc4-80cd1a401aa2",
+				"18b80c85-cbbc-1c75-5b0f-dbc920f20d3c",
+				"9b6bc80f-9c01-4dec-aee1-750e5e5fe59e",
+				"9c19f294-48a8-40a0-4459-2cf6c136d83f",
+				"ad447822-c88c-0c15-6bff-de0ad3cb5417",
+				"c7908707-abd2-d4a3-0572-06ab0039f47a",
+				"7f3b58cd-e27f-e051-1438-c3f1bacd81a7",
+				"e4d12155-fd50-7ebb-940d-2f7e954e66d0",
+				"142c84ba-c33d-1697-80d4-eb7edab01644",
+				"9ba97ab4-7a50-56ae-80e8-4334cf41a08f",
+				"1d6cd4cf-613c-9006-73b9-8fc6dde3027f",
+				"5df20642-34f9-2f20-46f5-52d0a7339cc8",
+				"2617c8b4-eaec-4fe4-82d0-89f32d17de1a",
+				"ee52ea2a-c618-a6b4-d089-168f343be388",
+				"45912f1e-433d-ba9c-2807-222a7bb816e1",
+				"417f3cc7-a2a9-2145-cb2d-fee2bbabb908",
+				"94f224a9-8b63-3be1-2b69-98c4c650501d",
+				"59fb4915-5573-788e-b25b-c3d1e97ef8b4",
+				"ab38dc73-d292-717a-14ab-580266d13c9c",
+				"f59b2f93-ef6f-5eba-b42f-6d1fcebc37bf",
+				"c1856510-81e3-2daf-b74f-f5be5e7ff43b"
+			],
+			"folders": [],
+			"timestamp": 1492049740079,
+			"synced": false,
+			"remote_id": 0,
+			"owner": "981326",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1492049740079,
+			"updatedAt": 1492507798169,
+			"write": true,
+			"published": false,
+			"favorite": true,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "115c5e7c-14b0-6865-3b63-9d65994ca40e",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getCfgTimeZoneNew",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492072573027,
+					"name": "getCfgTimeZoneNew",
+					"description": "查询CfgTimeZoneNew",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "142c84ba-c33d-1697-80d4-eb7edab01644",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/cache/getCacheConBasic",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getCacheConBasic",
+					"description": "查询顧問缓存",
+					"descriptionFormat": "html",
+					"time": 1492074238596,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "18b80c85-cbbc-1c75-5b0f-dbc920f20d3c",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientSettingByBrandId?clientSn=566889&brandId=2&valid=1",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492072778642,
+					"name": "getClientSettingByBrandId",
+					"description": "查询getClientSetting By BrandId",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "1d6cd4cf-613c-9006-73b9-8fc6dde3027f",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/cache/getCacheTmpCompleteMaterial",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getCacheTmpCompleteMaterial",
+					"description": "查询教材缓存",
+					"descriptionFormat": "html",
+					"time": 1492074536418,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "2617c8b4-eaec-4fe4-82d0-89f32d17de1a",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionArranging/getStrategyRule",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getStrategyRule",
+					"description": "查询所有dcgs策略\n\nsp: uspVqsGetStrategyRule",
+					"descriptionFormat": "html",
+					"time": 1492139812346,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "417f3cc7-a2a9-2145-cb2d-fee2bbabb908",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionArranging/getStaffSchedule",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getStaffSchedule",
+					"description": "sp: uspVqsGetStaffSchedule",
+					"descriptionFormat": "html",
+					"time": 1492422696533,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "45912f1e-433d-ba9c-2807-222a7bb816e1",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionArranging/getClienBasicByClientSn?clientSns=566889",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492140145463,
+					"name": "getClienBasicByClientSn",
+					"description": "查询学生信息",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "59fb4915-5573-788e-b25b-c3d1e97ef8b4",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getCfgProduct?sn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getCfgProduct",
+					"description": "sp: uspVqsGetCfgProduct",
+					"descriptionFormat": "html",
+					"time": 1492507216062,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "5df20642-34f9-2f20-46f5-52d0a7339cc8",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/cache/getCacheTmpCompleteMaterialByCourse?course=1",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492074826564,
+					"name": "getCacheTmpCompleteMaterialByCourse",
+					"description": "查询单个教材缓存",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "681fbc9e-755e-c39a-c0f8-cbfeb53e90b2",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getDCGS?profileId=866&DCGSValid=1",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getDCGS",
+					"description": "查询member.DCGS",
+					"descriptionFormat": "html",
+					"time": 1492071292501,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "7f3b58cd-e27f-e051-1438-c3f1bacd81a7",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getContract?profileId=866",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getContract",
+					"description": "查询Member.Contract",
+					"descriptionFormat": "html",
+					"time": 1492073829175,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "923f9327-6325-12d2-eb4b-db401ffbacbd",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientTimeZoneSetting?clientSn=566889&valid=1",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getClientTimeZoneSetting",
+					"description": "查询ClientTimeZoneSetting\n\nsp: uspVqsGetClientTimeZoneSetting",
+					"descriptionFormat": "html",
+					"time": 1492072344486,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "94f224a9-8b63-3be1-2b69-98c4c650501d",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionArranging/readAllJRMaterialFocus",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492422913141,
+					"name": "readAllJRMaterialFocus",
+					"description": "sp: uspVqsReadAllJRMaterialFocus",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "9b6bc80f-9c01-4dec-aee1-750e5e5fe59e",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getPayTypeConfigSns?data1=1",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492073278399,
+					"name": "getPayTypeConfigSns",
+					"description": "查询cfg_pay_type not in data1",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "9ba97ab4-7a50-56ae-80e8-4334cf41a08f",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/cache/getCacheConBasicByConSn?conSn=1",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492074432199,
+					"name": "getCacheConBasicByConSn",
+					"description": "查询单个顧問缓存",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "9c19f294-48a8-40a0-4459-2cf6c136d83f",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientFreeVideoPoint?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getClientFreeVideoPoint",
+					"description": "查询client_free_video_point",
+					"descriptionFormat": "html",
+					"time": 1492073400001,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "ab38dc73-d292-717a-14ab-580266d13c9c",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientBasic?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getClientBasic",
+					"description": "sp: uspVqsGetClientBasic",
+					"descriptionFormat": "html",
+					"time": 1492507373895,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "ab783cba-c510-9e73-b2f2-8907fb48615b",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientPurchase?clientSn=566889&valid=1&currentDate=2014-04-13",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": [],
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492050134575,
+					"name": "getClientPurchase",
+					"description": "查询用户合约\n\nsp: uspVqsGetClientPurchase",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "ad447822-c88c-0c15-6bff-de0ad3cb5417",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getSessionrecordViewUsedFreeVideoPointList?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getSessionrecordViewUsedFreeVideoPointList",
+					"description": "查询sessionrecord_view_used_free_video_point_list\n\nsp: uspVqsGetSessionrecordViewUsedFreeVideoPointList",
+					"descriptionFormat": "html",
+					"time": 1492073486377,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "b11025df-19ac-13fa-5e06-63016028ad27",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientPasswd?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getClientPasswd",
+					"description": "查询client_passwd\n\nsp: uspVqsGetClientPasswd",
+					"descriptionFormat": "html",
+					"time": 1492070738221,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "c1856510-81e3-2daf-b74f-f5be5e7ff43b",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getSessionrecordViewList?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getSessionrecordViewList",
+					"description": "sp: uspVqsGetSessionrecordViewList",
+					"descriptionFormat": "html",
+					"time": 1492507798083,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "c7908707-abd2-d4a3-0572-06ab0039f47a",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getClientSupplementContract?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getClientSupplementContract",
+					"description": "查询ClientSupplementContract\n\nsp: uspVqsGetClientSupplementContract",
+					"descriptionFormat": "html",
+					"time": 1492073696202,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "cc181acb-6608-1c0b-cfc4-80cd1a401aa2",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getConfigTimeZone",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getConfigTimeZone",
+					"description": "查询ConfigTimeZone",
+					"descriptionFormat": "html",
+					"time": 1492072665734,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "de3eb440-7816-a412-3e94-3b3f703aa418",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getProfile?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getProfile",
+					"description": "查询Profile",
+					"descriptionFormat": "html",
+					"time": 1492071000031,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "e4d12155-fd50-7ebb-940d-2f7e954e66d0",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getCompanyCalendar?date=2017-04-12",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492074175291,
+					"name": "getCompanyCalendar",
+					"description": "查询dbo.company_calendar",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "ee52ea2a-c618-a6b4-d089-168f343be388",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionArranging/getConBasicInfo",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getConBasicInfo",
+					"description": "查询顾问基本资料",
+					"descriptionFormat": "html",
+					"time": 1492140045622,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "f593f9de-84f6-0630-611c-fcded2cc559e",
+					"headers": "",
+					"url": "http://172.16.233.127:8092/sessionBooking/getClientSetting?clientSn=2602792&settingGroupId=1&settingTypeId=1",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492509368121,
+					"name": "getClientSetting",
+					"description": "查询ClientSetting\n\nsp: uspVqsGetClientSetting",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"responses": []
+				},
+				{
+					"id": "f59b2f93-ef6f-5eba-b42f-6d1fcebc37bf",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getComboSessionExtraAdd?clientSn=566889",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getComboSessionExtraAdd",
+					"description": "sp: uspVqsGetComboSessionExtraAdd",
+					"descriptionFormat": "html",
+					"time": 1492507541857,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "f916e608-1505-3331-ab29-d346db4465a9",
+					"headers": "",
+					"url": "http://172.16.233.82:8091/sessionBooking/getProductSessionRule?productSns=2178,2170.2172",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7b87c3d5-f13d-45ac-211e-233ffcc0723b",
+					"data": null,
+					"dataMode": "params",
+					"name": "getProductSessionRule",
+					"description": "查询product_session_rule",
+					"descriptionFormat": "html",
+					"time": 1492070531719,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				}
+			]
+		},
+		{
+			"id": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+			"name": "vipabc",
+			"description": "vipabc interface",
+			"order": [
+				"f9afaa3a-78aa-1d20-4355-2b58c58075bd",
+				"01427dfc-3c56-9b94-084f-f4d945bb0730",
+				"91ec5e11-177d-774b-b530-b0cd9e43898e",
+				"2a682bcc-5500-e74f-bf03-a07f04032ab1",
+				"403bdd9c-b96f-abbe-9e8a-7f29f0c1bfce",
+				"4afd1853-2b5b-4c6c-705f-6a51c1857c63",
+				"3ba229be-7431-e1a1-bf0e-3433d64fd4e1",
+				"57361f44-851c-7082-70e4-0c2f9c51a853",
+				"390fe4ef-7ef0-874e-9504-ef15cff4e8a3",
+				"e75297d1-ef45-c966-3d31-75553615cb47",
+				"d5d171e8-e0a5-0668-9213-f3eacfbf94f6",
+				"ffe0d437-f4fb-39f1-3a7f-d6c724cdab2c",
+				"f8344efc-5513-1842-921f-ae63db393877",
+				"abb3a18c-1c83-0f74-4639-169a3b7af5ce",
+				"4481eea3-d461-b25b-f3b5-b740ae1d1e8e",
+				"77450860-ec6e-975f-8b06-5c818d73ede8",
+				"246eb037-78cc-dd98-cb28-ac25b057a243",
+				"4fb63a17-1d75-604a-3b60-c92b8c1eac0a",
+				"4e145b2b-35b5-c820-5ed8-b0ffc014bbf2",
+				"0050d8c0-6431-82fd-9fcc-58e8542c9e02",
+				"771841b4-7cff-a88f-a1f8-43214aead83f",
+				"f941f2c6-ab85-06d2-8806-e789988f9105",
+				"434acf6f-453b-9862-d89b-15be300e43f1",
+				"eead1d09-05b8-53f8-defb-ed77c230fc3e",
+				"9b2d7954-8d72-7c1e-3130-36184732016c",
+				"fbf474db-4612-edf4-c3b4-4c43120d38c4",
+				"6fa780b8-267a-ea84-91eb-51c7e8e51535",
+				"2f49637d-0179-ba90-c10c-3212e22b7e0d",
+				"be118c8e-b244-3e51-0f3f-9db45f59821a",
+				"a7f6d1a1-90e1-9b04-f890-79e7695983cb",
+				"70943ea9-d7d2-c7fd-2f8c-42f7ba5c9d0e",
+				"ee206612-b0a5-202b-ef45-59128950e4fc",
+				"0a7d8569-172a-92ae-e680-a520986fdac6",
+				"dc776d5a-6937-81eb-032c-cb95d8a9a8a1",
+				"f14ba4fe-bab6-d83a-d4e3-3402df53ddb2",
+				"fb1b42f3-8510-babe-fb56-02c9c2a1f855",
+				"2b1eed61-c975-5710-0a7b-faec87532b07",
+				"5cdcf324-78e8-a418-6e01-2f2911368cac",
+				"e02d1c3a-9ece-b459-6ed4-5ea9d0d3b3d1",
+				"937e0107-66d2-12f9-ad18-5407c36d3682",
+				"511f9762-642d-6e87-b715-0399722da397",
+				"1c42021e-0723-7cb2-14ee-b3c0df920db4",
+				"89dbeaf9-9f70-b377-0c1b-551e9337837f",
+				"079de2a0-c5ed-7f9b-5b44-4a427ca857c4",
+				"643eac88-1cef-330d-30e3-fa82ec5825c3",
+				"75bebd71-6cfc-14f2-2cd8-c4816ceeafae",
+				"285750a3-cb4d-b6e4-8d00-0e7151c87cb8",
+				"85916a7a-f44d-298c-f8d6-0df1c0b2fed5",
+				"e4b43cc3-7cd0-5945-c178-c39de3c21733",
+				"e9cdbec9-cd2c-4d15-7e6e-6b3a7d6aedcc",
+				"b76f326c-1f11-2e3d-fc4b-bb416df4143a",
+				"e4a4dcf0-f5ac-9d3b-8d3f-1bb614d9c422"
+			],
+			"folders": [],
+			"timestamp": 1484704098122,
+			"synced": true,
+			"remote_id": 0,
+			"owner": "981326",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1487816852971,
+			"updatedAt": 1493807261988,
+			"write": true,
+			"published": false,
+			"favorite": true,
+			"permissions": {},
+			"syncedPermissions": {},
+			"requests": [
+				{
+					"id": "0050d8c0-6431-82fd-9fcc-58e8542c9e02",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/Client/ActivateAccount",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"ClientSN\":2602497,\n\t\"Randstr\":\"6I2AKUFTCS8KRFX\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489388989433,
+					"name": "API激活",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "01427dfc-3c56-9b94-084f-f4d945bb0730",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://apistore.vipabc.com/InternalMDAPI/api/MediaChannel/GetMediaItemInfoByMediaSn",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\"MediaSn\":\"17\",\"BrandId\":\"3\"}\r\n\r\n",
+					"dataMode": "raw",
+					"name": "MediaChannel/GetMediaItemInfoByMediaSn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484704373482,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"rawModeData": "{\"MediaSn\":\"17\",\"BrandId\":\"3\"}\r\n\r\n",
+					"owner": "981326"
+				},
+				{
+					"id": "079de2a0-c5ed-7f9b-5b44-4a427ca857c4",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/AfterClass/SetAfterQuestionEvaluation",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\n\t\"afterQuestionSn\": 7156,\n\t\"evaluation\":5,\n\t\"brandId\": \"Brand.VIPABC\"\n\t\n}",
+					"dataMode": "raw",
+					"name": "SetAfterQuestionEvaluation",
+					"description": "儲存客戶課後問題評鑑",
+					"descriptionFormat": "html",
+					"time": 1490841312111,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "0a7d8569-172a-92ae-e680-a520986fdac6",
+					"headers": "",
+					"url": "http://stagemember.vipabc.com/HomeworkIMO/homework/GetHomework/?d=Df2lGchJ2YKJnTldHfyATM8JDMxcDMzEzNxIDMwITOzIkU==wQQxXM0wnM2ATM5cTN38CMz8SM3ASMzozM3oDM2Q",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489730195428,
+					"name": "课后作业",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "1c42021e-0723-7cb2-14ee-b3c0df920db4",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/DCGS/GetDCGS",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2601975,\n\t\"brandId\":4\n\t\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490837984782,
+					"name": "GetDCGS",
+					"description": "取得一客戶的DCGS值",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "246eb037-78cc-dd98-cb28-ac25b057a243",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"url": "{{APIHost}}/Login/NewLogin",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "Account",
+							"value": "usernamez@test.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "Password",
+							"value": "123456",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "RememberMe",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "FromIms",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493712945847,
+					"name": "用户登陆",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "285750a3-cb4d-b6e4-8d00-0e7151c87cb8",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/GetClientLessonHistory",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2602189,\n\t\"brandId\":4,\n\t\"searchType\":\"next\",\n\t\"lessonType\":8191,\n\t\"attendance\":null,\n\t\"reviewType\":\"all\",\n\t\"beginTime\":\"2017-03-30T20:30:12.7958375+08:00\",\n\t\"endTime\":\"2017-04-03T23:30:12.7958375+08:00\",\n\t\"pageIdx\":1,\n\t\"pageCnt\":12,\n\t\"sessionTimeAsc\":false\n\t\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490865442032,
+					"name": "GetClientLessonHistory",
+					"description": "课后复习列表获取\n我的课程-课后复习\n\nClassType:\n\n\t\tNone = 0,\n\n        OneToOne45 = 1 << 0, /// 一对一45分钟\n\n        OneToTwo = 1 << 1, /// 一对二\n\n        OneToThree = 1 << 2, /// 一对三\n\n        SmallClass4 = 1 << 3, /// 小班制4人\n\n        QuickSession10 = 1 << 4, /// 隨選快課(10分钟)\n\n        QuickSession20 = 1 << 5, /// 隨選快課(20分钟)\n\n        LobbyClass = 1 << 6, /// 英语大會堂\n        \n        VideoClass = 1 << 7, /// 錄像課程\n        \n        OneToOne30Ordinary = 1 << 8, /// 一对一30分钟（普通 与 SuperJunior 做区分）\n        \n        OneToOneMath = 1 << 9, /// 数学一对一\n        \n        LobbyMath = 1 << 10, /// 数学大会堂\n        \n        SmallClass6 = 1 << 11, /// 小班制6人\n        \n        SuperJunior = 1 << 12, /// SuperJunior\n        \n        QuickSession = QuickSession10 | QuickSession20, /// 隨選快課\n        \n        OneToOne = OneToOne45 | OneToOne30, /// 一对一\n        \n        OneToOne30 = OneToOne30Ordinary | SuperJunior, /// 一对一30分钟\n        \n        SmallClass = SmallClass4 | SmallClass6, /// 小班制\n        \n        MathAll = OneToOneMath | LobbyMath, /// 数学所有\n       \n        EnglishAll = None | OneToOne45 | OneToOne30 | OneTo  /// 英文所有\n\nSearchType:\n\n\t\tNone = 1,\n\n\t\tAttended = 2, /// 出席(課程時間已過)\n\n\t\tAbsence = 4, /// 缺席 (課程時間已過)\n\n\t\tReserved = 8, /// 已訂課 (課程時間未過)\n\n\t\tCouldBeReserve = 16, /// 可被預訂 (課程時間未過)\n\n\t\tAfterClass = 32, /// 已上完的課程(包含出席、缺席)(課程時間已過)(不會用時間來搜尋)\n\n\t\tNextClass = 64,  /// 已訂課 (課程時間未過)(不會用時間來搜尋)\n\n\t\tFutureLobbyClasses = 128, /// 未來的課程不排除已訂課程\n\n\t\tAll = None | Attended | Absence | Reserved | CouldBeReserve",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "2a682bcc-5500-e74f-bf03-a07f04032ab1",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://192.168.235.31:8090/class/add",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\"class\":\"apply\"}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1486962487009,
+					"name": "PostClassAdd",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": [],
+					"rawModeData": "{\"class\":\"apply\"}",
+					"owner": "981326"
+				},
+				{
+					"id": "2b1eed61-c975-5710-0a7b-faec87532b07",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"url": "http://stagemember.vipjr.com/aspx/IMO/MyLessons/LessonVocab",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": [
+						{
+							"key": "materialSn",
+							"value": "107777",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "period",
+							"value": "45",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "materialBrand",
+							"value": "Jr",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"name": "本课单词",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1490002653039,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "2f49637d-0179-ba90-c10c-3212e22b7e0d",
+					"headers": "",
+					"url": "http://stage-imsp-content.vipabc.com/Api/CfgProductRequest",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "staffSn",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "okReason",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contractSn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "prowerSessionContractSn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "unlimitedCardContractSn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "clientSn",
+							"value": "2602191",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "originalContractSn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "webSite",
+							"value": "C",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "selectedProductSn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488852613084,
+					"name": "用户产品查询",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "390fe4ef-7ef0-874e-9504-ef15cff4e8a3",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://stage.vipabcjr.com/Common/IsValidateCode",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"code\":\"1111\"\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488274510996,
+					"name": "判断验证码",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"headers": "Content-Type: application/json\n",
+					"url": "http://stage.vipabc.com/login/register?type=1&new=1",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"data": "{\"class\":\"apply\"}",
+					"dataMode": "raw",
+					"name": "Login",
+					"description": "",
+					"descriptionFormat": "html",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"folder": null,
+					"id": "3ba229be-7431-e1a1-bf0e-3433d64fd4e1",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"rawModeData": "{\"class\":\"apply\"}",
+					"owner": "981326"
+				},
+				{
+					"id": "403bdd9c-b96f-abbe-9e8a-7f29f0c1bfce",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://192.168.235.31:8090/class/searchByID",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\"id\":\"101\"}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1486963182737,
+					"name": "PostClassSearch",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": [],
+					"rawModeData": "{\"id\":\"101\"}",
+					"owner": "981326"
+				},
+				{
+					"id": "434acf6f-453b-9862-d89b-15be300e43f1",
+					"headers": "",
+					"url": "http://stage-imsp-content.vipabc.com/vipabcOrder/Ordering",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "web_site",
+							"value": "C",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contract_sn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_fullname",
+							"value": "usernamen",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "cname",
+							"value": "usernamen",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_sn",
+							"value": "2602191",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "lead_sn",
+							"value": "11034360",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ty",
+							"value": "2016",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "tm",
+							"value": "12",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "td",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pty",
+							"value": "2016",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptm",
+							"value": "8",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptd",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ey",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "em",
+							"value": "4",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ed",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "staff_sn",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_y",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_m",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_d",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_product",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_ptype",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_ptimes",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_pmethod",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paysdate",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "vipabcfd",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ProwerSessionExtraPay",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "UnlimitedCardExtraPay",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "brand",
+							"value": "4",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pOrderNo",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_IsVipabcJr",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inp_sales",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "okreason",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_okreason",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "product",
+							"value": "1507",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "product_sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date1",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date2",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date3",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptype",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptype1",
+							"value": "-1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_money_activity",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "combo_99",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "combo_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "text_account",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "select_relation",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "payrecord_sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pay_man",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pay_date",
+							"value": "2017/2/01",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate1",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate2",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate3",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_sales",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "total_cash",
+							"value": "3000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paycount",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount_three_change",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_1",
+							"value": "34",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_1",
+							"value": "10000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_1",
+							"value": "5000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount1_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount2_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_2",
+							"value": "34",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount2_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dsn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "intLastPaymentAmount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dis_note",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dpayrecord_sn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dsn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn1",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp1",
+							"value": "100",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contract_type",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "note",
+							"value": "JustForTesting",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "q2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488789148782,
+					"name": "直购",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "4481eea3-d461-b25b-f3b5-b740ae1d1e8e",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{LoginHost}}/loginapi/register",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"age\":20,\n\t\"brandId\":4,\n\t\"cname\":\"usernamey\",\n\t\"ename\":\"usernamey\",\n\t\"countryId\":\"+86\",\n\t\"email\":\"usernamey@test.com\",\n\t\"gender\":1,\n\t\"parentMail\":\"\",\n\t\"password\":\"123456\",\n\t\"mobile\":\"111\",\n\t\"reasonId\":\"111\",\n\t\"SourceType\":\"vipabc-vipabc\",\n\t\"birthday\":\"\",\n\t\"phone\":\"\",\n\t\"parentFlag\":0\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493711481599,
+					"name": "注册",
+					"description": "brandId:\n\n1: tutorabc\n\n2: vipabc\n\n3: tutorabcjr\n\n4: vipabcjr\n\n8: vipabcJp",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "4afd1853-2b5b-4c6c-705f-6a51c1857c63",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"url": "http://stage.vipabc.com/Home/Login",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "txt_login_account=QASusanTest2016120902%40test.com&pwd_login_password=123456",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1487828788361,
+					"name": "HomeLogin",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "4e145b2b-35b5-c820-5ed8-b0ffc014bbf2",
+					"headers": "",
+					"url": "{{APIHost}}/Customer/ActivatingAccount?checkid=2863MS43QC3Y7A5&client=usernamet@test.com",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493706530468,
+					"name": "用户激活",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "4fb63a17-1d75-604a-3b60-c92b8c1eac0a",
+					"headers": "Accept: */*\nOrigin: http://stage.vipjr.com\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\nContent-Type: application/x-www-form-urlencoded; charset=UTF-8\nReferer: http://stage.vipjr.com/\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-TW;q=0.2\nCookie: _gscu_1527489509=88872263u3egy420; _gat=1\n",
+					"url": "http://stagemember.vipjr.com/Login/CorsCheck",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "Account",
+							"value": "usernamen@gmail.com"
+						},
+						{
+							"key": "FromIms",
+							"value": "false"
+						},
+						{
+							"key": "Password",
+							"value": "111111"
+						},
+						{
+							"key": "RememberMe",
+							"value": "false"
+						}
+					],
+					"dataMode": "urlencoded",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488876256879,
+					"name": "登陆检查",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "511f9762-642d-6e87-b715-0399722da397",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/GetClassInformationByLobbySn",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\n\t\"lobbySn\":[100880,100883,100882,100885,100884,100879],\n\t\"brandId\":2\n\t\n}\n",
+					"dataMode": "raw",
+					"name": "GetClassInformationByLobbySn",
+					"description": "取得課程資訊 by 課程編號",
+					"descriptionFormat": "html",
+					"time": 1490580364007,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "57361f44-851c-7082-70e4-0c2f9c51a853",
+					"headers": "",
+					"url": "http://stage.vipabcjr.com/Common/GetValidateCode?t={{$timestamp}}",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488508885362,
+					"name": "生成验证码",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": [
+						{
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK",
+								"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+							},
+							"time": 57,
+							"headers": [
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "private",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "1265",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "image/jpeg",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Tue, 28 Feb 2017 06:59:09 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Proxy-Connection",
+									"key": "Proxy-Connection",
+									"value": "Keep-alive",
+									"description": "Custom header"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Microsoft-IIS/7.5",
+									"description": "A name for the server"
+								},
+								{
+									"name": "X-AspNet-Version",
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319",
+									"description": "Custom header"
+								},
+								{
+									"name": "X-AspNetMvc-Version",
+									"key": "X-AspNetMvc-Version",
+									"value": "4.0",
+									"description": "Custom header"
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "ASP.NET",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "",
+							"language": "plainText",
+							"rawDataType": "arraybuffer",
+							"previewType": "image",
+							"searchResultScrolledTo": -1,
+							"forceNoPretty": false,
+							"write": true,
+							"empty": false,
+							"failed": false,
+							"responseData": {},
+							"state": {
+								"size": "normal"
+							},
+							"id": "012d32a5-5d30-8f30-ac3e-b32f685de7e8",
+							"name": "7715",
+							"request": {
+								"url": "http://stage.vipabcjr.com/Common/GetValidateCode?t={{$timestamp}}",
+								"headers": [],
+								"data": null,
+								"method": "GET",
+								"dataMode": "params"
+							}
+						},
+						{
+							"status": "",
+							"responseCode": {
+								"code": 200,
+								"name": "OK",
+								"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+							},
+							"time": 70,
+							"headers": [
+								{
+									"name": "Cache-Control",
+									"key": "Cache-Control",
+									"value": "private",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "1282",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "image/jpeg",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "Date",
+									"key": "Date",
+									"value": "Tue, 28 Feb 2017 07:00:45 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "Proxy-Connection",
+									"key": "Proxy-Connection",
+									"value": "Keep-alive",
+									"description": "Custom header"
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Microsoft-IIS/7.5",
+									"description": "A name for the server"
+								},
+								{
+									"name": "X-AspNet-Version",
+									"key": "X-AspNet-Version",
+									"value": "4.0.30319",
+									"description": "Custom header"
+								},
+								{
+									"name": "X-AspNetMvc-Version",
+									"key": "X-AspNetMvc-Version",
+									"value": "4.0",
+									"description": "Custom header"
+								},
+								{
+									"name": "X-Powered-By",
+									"key": "X-Powered-By",
+									"value": "ASP.NET",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								}
+							],
+							"cookies": [],
+							"mime": "",
+							"text": "",
+							"language": "plainText",
+							"rawDataType": "arraybuffer",
+							"previewType": "image",
+							"searchResultScrolledTo": -1,
+							"forceNoPretty": false,
+							"write": true,
+							"empty": false,
+							"failed": false,
+							"responseData": {},
+							"state": {
+								"size": "normal"
+							},
+							"id": "176410fb-7e2c-f2a4-c64d-bd2a0590e4de",
+							"name": "7148",
+							"request": {
+								"url": "http://stage.vipabcjr.com/Common/GetValidateCode?t={{$timestamp}}",
+								"headers": [],
+								"data": null,
+								"method": "GET",
+								"dataMode": "params"
+							}
+						}
+					]
+				},
+				{
+					"id": "5cdcf324-78e8-a418-6e01-2f2911368cac",
+					"headers": "",
+					"url": "http://stagemember.vipabc.com/HomeworkIMO/homework/GetHomework/?d=jpkcOV2d8JDMxczLwMzLyIDIwNwMTM3EjMwAjM5MjM8ZXawFmYkUDB1czRDfyYDMxkzN1wnMwEzkjOygjOzkDfxwHTvJmY5NEbhR",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": null,
+					"dataMode": "params",
+					"name": "课后作业",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1490236356785,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "643eac88-1cef-330d-30e3-fa82ec5825c3",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/GetClientClasses",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":\"2602775\",\n\t\"brandId\":4,\n\t\"classType\":\"OneToOne\",\n\t\"searchType\":\"64\",\n\t\"beginTime\":\"2017-04-25 15:30:00\",\n\t\"endTime\":\"2017-12-12 15:30:00\",\n\t\"pageIdx\":1,\n\t\"pageCnt\":100,\n\t\"sessionTimeAsc\":true\n\t\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493284033790,
+					"name": "GetClientClasses",
+					"description": "ClassType:\n\n\t\tNone = 0,\n\n        OneToOne45 = 1 << 0, /// 一对一45分钟\n\n        OneToTwo = 1 << 1, /// 一对二\n\n        OneToThree = 1 << 2, /// 一对三\n\n        SmallClass4 = 1 << 3, /// 小班制4人\n\n        QuickSession10 = 1 << 4, /// 隨選快課(10分钟)\n\n        QuickSession20 = 1 << 5, /// 隨選快課(20分钟)\n\n        LobbyClass = 1 << 6, /// 英语大會堂\n        \n        VideoClass = 1 << 7, /// 錄像課程\n        \n        OneToOne30Ordinary = 1 << 8, /// 一对一30分钟（普通 与 SuperJunior 做区分）\n        \n        OneToOneMath = 1 << 9, /// 数学一对一\n        \n        LobbyMath = 1 << 10, /// 数学大会堂\n        \n        SmallClass6 = 1 << 11, /// 小班制6人\n        \n        SuperJunior = 1 << 12, /// SuperJunior\n        \n        QuickSession = QuickSession10 | QuickSession20, /// 隨選快課\n        \n        OneToOne = OneToOne45 | OneToOne30, /// 一对一\n        \n        OneToOne30 = OneToOne30Ordinary | SuperJunior, /// 一对一30分钟\n        \n        SmallClass = SmallClass4 | SmallClass6, /// 小班制\n        \n        MathAll = OneToOneMath | LobbyMath, /// 数学所有\n       \n        EnglishAll = None | OneToOne45 | OneToOne30 | OneTo  /// 英文所有\n\nSearchType:\n\n\t\tNone = 1,\n\n\t\tAttended = 2, /// 出席(課程時間已過)\n\n\t\tAbsence = 4, /// 缺席 (課程時間已過)\n\n\t\tReserved = 8, /// 已訂課 (課程時間未過)\n\n\t\tCouldBeReserve = 16, /// 可被預訂 (課程時間未過)\n\n\t\tAfterClass = 32, /// 已上完的課程(包含出席、缺席)(課程時間已過)(不會用時間來搜尋)\n\n\t\tNextClass = 64,  /// 已訂課 (課程時間未過)(不會用時間來搜尋)\n\n\t\tFutureLobbyClasses = 128, /// 未來的課程不排除已訂課程\n\n\t\tAll = None | Attended | Absence | Reserved | CouldBeReserve",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "6fa780b8-267a-ea84-91eb-51c7e8e51535",
+					"headers": "",
+					"url": "http://stage-imsp-content.vipabc.com/Api/GetValidCfgProductAndPaysOffBonusInfoRequest",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [],
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488778143331,
+					"name": "所有产品详情",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "70943ea9-d7d2-c7fd-2f8c-42f7ba5c9d0e",
+					"headers": "Accept: application/json, text/javascript, */*; q=0.01\nOrigin: http://stagemember.vipjr.com\nX-Requested-With: XMLHttpRequest\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\nReferer: http://stagemember.vipjr.com/program/member/reservation_class/reservation_class_new.asp?clst=2\nAccept-Encoding: gzip, deflate\nAccept-Language: zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-TW;q=0.2\nCookie: gr_user_id=3e55696f-05d9-4cce-82ba-0de346d6ad8d; Lang=zh; ASPSESSIONIDASSSDAAR=FKPDIPJDHKJONDNNJCKANANO; NewMemberGiftBox2602497=dontAlert; IsHideCircleBooking=1|http://stagemember.vipabc.com/Center/Checkin/Index?id=; IsHideVPad=1; valueForGaCode=2530|1|True; isSJClient=0|1|0|1|1|0; SNMB=1; .ASPXAUTH=02303F17DCD2B7AC09FE7AD1011E4CF476DB2BB3E7DA873620D24FDE82F38759CB4F86AE8C39AEA551B3BB23D7EF727C6F61253A9FCF89158A852F599DD88E5F22AB2ED31D44D2E8FC9D70A9CC438128370783DC723592AAE01B293207A8D848FA664C28AD897F3F7494134A25EBCBEDBF440529; LoginEmailList=xiangming.luan@gmail.com; _gscu_1713184998=89455043ks11fh34; _gscs_1713184998=89455043pxiri234|pv:6; _gscbrs_1713184998=1; Hm_lvt_08471f6788c47d26167de86fc012fe8d=1489455041; Hm_lpvt_08471f6788c47d26167de86fc012fe8d=1489455551; gr_session_id_9d266ebb1dc1d33d=c4d10735-6721-4519-8c4f-df19e0b8e3d5; _gscu_1527489509=89452803bg9tgg12; _gscs_1527489509=894528032f256p12|pv:3; _gscbrs_1527489509=1; client%5Fsn=2602497; bolVIPABCJR=1; LoginInfo=wEzNvAzMvEDYDMyQTO3wnMkU%3D%3DwQQRDOyNgEDM6QDM6Q; clientName=Oliver+Luan; encodeC=jM2AEU5ckU%3DMjM0Q; rememberAccount=xiangming%2Eluan%40gmail%2Ecom; chkRememberAccount=N; rememberPassword=; smail=xiangming%2Eluan%40gmail%2Ecom; txtLoginCheck=462E25882D51BD8804ACAA35C997D073E8E1A5E9; firstTest=N; SideMenuType=CommondContract; txt%5Fislogin=true; isCanClass=Y; scode=Q1i%3DwQkU%3DKqQ; everLogin=2602497; encodeD=Oliver; OverWriteHomeUrl_2602497=\"\"; _ga=GA1.2.972110756.1489452802; Hm_lvt_8458a3f4843e86d9fcd6e38b93dc5b69=1489452844; Hm_lpvt_8458a3f4843e86d9fcd6e38b93dc5b69=1489455780; Member_Language=1; client={\"Icon\":\"avator_animal_01.png\",\"SN\":\"jM2AEU5ckU=MjM0Q\",\"EName\":\"Oliver Luan\"}; ASP.NET_SessionId=jjhpj2qzlnhjood05mugwm1y\n",
+					"url": "http://stagemember.vipjr.com/Entrance/AutoCheckIn",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "",
+					"dataMode": "raw",
+					"name": "AutoCheckIn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1489456297900,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "75bebd71-6cfc-14f2-2cd8-c4816ceeafae",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/GetClientReservedLessons",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2601975,\n\t\"brandId\":2,\n\t\"lessonType\":\"SmallClass\",\n\t\"beginTime\":\"2017-03-30T20:30:12.7958375+08:00\",\n\t\"endTime\":\"2017-04-03T23:30:12.7958375+08:00\",\n\t\"pageIdx\":1,\n\t\"pageCnt\":12,\n\t\"sessionTimeAsc\":true\n\t\n}\n",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1491557955111,
+					"name": "GetClientReservedLessons",
+					"description": "课前预习列表获取\nWeb使用场景：\n我的课程-课前预习\n\nClassType:\n\n\t\tNone = 0,\n\n        OneToOne45 = 1 << 0, /// 一对一45分钟\n\n        OneToTwo = 1 << 1, /// 一对二\n\n        OneToThree = 1 << 2, /// 一对三\n\n        SmallClass4 = 1 << 3, /// 小班制4人\n\n        QuickSession10 = 1 << 4, /// 隨選快課(10分钟)\n\n        QuickSession20 = 1 << 5, /// 隨選快課(20分钟)\n\n        LobbyClass = 1 << 6, /// 英语大會堂\n        \n        VideoClass = 1 << 7, /// 錄像課程\n        \n        OneToOne30Ordinary = 1 << 8, /// 一对一30分钟（普通 与 SuperJunior 做区分）\n        \n        OneToOneMath = 1 << 9, /// 数学一对一\n        \n        LobbyMath = 1 << 10, /// 数学大会堂\n        \n        SmallClass6 = 1 << 11, /// 小班制6人\n        \n        SuperJunior = 1 << 12, /// SuperJunior\n        \n        QuickSession = QuickSession10 | QuickSession20, /// 隨選快課\n        \n        OneToOne = OneToOne45 | OneToOne30, /// 一对一\n        \n        OneToOne30 = OneToOne30Ordinary | SuperJunior, /// 一对一30分钟\n        \n        SmallClass = SmallClass4 | SmallClass6, /// 小班制\n        \n        MathAll = OneToOneMath | LobbyMath, /// 数学所有\n       \n        EnglishAll = None | OneToOne45 | OneToOne30 | OneTo  /// 英文所有\n\nSearchType:\n\n\t\tNone = 1,\n\n\t\tAttended = 2, /// 出席(課程時間已過)\n\n\t\tAbsence = 4, /// 缺席 (課程時間已過)\n\n\t\tReserved = 8, /// 已訂課 (課程時間未過)\n\n\t\tCouldBeReserve = 16, /// 可被預訂 (課程時間未過)\n\n\t\tAfterClass = 32, /// 已上完的課程(包含出席、缺席)(課程時間已過)(不會用時間來搜尋)\n\n\t\tNextClass = 64,  /// 已訂課 (課程時間未過)(不會用時間來搜尋)\n\n\t\tFutureLobbyClasses = 128, /// 未來的課程不排除已訂課程\n\n\t\tAll = None | Attended | Absence | Reserved | CouldBeReserve",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "771841b4-7cff-a88f-a1f8-43214aead83f",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/Client/GetClientInfoById",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"sn\":\"2602062\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489730207904,
+					"name": "按id查用户",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "77450860-ec6e-975f-8b06-5c818d73ede8",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{LoginHost}}/loginapi/in",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"account\":\"usernamed@gmail.com\",\n\t\"password\":\"111111\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489641881570,
+					"name": "核心登陆",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "85916a7a-f44d-298c-f8d6-0df1c0b2fed5",
+					"headers": "",
+					"url": "172.16.233.82:8093/v1/file/uploadWithFileConvert",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "file",
+							"value": {
+								"0": {}
+							},
+							"type": "file",
+							"enabled": true
+						},
+						{
+							"key": "callback",
+							"value": "172.16.233.82:8093/v1/test/post",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "extension",
+							"value": "ppt",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "convertTo",
+							"value": "png",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "uploader",
+							"value": "oliver04",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "location",
+							"value": "sd",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "scope",
+							"value": "public",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493283411777,
+					"name": "uploadWithFileConvert",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "89dbeaf9-9f70-b377-0c1b-551e9337837f",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/AfterClass/GetAfterQuestion",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2601975,\n\t\"sessionSn\":\"2017031712002932\",\n\t\"brandId\": \"Brand.VIPABC\"\n\t\n}\n",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490840469601,
+					"name": "GetAfterQuestion",
+					"description": "取得課後問題列表\nWeb使用场景：\n我的课程-课后复习-\n选择某堂课-英语问题",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "91ec5e11-177d-774b-b530-b0cd9e43898e",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://192.168.235.31:8090/class/search?name=zhangsan&password=vipjr",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": "{\"MediaItemSn\":\"100\",\"isOpenDateTimeFilter\":0,\"BrandId\":\"3\"}\r\n",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1486962368299,
+					"name": "GetClassSearch",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": [],
+					"rawModeData": "{\"MediaItemSn\":\"100\",\"isOpenDateTimeFilter\":0,\"BrandId\":\"3\"}\r\n",
+					"owner": "981326"
+				},
+				{
+					"id": "937e0107-66d2-12f9-ad18-5407c36d3682",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Level/GetLevelInfo",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"brandId\":2,\n\t\"clientSn\":2602189,\n\t\"gradeType\":4\n\t\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490837835171,
+					"name": "GetLevelInfo",
+					"description": "客戶等級資訊\n \nWeb使用场景:\n登录",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "9b2d7954-8d72-7c1e-3130-36184732016c",
+					"headers": "",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/JRNews/GetJRNewsDetailByNewsID",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489025773883,
+					"name": "按id查新闻",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "a7f6d1a1-90e1-9b04-f890-79e7695983cb",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{MemberHost}}/aspx/IMO/Booking/SetReservation",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"actionType\": 0,\n\t\"data\": \"[\n\t\t{\n\t\t\t\\\"SstNumber\\\":0,\n\t\t\t\\\"SessionTime\\\":\\\"2017/04/15 10:30:00\\\",\n\t\t\t\\\"LobbySn\\\":0,\n\t\t\t\\\"SessionPeriod\\\":45,\n\t\t\t\\\"BookingClassType\\\":\\\"OneOnTwo\\\",\n\t\t\t\\\"MaxMember\\\":2,\n\t\t\t\\\"IsCycleBooking\\\":0\n\t\t}\n\t]\"\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1491805464953,
+					"name": "订课",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "abb3a18c-1c83-0f74-4639-169a3b7af5ce",
+					"headers": "",
+					"url": "{{APIHost}}/Customer/CheckRegisterMail?email=usernameu@test.com",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493707684802,
+					"name": "检查注册邮箱",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "b76f326c-1f11-2e3d-fc4b-bb416df4143a",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/EnterSession",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2598388,\n\t\"sessionSn\":\"2017041818000000\",\n\t\"isQuickSession\":false,\n\t\"brandId\":4\n\t\n}\n",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492049098373,
+					"name": "EnterSession",
+					"description": "取得进入教室参数\nWeb使用场景：\n我的课程-课前预习-\n选某堂开课的课程\n-进入教室",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "be118c8e-b244-3e51-0f3f-9db45f59821a",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{IMSHost}}/Search/SearchAdvanceData",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"Brand\": \"Vipabc\",\n\t\"CName\": \"\",\n\t\"Email\": \"usernamed@gmail.com\",\n\t\"CellPhone\": \"\",\n\t\"EFirstName\": \"\",\n\t\"ELastName\": \"\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489406187361,
+					"name": "進階搜尋",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "d5d171e8-e0a5-0668-9213-f3eacfbf94f6",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://www.vipjr.com/ForgotPassword/SendPhoneVerificationCode",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\n\t\"strEmail\":\"18616762525\"\n}",
+					"dataMode": "raw",
+					"name": "发送手机验证码",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1488190599314,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "dc776d5a-6937-81eb-032c-cb95d8a9a8a1",
+					"headers": "",
+					"url": "http://stagemember.vipjr.com/aspx/IMO/MyLessons/LessonQuestions?sessionSn=2017031712002932",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": null,
+					"dataMode": "params",
+					"name": "英语问题",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1489731071214,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "e02d1c3a-9ece-b459-6ed4-5ea9d0d3b3d1",
+					"headers": "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\nX-Requested-With: XMLHttpRequest\n",
+					"url": "{{MemberHost}}/aspx/IMO/Video/RecommandList",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "type",
+							"value": "mostView",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490238374641,
+					"name": "精选录像",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "e4a4dcf0-f5ac-9d3b-8d3f-1bb614d9c422",
+					"headers": "",
+					"url": "http://stage-imsp-content.vipabc.com/vipabcOrder/Ordering",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "web_site",
+							"value": "C",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contract_sn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_fullname",
+							"value": "usernamen",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "cname",
+							"value": "usernamen",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "client_sn",
+							"value": "2602191",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "lead_sn",
+							"value": "11034360",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ty",
+							"value": "2016",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "tm",
+							"value": "12",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "td",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pty",
+							"value": "2016",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptm",
+							"value": "8",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptd",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ey",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "em",
+							"value": "4",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ed",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "staff_sn",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_y",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_m",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inpdate_d",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_product",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_ptype",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_ptimes",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_pmethod",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paysdate",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "vipabcfd",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ProwerSessionExtraPay",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "UnlimitedCardExtraPay",
+							"value": "false",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "brand",
+							"value": "4",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pOrderNo",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_IsVipabcJr",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "inp_sales",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "okreason",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_okreason",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "product",
+							"value": "1507",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "product_sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date1",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date2",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "date3",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptype",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "ptype1",
+							"value": "-1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_money_activity",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "combo_99",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "combo_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "text_account",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "select_relation",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "payrecord_sn",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pay_man",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pay_date",
+							"value": "2017/2/01",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate1",
+							"value": "2017",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate2",
+							"value": "3",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "pdate3",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "hidden_sales",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "total_cash",
+							"value": "3000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paycount",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount_three_change",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_1",
+							"value": "34",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_1",
+							"value": "10000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_1",
+							"value": "5000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount1_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount2_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_1",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_1",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_2",
+							"value": "34",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount1_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount2_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_2",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_3",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_4",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_4",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_5",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_5",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_6",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_6",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_7",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_7",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_8",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_8",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_9",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_9",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_10",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_10",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_11",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_11",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_12",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_12",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_13",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_13",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_14",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_14",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_15",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_15",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_16",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_16",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_17",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_17",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_18",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_18",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_19",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_19",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paymode1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_paymode1_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_amount1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount1_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "isbuy_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "batchno_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "storeid_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paynote1_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "paybank_20",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "OldCreditCardInstallment_20",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dsn",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "intLastPaymentAmount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "display_discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "old_discount",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dis_note",
+							"value": "",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dpayrecord_sn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "dsn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn1",
+							"value": "16914",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp1",
+							"value": "100",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sn3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sp3",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contract_type",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "note",
+							"value": "JustForTesting",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "q2",
+							"value": "0",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488789148782,
+					"name": "直购test",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": [],
+					"isFromCollection": true,
+					"collectionRequestId": "434acf6f-453b-9862-d89b-15be300e43f1"
+				},
+				{
+					"id": "e4b43cc3-7cd0-5945-c178-c39de3c21733",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/GetClientClassRecordTimeList",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\n\t\"clientSn\":2602189,\n\t\"brandId\":2,\n\t\"beginDate\":\"2017-10-01T00:00:00+08:00\",\n\t\"endDate\":\"2017-11-28T23:59:59+08:00\"\n\t\n}\n",
+					"dataMode": "raw",
+					"name": "GetClientClassRecordTimeList",
+					"description": "取得顧客的上課紀錄\nWeb使用场景：\n我的课程-日历表",
+					"descriptionFormat": "html",
+					"time": 1491382634542,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "e75297d1-ef45-c966-3d31-75553615cb47",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://www.vipjr.com/ForgotPassword/ForgotPasswordOption",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"Email\":\"xiangmingluan@gmail.com\",\n\t\"validatecode\":\"6393\"\n\t\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488190225829,
+					"name": "忘记密码",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "e9cdbec9-cd2c-4d15-7e6e-6b3a7d6aedcc",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{InfoHost}}/InformationAPIimo/Class/AttendClass",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"clientSn\":2602792,\n\t\"sessionSn\":\"2017041217004007\",\n\t\"brandId\":4\n\t\n}\n",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1492049097643,
+					"name": "AttendClass",
+					"description": "進教室壓出席\nWeb使用场景：\n上课小帮手-进入教室",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "ee206612-b0a5-202b-ef45-59128950e4fc",
+					"headers": "",
+					"url": "{{MemberHost}}/aspx/IMO/MyLessons?layoutMode=HalfWidth&uid=486&_=1489643422691",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": null,
+					"dataMode": "params",
+					"name": "我的课程",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1489646533350,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "eead1d09-05b8-53f8-defb-ed77c230fc3e",
+					"headers": "",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/JRNews/GetJRHotNewsList",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489025763402,
+					"name": "新闻列表",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "f14ba4fe-bab6-d83a-d4e3-3402df53ddb2",
+					"headers": "",
+					"url": "http://stagemember.vipjr.com/aspx/IMO/MyLessons/LessonInfo?sessiontime=2017%2F03%2F17%2012%3A30",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "GET",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1490683343822,
+					"name": "课程信息",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "f8344efc-5513-1842-921f-ae63db393877",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/Password/GetCheckCodeByClientSn",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"ClientSn\": 3948368,\n\t\"CheckType\": 2\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489026431541,
+					"name": "API获得验证码",
+					"description": "public int CheckType { get; set; }\r\n1：邮件；2：手机",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "f941f2c6-ab85-06d2-8806-e789988f9105",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{APIStore}}/VMD/VipJr.API/api/Client/GetClientBasicInfoByEmail",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"email\":\"usernamez@test.com\"\n}",
+					"dataMode": "raw",
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1493712911865,
+					"name": "按email查用户",
+					"description": "年约qafty-stgny201703162155@test.com\r\r\r精致qafty-stgjz201703170050@test.com\r\r\r超值加购qafty-stgczj201703161040@test.com\r\r\r无限加购qafty-stgwxj201703161625@test.com\r\r\r精选qafty-stagesj20161021003@test.com",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "f9afaa3a-78aa-1d20-4355-2b58c58075bd",
+					"headers": "Content-Type: application/json\n",
+					"url": "http://apistore.vipabc.com/InternalMDAPI/api/MediaChannel/GetMarketMediaInfoByMediaItemSn",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": "{\"MediaItemSn\":\"100\",\"isOpenDateTimeFilter\":0,\"BrandId\":\"3\"}\r\n",
+					"dataMode": "raw",
+					"name": "MediaChannel/GetMarketMediaInfoByMediaItemSn",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1484704316987,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"rawModeData": "{\"MediaItemSn\":\"100\",\"isOpenDateTimeFilter\":0,\"BrandId\":\"3\"}\r\n",
+					"owner": "981326"
+				},
+				{
+					"id": "fb1b42f3-8510-babe-fb56-02c9c2a1f855",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"url": "http://stagemember.vipjr.com/aspx/IMO/Video/ViewMyVideo",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "POST",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"data": [
+						{
+							"key": "sessionSn",
+							"value": "2017031712002932",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"name": "课程录像",
+					"description": "",
+					"descriptionFormat": "html",
+					"time": 1490000400932,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
+				{
+					"id": "fbf474db-4612-edf4-c3b4-4c43120d38c4",
+					"headers": "",
+					"url": "http://stage-imsp-content.vipabc.com/Api/GetAllValidProductInfoRequest",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": null,
+					"dataMode": "params",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1488778175193,
+					"name": "所有产品列表",
+					"description": "",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				},
+				{
+					"id": "ffe0d437-f4fb-39f1-3a7f-d6c724cdab2c",
+					"headers": "Content-Type: application/json\n",
+					"url": "{{APIHost}}/ForgotPassword/SendVerificationCode",
+					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n\t\"checkType\":2,\n\t\"strEmail\":\"usernamef@gmail.com\"\n}",
+					"dataMode": "raw",
+					"version": 2,
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1489026497974,
+					"name": "发送验证码",
+					"description": "#region 发送验证码\r\n\r\n        /// <summary>\r\n        /// 发送验证码\r\n        /// </summary>\r\n        /// <param name=\"checkType\">2：手机；1:邮箱</param>\r\n        /// <param name=\"strEmail\"></param>\r\n        /// <returns></returns>\r\n        [HttpPost]",
+					"collectionId": "eaef6fd7-9833-42c1-d289-ed9abe1a1b11",
+					"responses": []
+				}
+			]
+		},
+		{
 			"id": "0e3f2864-6419-a894-5c01-103e9f99345e",
 			"name": "VLiveShow",
 			"description": "",
@@ -2434,7 +8158,7 @@
 			"updatedAt": 1487730655727,
 			"write": true,
 			"published": false,
-			"favorite": true,
+			"favorite": false,
 			"permissions": {},
 			"syncedPermissions": {},
 			"requests": [
@@ -4754,30 +10478,20 @@
 				},
 				{
 					"id": "5bc49ccf-5fd6-bffc-3015-a2c3d1efc15e",
-					"owner": "981326",
-					"lastUpdatedBy": "981326",
-					"lastRevision": 997186006,
-					"folder": "d0ed070c-0905-2b84-64c4-b4fca5b2d561",
-					"name": "进入房间Callback",
-					"dataMode": "raw",
-					"data": "{\n  \"GroupId\": \"{{roomId}}\", \n  \"NewMemberList\" :[{\n    \"Member_Account\":\"{{userId}}\"\n  }]\n  \n}",
-					"rawModeData": "{\n  \"GroupId\": \"{{roomId}}\", \n  \"NewMemberList\" :[{\n    \"Member_Account\":\"{{userId}}\"\n  }]\n  \n}",
-					"descriptionFormat": null,
-					"description": "",
 					"headers": "Content-Type: application/json\n",
-					"method": "POST",
-					"pathVariables": {},
-					"url": "{{APIHost}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid=2.0&ClientIP=192.168.111.215&OptPlatform=IOS9",
+					"url": "{{APIHost}}/vliveshow-callback-app/v1/tencent/imcallback?CallbackCommand=Group.CallbackAfterNewMemberJoin&SdkAppid={{sdkappid}}&ClientIP=192.168.111.215&OptPlatform=IOS9",
 					"preRequestScript": null,
+					"pathVariables": {},
+					"method": "POST",
+					"data": "{\n  \"GroupId\": \"{{roomId}}\", \n  \"NewMemberList\" :[{\n    \"Member_Account\":\"{{userId}}\"\n  }]\n  \n}",
+					"dataMode": "raw",
 					"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.actionStatus === \"OK\";",
 					"currentHelper": "normal",
-					"helperAttributes": "{}",
-					"createdAt": "2017-01-31T15:18:07.000Z",
-					"updatedAt": "2017-01-31T15:18:08.000Z",
-					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e",
-					"write": true,
-					"timestamp": null,
-					"collection": "0e3f2864-6419-a894-5c01-103e9f99345e"
+					"helperAttributes": {},
+					"time": 1489714297149,
+					"name": "进入房间Callback",
+					"description": "",
+					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
 				},
 				{
 					"owner": "981326",
@@ -6895,12 +12609,12 @@
 					"preRequestScript": null,
 					"pathVariables": {},
 					"method": "POST",
-					"data": "{\n  \"role\":[\"AUDIENCES\"],\n  \"mobilePhone\":null,\n  \"userId\":6094037,\n  \"nickName\":null,\n  \"sortFields\":{\"update_time\":\"desc\"},\n  \"registerTime\":{\"from\": \"2016-01-01\", \"to\": \"2017-01-01\"}\n}\n",
+					"data": "{\n  \"role\":null,\n  \"mobilePhone\":null,\n  \"userId\":null,\n  \"nickName\":null,\n  \"sortFields\":{\"update_time\":\"desc\"},\n  \"registerTime\":{\"from\": \"2017-03-19\", \"to\": \"2017-03-21\"}\n}\n",
 					"dataMode": "raw",
 					"tests": null,
 					"currentHelper": "normal",
 					"helperAttributes": {},
-					"time": 1487152820762,
+					"time": 1490082572290,
 					"name": "用户查询",
 					"description": "HOST(\"HOST\",1),\n\nSUPER_USER(\"SUPER_USER\",2), \n\nSPECIAL_GUEST(\"SPECIAL_GUEST\",4), \n\nGUEST(\"GUEST\",8), \n\nAUDIENCES(\"AUDIENCES\",16),\n\nADMINISTRATOR(\"ADMINISTRATOR\",32),\n\nTRIAL_HOST(\"TRIAL_HOST\",64),\n\nCOURSE_VIP(\"COURSE_VIP\",128);",
 					"collectionId": "0e3f2864-6419-a894-5c01-103e9f99345e"
@@ -8631,7 +14345,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487756872688
+			"timestamp": 1488594371240
 		},
 		{
 			"id": "a7f86e6d-59d3-38bb-1df7-7d0acf5d9588",
@@ -8831,225 +14545,7 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487756872735
-		},
-		{
-			"id": "b478dad2-c0ad-9b91-4fe5-897e02b3ec6b",
-			"name": "VLS PRD",
-			"values": [
-				{
-					"enabled": true,
-					"key": "APIHost",
-					"value": "http://www.vliveshow.com",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "BOHost",
-					"value": "http://172.16.14.118:8080",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "token",
-					"value": "0a7ba9b17bcbfa692997f03599f7e252",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "roomId",
-					"value": "58a56a14d34e47aa1f5a8ce6",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "rating",
-					"value": "3",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "client_language",
-					"value": "zh-hant",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "courseId",
-					"value": "52",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "lessonId",
-					"value": "62",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "subscriptionId",
-					"value": "145",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "subscriptionType",
-					"value": "1",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "BOToken",
-					"value": "3481f42eba3940559c9119fa3b9d9718",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "userId",
-					"value": "6000127",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "usersig",
-					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "sdkappid",
-					"value": "1400011613",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "remark",
-					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "giftId",
-					"value": "57f9aa576dde204d83048445",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "nickName",
-					"value": "新压力试播",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "giftType",
-					"value": "0",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "giftNum",
-					"value": "1",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "combo",
-					"value": "3",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "nationCode",
-					"value": "86",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "mobilePhone",
-					"value": "13671853549",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "password",
-					"value": "111111",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "userToUID",
-					"value": "6000025",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "unregisteredPhone",
-					"value": "90000001010",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "verificationCode",
-					"value": "111111",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "refundDiamond",
-					"value": "1",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "refundReason",
-					"value": "最近实在太忙了",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "userBeBlocked",
-					"value": "6086949",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "csvPath",
-					"value": "{{APIHost}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "channelId",
-					"value": "1",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "silencedUserId",
-					"value": "7000095",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "votedId",
-					"value": "6000025",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "rechargeId",
-					"value": "25187",
-					"type": "text"
-				},
-				{
-					"enabled": true,
-					"key": "avatarCDN",
-					"value": "http://asset.vliveshow.com/M00/05/41/rBAOgFhkw1qALdz2AAAKfeRIIoY177.png",
-					"type": "text"
-				}
-			],
-			"team": null,
-			"timestamp": 1487756872777
+			"timestamp": 1488594371260
 		},
 		{
 			"id": "cf9eae7c-e084-7ab2-d084-c715653ec77e",
@@ -9261,10 +14757,379 @@
 				}
 			],
 			"team": null,
-			"timestamp": 1487756872801
+			"timestamp": 1488594371292
+		},
+		{
+			"id": "b478dad2-c0ad-9b91-4fe5-897e02b3ec6b",
+			"name": "VLS PRD",
+			"values": [
+				{
+					"enabled": true,
+					"key": "APIHost",
+					"value": "http://www.vliveshow.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "BOHost",
+					"value": "http://172.16.14.118:8090",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "token",
+					"value": "5e493cdc38fb1e4d4e57bf99db323a8b",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "roomId",
+					"value": "58cb35efd34e866bd7b84e44",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "rating",
+					"value": "3",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "client_language",
+					"value": "zh-hant",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "courseId",
+					"value": "52",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "lessonId",
+					"value": "62",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "subscriptionId",
+					"value": "145",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "subscriptionType",
+					"value": "1",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "BOToken",
+					"value": "3481f42eba3940559c9119fa3b9d9718",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "userId",
+					"value": "6000127",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "usersig",
+					"value": "eJxFkFFPgzAUhf8Lrxp3C*sIJj7MjcDIljTKgvJCKi3zOleaUrcx438XGxZfvy8355z77eXr5zuuNYqK2yowwrv3wLt1WJ41GlnxxkozYEIp9QGu9ihNh60ahA*EEj8A*JcopLLYoDvk4oBqFB3uBrKJt4vVI6GblJaTfsf62dtSFoWS5Y04AXv-XB4Nm-BVWKyzLNIfc4znJmulebk0l6d0nzMVpD6LyhzjKK-j5LU8TQV0YbZIzsn24Rom9pXb9td*OrQjZEaCUVo8SMdDCpRGQEbO67r9UrayvZbuGT*-bJBXMQ__",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "sdkappid",
+					"value": "1400011613",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "remark",
+					"value": "{{userId}}%26{{giftId}}%26http://{{APIHost}}/vliveshow-api-app/v1/users/{{userId}}/avatars.png%26{{nickName}}%26送了一个神秘礼物%26{{combo}}%261479452000811%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%260%26Popsicle%26false%261.0%26http://{{APIHost}}/M00/01/18/rBAOcFf5qoiAKFnAAAAa3esKlDc289.png%261%261",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "giftId",
+					"value": "57f9aa576dde204d83048445",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "nickName",
+					"value": "新压力试播",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "giftType",
+					"value": "0",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "giftNum",
+					"value": "1",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "combo",
+					"value": "3",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "nationCode",
+					"value": "86",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "mobilePhone",
+					"value": "13671853549",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "password",
+					"value": "111111",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "userToUID",
+					"value": "6000025",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "unregisteredPhone",
+					"value": "90000001010",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "verificationCode",
+					"value": "111111",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "refundDiamond",
+					"value": "1",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "refundReason",
+					"value": "最近实在太忙了",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "userBeBlocked",
+					"value": "6086949",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "csvPath",
+					"value": "{{APIHost}}/M00/03/63/rBAOcFg9XACACZNMAAAE6rZv6b4854.csv",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "channelId",
+					"value": "1",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "silencedUserId",
+					"value": "7000095",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "votedId",
+					"value": "6000025",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "rechargeId",
+					"value": "25187",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "avatarCDN",
+					"value": "http://asset.vliveshow.com/M00/05/41/rBAOgFhkw1qALdz2AAAKfeRIIoY177.png",
+					"type": "text"
+				}
+			],
+			"team": null,
+			"timestamp": 1490082491725
+		},
+		{
+			"id": "fe6d5896-4d8c-14f9-abb0-a168ebb10aac",
+			"name": "VIP STG",
+			"values": [
+				{
+					"enabled": true,
+					"key": "APIHost",
+					"value": "stage.vipjr.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "RegHost",
+					"value": "stageopenapi.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "LoginHost",
+					"value": "172.16.233.87:8888",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "APIStore",
+					"value": "stageapistore.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "IMSHost",
+					"value": "stagecpims.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "MemberHost",
+					"value": "stagemember.vipjr.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "InfoHost",
+					"value": "stageapi.vipabc.com",
+					"type": "text"
+				}
+			],
+			"team": null,
+			"timestamp": 1490579979673
+		},
+		{
+			"id": "31cf5e99-5316-80a1-b058-5c0b26967ddb",
+			"name": "VIP PRD",
+			"values": [
+				{
+					"enabled": true,
+					"key": "APIHost",
+					"value": "www.vipjr.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "RegHost",
+					"value": "openapi.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "LoginHost",
+					"value": "passport.vipjr.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "APIStore",
+					"value": "apistore.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "IMSHost",
+					"value": "cpims.vipabc.com",
+					"type": "text"
+				},
+				{
+					"enabled": true,
+					"key": "InfoHost",
+					"value": "api.vipabc.com",
+					"type": "text"
+				}
+			],
+			"team": null,
+			"timestamp": 1491804296161
 		}
 	],
-	"headerPresets": [],
+	"headerPresets": [
+		{
+			"id": "a290e52e-2dc6-7cb6-2640-dc1214180055",
+			"name": "cooky",
+			"headers": [
+				{
+					"key": "ASP.NET_SessionId",
+					"value": "0wxlse3nqvbsmlzqrcgr5uif",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "client_sn",
+					"value": "2601975",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "chkRememberAccount",
+					"value": "N",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "clientName",
+					"value": "+",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "rememeberAccount",
+					"value": "usernamed@gmail.com",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "txtLoginCheck",
+					"value": "581298AFBC8A2FB547771EC8C2ED5D353C6096CC",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "LoginInfo",
+					"value": "wEzNvAzMvAjYDMxkzN1wnMkU==wQQVjNyNgEzM6ITO6Q",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"timestamp": 1488774798751
+		}
+	],
 	"globals": [
 		{
 			"key": "IMhost",
@@ -9444,6 +15309,18 @@
 			"key": "end_day",
 			"value": "20170222",
 			"type": "text",
+			"enabled": true
+		},
+		{
+			"key": "echo_digest_realm",
+			"type": "text",
+			"value": "Users",
+			"enabled": true
+		},
+		{
+			"key": "echo_digest_nonce",
+			"type": "text",
+			"value": "MeIMxqqvcx31oOsUh0OUDX62jxwiL5DD",
 			"enabled": true
 		}
 	]
